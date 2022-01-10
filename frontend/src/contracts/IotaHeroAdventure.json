@@ -199,7 +199,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -236,7 +237,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -255,7 +257,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -315,7 +318,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -381,7 +385,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -440,7 +445,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -464,7 +470,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -477,7 +484,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -508,7 +516,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -527,7 +536,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -629,7 +639,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -642,7 +653,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -661,7 +673,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
@@ -674,7 +687,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -717,7 +731,8 @@
       "name": "withdraw",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [
@@ -24192,7 +24207,7 @@
         3993
       ],
       "IotaHeroUtil": [
-        4531
+        4627
       ],
       "Ownable": [
         104
@@ -24226,7 +24241,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 3590,
-        "sourceUnit": 4532,
+        "sourceUnit": 4628,
         "src": "58:28:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -24251,7 +24266,7 @@
               "id": 3245,
               "name": "IotaHeroUtil",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4531,
+              "referencedDeclaration": 4627,
               "src": "156:12:15"
             },
             "id": 3246,
@@ -24266,7 +24281,7 @@
         "id": 3589,
         "linearizedBaseContracts": [
           3589,
-          4531,
+          4627,
           3811,
           104,
           2209,
@@ -28513,7 +28528,7 @@
         3993
       ],
       "IotaHeroUtil": [
-        4531
+        4627
       ],
       "Ownable": [
         104
@@ -28547,7 +28562,7 @@
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
         "scope": 3590,
-        "sourceUnit": 4532,
+        "sourceUnit": 4628,
         "src": "58:28:15",
         "symbolAliases": [],
         "unitAlias": ""
@@ -28572,7 +28587,7 @@
               "id": 3245,
               "name": "IotaHeroUtil",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4531,
+              "referencedDeclaration": 4627,
               "src": "156:12:15"
             },
             "id": 3246,
@@ -28587,7 +28602,7 @@
         "id": 3589,
         "linearizedBaseContracts": [
           3589,
-          4531,
+          4627,
           3811,
           104,
           2209,
@@ -32950,8 +32965,8 @@
         }
       },
       "links": {},
-      "address": "0xcB67e277Eb816e48C7f6d443D3673aA5573C4118",
-      "transactionHash": "0xf529ddd33cfb29d4754ebfb81673f78660b40ed50418a9ac042694ddf47d500d"
+      "address": "0xBc153cA5a48e731119a174E096B7bE18eD425dd0",
+      "transactionHash": "0xd541f6a5cc50b6e107d9ba47a4b10ffb98a25472c3b373d8007bf0e90bf69b71"
     },
     "5777": {
       "events": {
@@ -33118,7 +33133,8 @@
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-10T17:14:33.085Z",
+  "updatedAt": "2022-01-10T23:16:17.326Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {

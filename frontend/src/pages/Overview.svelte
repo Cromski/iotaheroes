@@ -24,6 +24,7 @@
   }
 
   async function getHeroes() {
+    console.log($hero);
     let response = await $hero.methods.getOwnerHeroes($selectedAccount).call();
     return response;
   }
@@ -53,6 +54,7 @@
           {/if}
         {/each}
       </div>
+      <button on:click={() => (location.href = "trade")}>Start trading!</button>
     {/await}
   {/await}
 </div>
