@@ -1,37 +1,18 @@
 <script>
-  import { selectedAccount } from "svelte-web3";
-  import { hero, token, trade } from "../contract_stores";
+  import { getInventory, getTokensUri } from "../tokenStore";
+  import { getHeroes, reset } from "../heroStore";
+  import { hero } from "../contract_stores";
   import HeroSummary from "../components/HeroSummary.svelte";
   import Item from "../components/Item.svelte";
+  import { selectedAccount } from "svelte-web3";
 
-  $: uriPromise = $token ? getTokensUri() : "";
-  $: inventoryPromise = $token ? getInventory() : "";
-  $: heroesPromise = $hero ? getHeroes() : "";
-
-  async function getTokensUri() {
-    const response = await $token.methods.uri(0).call();
-    return response;
-  }
-
-  async function getInventory() {
-    const response = await $token.methods
-      .balanceOfBatch(
-        Array(100).fill($selectedAccount),
-        Array.from(Array(100).keys())
-      )
-      .call();
-    return response;
-  }
-
-  async function getHeroes() {
-    console.log($hero);
-    let response = await $hero.methods.getOwnerHeroes($selectedAccount).call();
-    return response;
-  }
+  $: uriPromise = $getTokensUri;
+  $: inventoryPromise = $getInventory;
+  $: heroesPromise = $getHeroes;
 
   async function spawnHero() {
     await $hero.methods.spawnHero().send({ from: $selectedAccount });
-    heroesPromise = getHeroes();
+    reset.update((n) => n + 1);
   }
 
   function goToHeroPage(heroId) {
@@ -63,7 +44,7 @@
   <h1>Getting heroes....</h1>
 {:then heroes}
   <h1>Your heroes</h1>
-  <div style="display:flex;justify-content:center">
+  <div style="display:flex;flex-wrap:wrap;justify-content:center">
     {#each heroes as hero, i}
       <div>
         <HeroSummary
