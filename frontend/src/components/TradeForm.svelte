@@ -54,7 +54,7 @@
   {#await uriPromise}
     <p>Getting token uri</p>
   {:then _uri}
-    <div>
+    <div style="display:flex;justify-content:center">
       {#each inventory as item, i}
         {#if item != "0"}
           <Item clickItem={pickItem} qty={item} itemId={i} uri={_uri} />
@@ -95,14 +95,14 @@
         </div>
 
         <div
-          style="min-height:100px;min-width:50%;border-width:1px;border-style:solid"
+          style="min-height:100px;width:50%;border-width:1px;border-style:solid"
         >
           <div style="position:absolute">
             <strong>Select the items you are looking for</strong>
           </div>
-          <div style="margin-top:30px" />
+          <div style="margin-top:30px;display:flex" />
           {#each wantedItemIds as itemId, i}
-            <div style="margin-left:30px">
+            <div style="margin-left:30px;display:flex;">
               <img
                 on:click={() => pickItemWanted(itemId)}
                 style={"border-style:solid; border-width:1px;vertical-align:middle"}
