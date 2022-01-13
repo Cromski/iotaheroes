@@ -71,7 +71,7 @@
           </div>
           <div style="margin-top:30px">
             {#each chosenItemIds as itemId, i}
-              <div style="margin-left:30px">
+              <div style="margin:10px;display:flex">
                 <img
                   on:click={() => pickItem(itemId)}
                   style={"border-style:solid; border-width:1px;vertical-align:middle"}
@@ -100,9 +100,9 @@
           <div style="position:absolute">
             <strong>Select the items you are looking for</strong>
           </div>
-          <div style="margin-top:30px;display:flex" />
+          <div style="margin-top:30px;" />
           {#each wantedItemIds as itemId, i}
-            <div style="margin-left:30px;display:flex;">
+            <div style="margin:10px;display:flex">
               <img
                 on:click={() => pickItemWanted(itemId)}
                 style={"border-style:solid; border-width:1px;vertical-align:middle"}
