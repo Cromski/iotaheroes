@@ -1,34 +1,27 @@
 <script>
   import { selectedAccount } from "svelte-web3";
   import { hero } from "../contract_stores";
-
+  import {
+    getHero,
+    getCompletedAdventures,
+    goAdventure,
+  } from "../contractHelpers/heroFunctions";
   import HeroSummary from "../components/HeroSummary.svelte";
   import Adventure from "../components/Adventure.svelte";
   export let currentRoute;
   let id = currentRoute.namedParams.id;
 
-  $: heroPromise = $hero ? getHero() : "";
-  $: eventPromise = $hero ? getEvents() : "";
+  $: heroPromise = $hero ? getHeroAux() : "";
+  $: eventPromise = $hero ? getCompletedAdventuresAux() : "";
 
-  async function getHero() {
-    const response = await $hero.methods.heroes(id).call();
-    return response;
-  }
-  async function getEvents() {
-    const response = await $hero.getPastEvents("AdventureCompleted", {
-      fromBlock: 0,
-      toBlock: "latest",
-      filter: { heroId: id },
-    });
-    return response;
-  }
+  let getHeroAux = async () => getHero(id, $hero);
+  let getCompletedAdventuresAux = async () => getCompletedAdventures(id, $hero);
 
   async function GoAdventure() {
-    await $hero.methods.goAdventure(id).send({ from: $selectedAccount });
-    heroPromise = getHero();
-    eventPromise = getEvents();
+    await goAdventure(id, $hero, $selectedAccount);
+    heroPromise = getHeroAux();
+    eventPromise = getCompletedAdventuresAux();
   }
-
   function goToOverview() {
     location.href = "/";
   }

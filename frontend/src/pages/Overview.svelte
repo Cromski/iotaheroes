@@ -1,39 +1,23 @@
 <script>
-  import { selectedAccount } from "svelte-web3";
-  import { hero, token, trade } from "../contract_stores";
+  import { getHeroes, spawnHero } from "../contractHelpers/heroFunctions";
+  import { getTokenUri, getInventory } from "../contractHelpers/tokenFunctions";
+  import { hero, token } from "../contract_stores";
   import HeroSummary from "../components/HeroSummary.svelte";
   import Item from "../components/Item.svelte";
+  import { selectedAccount } from "svelte-web3";
 
-  $: uriPromise = $token ? getTokensUri() : "";
-  $: inventoryPromise = $token ? getInventory() : "";
-  $: heroesPromise = $hero ? getHeroes() : "";
+  $: uriPromise = $token ? getTokenUri($token) : "";
+  $: inventoryPromise = $token ? getInventoryAux() : "";
+  $: heroesPromise = $hero ? getHeroesAux() : "";
 
-  async function getTokensUri() {
-    const response = await $token.methods.uri(0).call();
-    return response;
+  let getHeroesAux = async () => getHeroes($hero, $selectedAccount);
+  let getInventoryAux = async () => getInventory($token, $selectedAccount);
+
+  async function spawnHeroAux() {
+    await spawnHero($hero, $selectedAccount);
+    inventoryPromise = getInventoryAux();
+    heroesPromise = getHeroesAux();
   }
-
-  async function getInventory() {
-    const response = await $token.methods
-      .balanceOfBatch(
-        Array(100).fill($selectedAccount),
-        Array.from(Array(100).keys())
-      )
-      .call();
-    return response;
-  }
-
-  async function getHeroes() {
-    console.log($hero);
-    let response = await $hero.methods.getOwnerHeroes($selectedAccount).call();
-    return response;
-  }
-
-  async function spawnHero() {
-    await $hero.methods.spawnHero().send({ from: $selectedAccount });
-    heroesPromise = getHeroes();
-  }
-
   function goToHeroPage(heroId) {
     location.href = "hero/" + heroId;
   }
@@ -63,7 +47,7 @@
   <h1>Getting heroes....</h1>
 {:then heroes}
   <h1>Your heroes</h1>
-  <div style="display:flex;justify-content:center">
+  <div style="display:flex;flex-wrap:wrap;justify-content:center">
     {#each heroes as hero, i}
       <div>
         <HeroSummary
@@ -82,5 +66,5 @@
   </div>
 {/await}
 <div>
-  <button on:click={spawnHero}>Spawn a new hero</button>
+  <button on:click={spawnHeroAux}>Spawn a new hero</button>
 </div>

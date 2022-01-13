@@ -1,55 +1,53 @@
 <script>
+  import {
+    getTokenUri,
+    getInventory,
+    isApprovedForAll,
+    approveAll,
+  } from "../contractHelpers/tokenFunctions";
+  import {
+    fulfillTrade,
+    getPastTrades,
+    setTradeOffer,
+  } from "../contractHelpers/tradeFunctions";
   import { selectedAccount } from "svelte-web3";
   import { trade, token } from "../contract_stores";
   import TradeForm from "../components/TradeForm.svelte";
   import Trade from "../components/Trade.svelte";
 
-  $: getTradesPromise = $trade ? getPastTrades() : "";
-  $: approvedStatus = $token && $trade ? isApprovedForAll() : "";
-  $: uriPromise = $token ? getTokensUri() : "";
+  $: getTradesPromise = $trade ? getPastTradesAux() : "";
+  $: approvedStatus = $token && $trade ? isApprovedForAllAux() : "";
+  $: uriPromise = $token ? getTokenUri($token) : "";
 
-  async function getTokensUri() {
-    const response = await $token.methods.uri(0).call();
-    return response;
-  }
+  let getPastTradesAux = async () => getPastTrades($trade);
+  let isApprovedForAllAux = async () =>
+    isApprovedForAll($trade, $token, $selectedAccount);
+
   async function createTrade(
     itemIdsForSale,
     amountsForSale,
     itemIdsWanted,
     amountsWanted
   ) {
-    await $trade.methods
-      .setTradeOffer(
-        itemIdsForSale,
-        amountsForSale,
-        itemIdsWanted,
-        amountsWanted
-      )
-      .send({ from: $selectedAccount });
-    getTradesPromise = await getPastTrades();
+    await setTradeOffer(
+      itemIdsForSale,
+      amountsForSale,
+      itemIdsWanted,
+      amountsWanted,
+      $trade,
+      $selectedAccount
+    );
+    getTradesPromise = getPastTradesAux();
   }
 
   async function tradeFulfiller(id) {
-    await $trade.methods.fulfillTradeOffer(id).send({ from: $selectedAccount });
-    getTradesPromise = await getPastTrades();
+    await fulfillTrade(id, $trade, $selectedAccount);
+    getTradesPromise = getPastTradesAux();
   }
-  async function isApprovedForAll() {
-    console.log($trade);
-    const response = await $token.methods
-      .isApprovedForAll($selectedAccount, $trade._address)
-      .call();
-    return response;
-  }
-  async function approveAll() {
-    await $token.methods
-      .setApprovalForAll($trade._address, true)
-      .send({ from: $selectedAccount });
-    approvedStatus = await isApprovedForAll();
-  }
-  async function getPastTrades() {
-    const response = await $trade.methods.getOpenTrades().call();
-    console.log(response[0]);
-    return response;
+
+  async function approveAllAux() {
+    await approveAll($trade, $token, $selectedAccount);
+    approvedStatus = isApprovedForAllAux();
   }
 </script>
 
@@ -62,7 +60,7 @@
       Before you can trade on the trading post, you must approve the marketplace
       to use your tokens
     </p>
-    <button on:click={approveAll}>Approve</button>
+    <button on:click={approveAllAux}>Approve</button>
   {:else}
     <p>
       You have approved the trade contract and are able to trade on the
