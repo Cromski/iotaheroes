@@ -23,3 +23,8 @@ export const approveAll = async (tradeContract, tokenContract,selectedAccount) =
     .setApprovalForAll(tradeContract._address, true)
     .send({ from: selectedAccount });
 }
+export const getAllItems = async () => {
+    const res = await fetch("http://localhost:8080/api/items")
+    const json = res.json() 
+    return json;
+}
