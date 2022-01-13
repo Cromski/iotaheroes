@@ -1,20 +1,23 @@
 <script>
-  import { getInventory, getTokensUri } from "../tokenStore";
-  import { getHeroes, reset } from "../heroStore";
-  import { hero } from "../contract_stores";
+  import { getHeroes, spawnHero } from "../contractHelpers/heroFunctions";
+  import { getTokenUri, getInventory } from "../contractHelpers/tokenFunctions";
+  import { hero, token } from "../contract_stores";
   import HeroSummary from "../components/HeroSummary.svelte";
   import Item from "../components/Item.svelte";
   import { selectedAccount } from "svelte-web3";
 
-  $: uriPromise = $getTokensUri;
-  $: inventoryPromise = $getInventory;
-  $: heroesPromise = $getHeroes;
+  $: uriPromise = $token ? getTokenUri($token) : "";
+  $: inventoryPromise = $token ? getInventoryAux() : "";
+  $: heroesPromise = $hero ? getHeroesAux() : "";
 
-  async function spawnHero() {
-    await $hero.methods.spawnHero().send({ from: $selectedAccount });
-    reset.update((n) => n + 1);
+  let getHeroesAux = async () => getHeroes($hero, $selectedAccount);
+  let getInventoryAux = async () => getInventory($token, $selectedAccount);
+
+  async function spawnHeroAux() {
+    await spawnHero($hero, $selectedAccount);
+    inventoryPromise = getInventoryAux();
+    heroesPromise = getHeroesAux();
   }
-
   function goToHeroPage(heroId) {
     location.href = "hero/" + heroId;
   }
@@ -63,5 +66,5 @@
   </div>
 {/await}
 <div>
-  <button on:click={spawnHero}>Spawn a new hero</button>
+  <button on:click={spawnHeroAux}>Spawn a new hero</button>
 </div>

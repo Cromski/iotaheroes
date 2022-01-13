@@ -1,6 +1,7 @@
 <script>
   import { form, field } from "svelte-forms";
   import { required } from "svelte-forms/validators";
+  import { getTokenUri, getInventory } from "../contractHelpers/tokenFunctions";
   import { selectedAccount } from "svelte-web3";
   import Item from "../components/Item.svelte";
 
@@ -8,10 +9,10 @@
   export let trade;
   export let createTrade;
 
-  let inventory;
+  $: inventoryPromise = $token ? getInventoryAux() : "";
+  $: uriPromise = $token ? getTokenUri($token) : "";
 
-  $: inventoryPromise = $token ? getInventory() : "";
-  $: uriPromise = $token ? getTokensUri() : "";
+  let getInventoryAux = async () => getInventory($token, $selectedAccount);
 
   const myItemId = field("myItemId", "", [required()]);
   const myAmount = field("myAmount", "", [required()]);
@@ -29,21 +30,6 @@
     const wAmounts = Array(1).fill($wantedAmount.value);
     console.log(itemIds, amounts, wItemIds, wAmounts);
     createTrade(itemIds, amounts, wItemIds, wAmounts);
-  }
-
-  async function getTokensUri() {
-    const response = await $token.methods.uri(0).call();
-    return response;
-  }
-
-  async function getInventory() {
-    const response = await $token.methods
-      .balanceOfBatch(
-        Array(100).fill($selectedAccount),
-        Array.from(Array(100).keys())
-      )
-      .call();
-    return response;
   }
 </script>
 
