@@ -2,6 +2,8 @@ import { defaultEvmStores, makeContractStore, web3, chainId } from "svelte-web3"
 import IotaHeroAdventure from "./contracts/IotaHeroAdventure.json";
 import IotaHeroGameTokens from "./contracts/IotaHeroGameTokens.json";
 import IotaHeroTokenTrade from "./contracts/IotaHeroTokenTrade.json";
+import IotaHeroStore from "./contracts/IotaHeroStore.json";
+
 import { derived } from 'svelte/store';
 
 export const hero = derived([web3, chainId], ([$web3, $chainId]) => {  
@@ -26,6 +28,14 @@ export const trade = derived([web3, chainId], ([$web3, $chainId]) => {
         const deployedNetwork = IotaHeroTokenTrade.networks[$chainId];
         return new $web3.eth.Contract(
             IotaHeroTokenTrade.abi, deployedNetwork.address);
+    }
+    return null;
+})
+export const shop = derived([web3, chainId], ([$web3, $chainId]) => {  
+    if ($chainId && $web3.eth) {
+        const deployedNetwork = IotaHeroStore.networks[$chainId];
+        return new $web3.eth.Contract(
+            IotaHeroStore.abi, deployedNetwork.address);
     }
     return null;
 })
