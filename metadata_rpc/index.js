@@ -2,7 +2,8 @@
 var express    = require('express');
 var app        = express();
 var bodyParser = require('body-parser');
-var fs = require('fs');
+var fs = require('fs')
+var fsp = require('fs').promises;
 var stream = require('stream')
 var cors = require('cors');
 
@@ -11,6 +12,26 @@ app.use(bodyParser.json());
 var port = process.env.PORT || 8080;
 var router = express.Router();
 
+async function getAllJsonFiles() {
+    let jsonArr = [];
+    const directoryPath = './erc1155_metadata/json/';
+    const files = await fsp.readdir(directoryPath)
+    for(let i=0;i<files.length;i++)
+    {
+        console.log("Reading file: "+directoryPath+files[i])
+        let json = await fsp.readFile(directoryPath+files[i])
+        console.log("found json: ",JSON.parse(json))
+        jsonArr = [...jsonArr,JSON.parse(json)] 
+    }
+    return jsonArr;
+}
+
+router.get('/items', async function(req,res)
+{
+    let jsonArr = await getAllJsonFiles();
+
+    res.json(jsonArr)
+})
 router.get('/item/json/:id.json', function(req, res) {
     var id = req.params.id;
     var j;

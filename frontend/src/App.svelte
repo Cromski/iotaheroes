@@ -36,7 +36,11 @@
   {/if} -->
 </main>
 
-<style>
+<style lang="postcss" global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
   main {
     background: lightgoldenrodyellow;
     text-align: center;

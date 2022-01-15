@@ -30,7 +30,7 @@
     {#await uriPromise}
       <h1>Awaiting uri...</h1>
     {:then _uri}
-      <h1>Your inventory</h1>
+      <h2>Your inventory</h2>
       <div style={"display:flex;justify-content:center"}>
         {#each inventory as item, i}
           {#if item != "0"}

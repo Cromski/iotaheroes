@@ -39,7 +39,6 @@
     );
     getTradesPromise = getPastTradesAux();
   }
-
   async function tradeFulfiller(id) {
     await fulfillTrade(id, $trade, $selectedAccount);
     getTradesPromise = getPastTradesAux();
