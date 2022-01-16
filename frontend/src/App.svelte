@@ -1,18 +1,19 @@
 <script>
-  import { Router } from "svelte-router-spa";
-  import { routes } from "./routes";
-  import {
-    defaultEvmStores,
-    connected,
-    web3,
-    makeContractStore,
-  } from "svelte-web3";
+  import { defaultEvmStores, connected, selectedAccount } from "svelte-web3";
   import { onMount } from "svelte";
-  import Overview from "./pages/Overview.svelte";
+  import SignUp from "./pages/SignUp.svelte";
+  import { isSignedUp } from "./contractHelpers/accountFunctions";
+  import { hero } from "./contract_stores";
+  import AuthenticatedApp from "./AuthenticatedApp.svelte";
+
+  $: isSignedUpPromise = $hero ? isSignedUp($hero, $selectedAccount) : "";
 
   onMount(async () => {
     await connect();
   });
+  function signInCallback() {
+    isSignedUpPromise = isSignedUp($hero, $selectedAccount);
+  }
   async function connect() {
     await defaultEvmStores.setProvider();
   }
@@ -21,19 +22,18 @@
 <main>
   <h1>IotaHeroes</h1>
   {#if $connected}
-    <Router {routes} />
+    {#await isSignedUpPromise}
+      <p>Checking if you are signed in..</p>
+    {:then isSignedUp}
+      {#if isSignedUp}
+        <AuthenticatedApp />
+      {:else}
+        <SignUp fnCallback={signInCallback} />
+      {/if}
+    {/await}
   {:else}
     <p>Please connect metamask..</p>
   {/if}
-  <!-- {#if window.ethereum}
-    <p>Browser wallet already connected to metamask: {metamaskConnected}</p>
-  {/if}
-  {#if window.ethereum && !metamaskConnected}
-    <button on:click={onClickConnectWallet}>Connect now!</button>
-  {:else}
-    <Router {routes} />
-    <ContractStores />
-  {/if} -->
 </main>
 
 <style lang="postcss" global>

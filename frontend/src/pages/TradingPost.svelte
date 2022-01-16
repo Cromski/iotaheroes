@@ -1,7 +1,6 @@
 <script>
   import {
     getTokenUri,
-    getInventory,
     isApprovedForAll,
     approveAll,
   } from "../contractHelpers/tokenFunctions";
