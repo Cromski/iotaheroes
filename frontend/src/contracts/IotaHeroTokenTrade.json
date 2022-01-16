@@ -29108,10 +29108,98 @@
   },
   "networks": {
     "3": {
-      "events": {},
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0xee9c34460e8ee443f03e0289107bb49bce5e3175dea84c2f73d4ed4cf08aaca7": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "tradeId",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "creator",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256[]",
+              "name": "tokenIdForSale",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256[]",
+              "name": "amountsToSell",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256[]",
+              "name": "tokenIdWanted",
+              "type": "uint256[]"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256[]",
+              "name": "amountsWanted",
+              "type": "uint256[]"
+            }
+          ],
+          "name": "TradeCreated",
+          "type": "event"
+        },
+        "0x580958e7d2b78e6e91069e3a54d87713100ef5a99d53edaf3b8062a175ca730e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "tradeId",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "updater",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "enum IotaHeroTokenTrade.TradeStatus",
+              "name": "updatedStatus",
+              "type": "uint8"
+            }
+          ],
+          "name": "TradeUpdated",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0x008104FAaa27C91894F4466B127f65A2d0C91c9e",
-      "transactionHash": "0xdf8789b71933c11c17cdf2b54b8d9c6e833b999a979806e065d9ba71b2d6295b"
+      "address": "0x1B0357dC5293FBDF04b825C0dA6870d745037c89",
+      "transactionHash": "0xc1a29c89f7e47efe1a75128d74522ca64421409f550b7f63baf460c96cdd3abb"
     },
     "1337": {
       "events": {
@@ -29303,7 +29391,7 @@
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-16T00:05:55.071Z",
+  "updatedAt": "2022-01-16T00:25:12.924Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

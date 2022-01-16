@@ -35344,10 +35344,167 @@
   },
   "networks": {
     "3": {
-      "events": {},
+      "events": {
+        "0x77e7f22c561a1fe25ae0fe4ab7fae668a036026e1e75ee2387811cb34aa1f0d2": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "player",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "heroId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "string",
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "indexed": false,
+              "internalType": "enum IotaHeroAdventure.AdventureType",
+              "name": "adventureType",
+              "type": "uint8"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "rand",
+              "type": "uint256"
+            }
+          ],
+          "name": "AdventureCompleted",
+          "type": "event"
+        },
+        "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "approved",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "name": "Approval",
+          "type": "event"
+        },
+        "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "operator",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "bool",
+              "name": "approved",
+              "type": "bool"
+            }
+          ],
+          "name": "ApprovalForAll",
+          "type": "event"
+        },
+        "0xad1c7ab5bfbe86a51764200b1532f3893b41563e78abe6d6eac4bbd987f38c68": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "owner",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "id",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "dna",
+              "type": "uint256"
+            }
+          ],
+          "name": "HeroMinted",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "from",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "name": "Transfer",
+          "type": "event"
+        }
+      },
       "links": {},
-      "address": "0xd90f770f71aBCC5530144E2601cC82236bF23a72",
-      "transactionHash": "0x3234316486dc3035e8a64a3317631cca8fcb1774f0066fdbf9860d8ad423f4d5"
+      "address": "0x81bC9d34A2656587e35561Ee0e47768961b5cE9b",
+      "transactionHash": "0x216461833329fbeec97bf9d66fea6d679408bec808f4d8825b6b7bb3fb99a9c1"
     },
     "1337": {
       "events": {
@@ -35677,7 +35834,7 @@
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-16T00:05:51.639Z",
+  "updatedAt": "2022-01-16T00:18:22.855Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

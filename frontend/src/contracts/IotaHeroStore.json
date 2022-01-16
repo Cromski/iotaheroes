@@ -36544,6 +36544,63 @@
     "version": "0.8.10+commit.fc410830.Emscripten.clang"
   },
   "networks": {
+    "3": {
+      "events": {
+        "0xe75ef3a0d768e0e8037e4b80e42d2f8a3c797998ec29cacf84fa87766ff8de5e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "buyer",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "storeId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "ItemBought",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x74Ba6b4DbCbc10fcb0Aab787b46C5630f93FCD21",
+      "transactionHash": "0x1248ca04fc7d5f6db58b297cd73c8b90fd1989beeed82813f76a9e907d55e591"
+    },
     "1337": {
       "events": {
         "0xe75ef3a0d768e0e8037e4b80e42d2f8a3c797998ec29cacf84fa87766ff8de5e": {
@@ -36603,7 +36660,7 @@
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-16T00:05:56.678Z",
+  "updatedAt": "2022-01-16T00:25:40.342Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
