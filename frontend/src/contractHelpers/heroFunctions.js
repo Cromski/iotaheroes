@@ -22,3 +22,4 @@ export const goAdventure = async (id, heroContract, selectedAccount) => {
 export const spawnHero = async (heroContract, selectedAccount) => {
     await heroContract.methods.spawnHero().send({ from: selectedAccount });
 }
+
