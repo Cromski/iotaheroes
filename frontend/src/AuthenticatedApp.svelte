@@ -11,7 +11,7 @@
 
 <Router {routes} />
 {#await getUsernamePromise then username}
-  <div style={"position:absolute;right:15px;top:15px;text-align:justify"}>
+  <div class=" absolute text-right top-[15px] right-7">
     <div>
       Welcome, <strong
         >{username} ({$selectedAccount.substring(0, 6) + "..."})</strong

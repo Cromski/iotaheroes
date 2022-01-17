@@ -5,6 +5,7 @@
   import { isSignedUp } from "./contractHelpers/accountFunctions";
   import { hero } from "./contract_stores";
   import AuthenticatedApp from "./AuthenticatedApp.svelte";
+  import NavBar from "./components/NavBar.svelte";
 
   $: isSignedUpPromise = $hero ? isSignedUp($hero, $selectedAccount) : "";
 
@@ -20,6 +21,7 @@
 </script>
 
 <main>
+  <NavBar />
   <h1>IotaHeroes</h1>
   {#if $connected}
     {#await isSignedUpPromise}
@@ -44,9 +46,6 @@
   main {
     background: lightgoldenrodyellow;
     text-align: center;
-    padding: 1em;
-    max-width: 240px;
-    margin: 0 auto;
   }
 
   h1 {

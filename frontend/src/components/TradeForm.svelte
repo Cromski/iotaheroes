@@ -54,7 +54,7 @@
   {#await uriPromise}
     <p>Getting token uri</p>
   {:then _uri}
-    <div style="display:flex;justify-content:center">
+    <div class="flex justify-center">
       {#each inventory as item, i}
         {#if item != "0"}
           <Item clickItem={pickItem} qty={item} itemId={i} uri={_uri} />
@@ -62,19 +62,17 @@
       {/each}
     </div>
     <section>
-      <div style="display:flex">
-        <div
-          style="min-height:100px;width:50%;border-width:1px;border-style:solid"
-        >
-          <div style="position:absolute">
+      <div class="flex">
+        <div class="min-h-[100px] w-[50%] border-[1px] border-solid">
+          <div class="mx-auto">
             <strong>Select the items you want to trade</strong>
           </div>
-          <div style="margin-top:30px">
+          <div class="mt-[30px]">
             {#each chosenItemIds as itemId, i}
-              <div style="margin:10px;display:flex">
+              <div class=" m-[10px] flex justify-center"> <!--/*border-2 border-black*/-->
                 <img
                   on:click={() => pickItem(itemId)}
-                  style={"border-style:solid; border-width:1px;vertical-align:middle"}
+                  class="mr-2"
                   width="35px"
                   alt={"pic"}
                   src={_uri.replace(
@@ -86,6 +84,8 @@
                 <input
                   type="number"
                   max={inventory[itemId]}
+                  class=" min-w-[20%] h-9 my-auto text-center text-xl"
+                  min=0
                   placeholder="Amount"
                   bind:value={chosenItemAmounts[i]}
                 />
@@ -97,15 +97,16 @@
         <div
           style="min-height:100px;width:50%;border-width:1px;border-style:solid"
         >
-          <div style="position:absolute">
+          <div class="mx-auto">
             <strong>Select the items you are looking for</strong>
           </div>
-          <div style="margin-top:30px;" />
+          <div class="mt-[10px]"> <!--/*border-2 border-black*/-->
+          <div><ItemSelector select={pickItemWanted} /></div>
           {#each wantedItemIds as itemId, i}
-            <div style="margin:10px;display:flex">
+            <div class="m-[10px] flex justify-center">
               <img
                 on:click={() => pickItemWanted(itemId)}
-                style={"border-style:solid; border-width:1px;vertical-align:middle"}
+                class="mr-2"
                 width="35px"
                 alt={"pic"}
                 src={_uri.replace("json/{id}.json", "image/" + itemId + ".png")}
@@ -113,12 +114,13 @@
               <input type="hidden" value={itemId} />
               <input
                 type="number"
+                class="min-w-[20%] h-9 my-auto text-center text-xl"
                 placeholder="Amount"
+                min=0
                 bind:value={wantedAmounts[i]}
               />
             </div>
           {/each}
-          <div><ItemSelector select={pickItemWanted} /></div>
         </div>
       </div>
       <button on:click={() => createTradeAux()}>Create trade!</button>
