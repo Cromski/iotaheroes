@@ -20,7 +20,7 @@
   }
 </script>
 
-<h1>Please sign up here</h1>
+<h2>Please sign up here</h2>
 <p>Just enter a username to create a user!</p>
 <input bind:value={username} type="text" />
-<button on:click={() => signUpAux()}>Sign up</button>
+<button class="btn-sm btn-orange" on:click={() => signUpAux()}>Sign up</button>

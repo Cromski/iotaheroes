@@ -6209,7 +6209,7 @@
                 }
               ]
             },
-            "name": "array_length_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+            "name": "array_length_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -6295,7 +6295,7 @@
                 }
               ]
             },
-            "name": "array_storeLengthForEncoding_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "array_storeLengthForEncoding_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -6378,7 +6378,7 @@
                 }
               ]
             },
-            "name": "array_dataslot_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+            "name": "array_dataslot_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7601,7 +7601,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_struct$_Hero_$3847_memory_ptr_to_t_struct$_Hero_$3847_memory_ptr",
+            "name": "abi_encode_t_struct$_Hero_$3875_memory_ptr_to_t_struct$_Hero_$3875_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7649,7 +7649,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_struct$_Hero_$3847_memory_ptr_to_t_struct$_Hero_$3847_memory_ptr",
+                      "name": "abi_encode_t_struct$_Hero_$3875_memory_ptr_to_t_struct$_Hero_$3875_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "12557:77:40"
                     },
@@ -7666,7 +7666,7 @@
                 }
               ]
             },
-            "name": "abi_encodeUpdatedPos_t_struct$_Hero_$3847_memory_ptr_to_t_struct$_Hero_$3847_memory_ptr",
+            "name": "abi_encodeUpdatedPos_t_struct$_Hero_$3875_memory_ptr_to_t_struct$_Hero_$3875_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7733,7 +7733,7 @@
                 }
               ]
             },
-            "name": "array_nextElement_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+            "name": "array_nextElement_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -7770,7 +7770,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_length_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_length_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "13062:69:40"
                     },
@@ -7803,7 +7803,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "array_storeLengthForEncoding_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "13154:95:40"
                     },
@@ -7898,7 +7898,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "array_dataslot_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                      "name": "array_dataslot_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                       "nodeType": "YulIdentifier",
                       "src": "13363:71:40"
                     },
@@ -8022,7 +8022,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "abi_encodeUpdatedPos_t_struct$_Hero_$3847_memory_ptr_to_t_struct$_Hero_$3847_memory_ptr",
+                            "name": "abi_encodeUpdatedPos_t_struct$_Hero_$3875_memory_ptr_to_t_struct$_Hero_$3875_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "13655:87:40"
                           },
@@ -8049,7 +8049,7 @@
                             }
                           ],
                           "functionName": {
-                            "name": "array_nextElement_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                            "name": "array_nextElement_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                             "nodeType": "YulIdentifier",
                             "src": "13786:74:40"
                           },
@@ -8223,7 +8223,7 @@
                 }
               ]
             },
-            "name": "abi_encode_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_fromStack",
+            "name": "abi_encode_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_fromStack",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -8364,7 +8364,7 @@
                       }
                     ],
                     "functionName": {
-                      "name": "abi_encode_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_fromStack",
+                      "name": "abi_encode_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_fromStack",
                       "nodeType": "YulIdentifier",
                       "src": "14265:137:40"
                     },
@@ -8381,7 +8381,7 @@
                 }
               ]
             },
-            "name": "abi_encode_tuple_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
+            "name": "abi_encode_tuple_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr__fromStack_reversed",
             "nodeType": "YulFunctionDefinition",
             "parameters": [
               {
@@ -21229,7 +21229,7 @@
           }
         ]
       },
-      "contents": "{\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() {\n        revert(0, 0)\n    }\n\n    function revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() {\n        revert(0, 0)\n    }\n\n    function cleanup_t_bytes4(value) -> cleaned {\n        cleaned := and(value, 0xffffffff00000000000000000000000000000000000000000000000000000000)\n    }\n\n    function validator_revert_t_bytes4(value) {\n        if iszero(eq(value, cleanup_t_bytes4(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_bytes4(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bytes4(value)\n    }\n\n    function abi_decode_tuple_t_bytes4(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes4(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function cleanup_t_bool(value) -> cleaned {\n        cleaned := iszero(iszero(value))\n    }\n\n    function abi_encode_t_bool_to_t_bool_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr__to_t_string_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_uint256(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_tuple_t_addresst_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_addresst_uint256(headStart, dataEnd) -> value0, value1, value2 {\n        if slt(sub(dataEnd, headStart), 96) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function revert_error_1b9f4a0a5773e33b91aa01db23bf8c55fce1411167c872835e7fa00a4f17d46d() {\n        revert(0, 0)\n    }\n\n    function revert_error_987264b3b1d58a9c7f8255e93e81c77d86d6299019c33110a076957a3e06e2ae() {\n        revert(0, 0)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function finalize_allocation(memPtr, size) {\n        let newFreePtr := add(memPtr, round_up_to_mul_of_32(size))\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function allocate_memory(size) -> memPtr {\n        memPtr := allocate_unbounded()\n        finalize_allocation(memPtr, size)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        size := round_up_to_mul_of_32(length)\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function copy_calldata_to_memory(src, dst, length) {\n        calldatacopy(dst, src, length)\n        // clear end\n        mstore(add(dst, length), 0)\n    }\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocate_memory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert_error_987264b3b1d58a9c7f8255e93e81c77d86d6299019c33110a076957a3e06e2ae() }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert_error_1b9f4a0a5773e33b91aa01db23bf8c55fce1411167c872835e7fa00a4f17d46d() }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_tuple_t_uint256t_string_memory_ptr(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 32))\n            if gt(offset, 0xffffffffffffffff) { revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() }\n\n            value1 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_string_memory_ptr(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := calldataload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() }\n\n            value0 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function array_length_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_dataslot_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function abi_encode_t_uint256_to_t_uint256(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    // struct IotaHeroFactory.Hero -> struct IotaHeroFactory.Hero\n    function abi_encode_t_struct$_Hero_$3847_memory_ptr_to_t_struct$_Hero_$3847_memory_ptr(value, pos)  -> end  {\n        let tail := add(pos, 0x0100)\n\n        {\n            // id\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // dna\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // constitution\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x40))\n        }\n\n        {\n            // strength\n\n            let memberValue0 := mload(add(value, 0x60))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x60))\n        }\n\n        {\n            // agility\n\n            let memberValue0 := mload(add(value, 0x80))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x80))\n        }\n\n        {\n            // intelligence\n\n            let memberValue0 := mload(add(value, 0xa0))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0xa0))\n        }\n\n        {\n            // restingTill\n\n            let memberValue0 := mload(add(value, 0xc0))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0xc0))\n        }\n\n        {\n            // name\n\n            let memberValue0 := mload(add(value, 0xe0))\n\n            mstore(add(pos, 0xe0), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_Hero_$3847_memory_ptr_to_t_struct$_Hero_$3847_memory_ptr(value0, pos) -> updatedPos {\n        updatedPos := abi_encode_t_struct$_Hero_$3847_memory_ptr_to_t_struct$_Hero_$3847_memory_ptr(value0, pos)\n    }\n\n    function array_nextElement_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    // struct IotaHeroFactory.Hero[] -> struct IotaHeroFactory.Hero[]\n    function abi_encode_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let headStart := pos\n        let tail := add(pos, mul(length, 0x20))\n        let baseRef := array_dataslot_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            mstore(pos, sub(tail, headStart))\n            let elementValue0 := mload(srcPtr)\n            tail := abi_encodeUpdatedPos_t_struct$_Hero_$3847_memory_ptr_to_t_struct$_Hero_$3847_memory_ptr(elementValue0, tail)\n            srcPtr := array_nextElement_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr(srcPtr)\n            pos := add(pos, 0x20)\n        }\n        pos := tail\n        end := pos\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function validator_revert_t_bool(value) {\n        if iszero(eq(value, cleanup_t_bool(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_bool(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bool(value)\n    }\n\n    function abi_decode_tuple_t_addresst_bool(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_bool(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_tuple_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_string_memory_ptr__to_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_string_memory_ptr__fromStack_reversed(headStart , value7, value6, value5, value4, value3, value2, value1, value0) -> tail {\n        tail := add(headStart, 256)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value1,  add(headStart, 32))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value2,  add(headStart, 64))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value3,  add(headStart, 96))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value4,  add(headStart, 128))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value5,  add(headStart, 160))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value6,  add(headStart, 192))\n\n        mstore(add(headStart, 224), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value7,  tail)\n\n    }\n\n    function array_allocation_size_t_bytes_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        size := round_up_to_mul_of_32(length)\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function abi_decode_available_length_t_bytes_memory_ptr(src, length, end) -> array {\n        array := allocate_memory(array_allocation_size_t_bytes_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert_error_987264b3b1d58a9c7f8255e93e81c77d86d6299019c33110a076957a3e06e2ae() }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    // bytes\n    function abi_decode_t_bytes_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert_error_1b9f4a0a5773e33b91aa01db23bf8c55fce1411167c872835e7fa00a4f17d46d() }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_bytes_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_tuple_t_addresst_addresst_uint256t_bytes_memory_ptr(headStart, dataEnd) -> value0, value1, value2, value3 {\n        if slt(sub(dataEnd, headStart), 128) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 96))\n            if gt(offset, 0xffffffffffffffff) { revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() }\n\n            value3 := abi_decode_t_bytes_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function store_literal_in_memory_9291e0f44949204f2e9b40e6be090924979d6047b2365868f4e9f027722eb89d(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: approved query for nonex\")\n\n        mstore(add(memPtr, 32), \"istent token\")\n\n    }\n\n    function abi_encode_t_stringliteral_9291e0f44949204f2e9b40e6be090924979d6047b2365868f4e9f027722eb89d_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 44)\n        store_literal_in_memory_9291e0f44949204f2e9b40e6be090924979d6047b2365868f4e9f027722eb89d(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_9291e0f44949204f2e9b40e6be090924979d6047b2365868f4e9f027722eb89d__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_9291e0f44949204f2e9b40e6be090924979d6047b2365868f4e9f027722eb89d_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_b51b4875eede07862961e8f9365c6749f5fe55c6ee5d7a9e42b6912ad0b15942(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: approval to current owne\")\n\n        mstore(add(memPtr, 32), \"r\")\n\n    }\n\n    function abi_encode_t_stringliteral_b51b4875eede07862961e8f9365c6749f5fe55c6ee5d7a9e42b6912ad0b15942_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 33)\n        store_literal_in_memory_b51b4875eede07862961e8f9365c6749f5fe55c6ee5d7a9e42b6912ad0b15942(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_b51b4875eede07862961e8f9365c6749f5fe55c6ee5d7a9e42b6912ad0b15942__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_b51b4875eede07862961e8f9365c6749f5fe55c6ee5d7a9e42b6912ad0b15942_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_6d83cef3e0cb19b8320a9c5feb26b56bbb08f152a8e61b12eca3302d8d68b23d(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: approve caller is not ow\")\n\n        mstore(add(memPtr, 32), \"ner nor approved for all\")\n\n    }\n\n    function abi_encode_t_stringliteral_6d83cef3e0cb19b8320a9c5feb26b56bbb08f152a8e61b12eca3302d8d68b23d_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 56)\n        store_literal_in_memory_6d83cef3e0cb19b8320a9c5feb26b56bbb08f152a8e61b12eca3302d8d68b23d(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_6d83cef3e0cb19b8320a9c5feb26b56bbb08f152a8e61b12eca3302d8d68b23d__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_6d83cef3e0cb19b8320a9c5feb26b56bbb08f152a8e61b12eca3302d8d68b23d_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_c8682f3ad98807db59a6ec6bb812b72fed0a66e3150fa8239699ee83885247f2(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: transfer caller is not o\")\n\n        mstore(add(memPtr, 32), \"wner nor approved\")\n\n    }\n\n    function abi_encode_t_stringliteral_c8682f3ad98807db59a6ec6bb812b72fed0a66e3150fa8239699ee83885247f2_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 49)\n        store_literal_in_memory_c8682f3ad98807db59a6ec6bb812b72fed0a66e3150fa8239699ee83885247f2(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_c8682f3ad98807db59a6ec6bb812b72fed0a66e3150fa8239699ee83885247f2__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_c8682f3ad98807db59a6ec6bb812b72fed0a66e3150fa8239699ee83885247f2_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_9924ebdf1add33d25d4ef888e16131f0a5687b0580a36c21b5c301a6c462effe(memPtr) {\n\n        mstore(add(memPtr, 0), \"Ownable: caller is not the owner\")\n\n    }\n\n    function abi_encode_t_stringliteral_9924ebdf1add33d25d4ef888e16131f0a5687b0580a36c21b5c301a6c462effe_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 32)\n        store_literal_in_memory_9924ebdf1add33d25d4ef888e16131f0a5687b0580a36c21b5c301a6c462effe(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_9924ebdf1add33d25d4ef888e16131f0a5687b0580a36c21b5c301a6c462effe__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_9924ebdf1add33d25d4ef888e16131f0a5687b0580a36c21b5c301a6c462effe_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_b5f4661ac9dab338559a68ff962acf8360f4cf1dc1e43d448d572685b2ba10c2(memPtr) {\n\n        mstore(add(memPtr, 0), \"You don't have an account\")\n\n    }\n\n    function abi_encode_t_stringliteral_b5f4661ac9dab338559a68ff962acf8360f4cf1dc1e43d448d572685b2ba10c2_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 25)\n        store_literal_in_memory_b5f4661ac9dab338559a68ff962acf8360f4cf1dc1e43d448d572685b2ba10c2(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_b5f4661ac9dab338559a68ff962acf8360f4cf1dc1e43d448d572685b2ba10c2__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_b5f4661ac9dab338559a68ff962acf8360f4cf1dc1e43d448d572685b2ba10c2_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_32512f00a140c06f068f4352c298a009472d40f3fe2d08d58446f1f24fff8f8d(memPtr) {\n\n        mstore(add(memPtr, 0), \"The hero name must be between 3 \")\n\n        mstore(add(memPtr, 32), \"and 12 characters\")\n\n    }\n\n    function abi_encode_t_stringliteral_32512f00a140c06f068f4352c298a009472d40f3fe2d08d58446f1f24fff8f8d_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 49)\n        store_literal_in_memory_32512f00a140c06f068f4352c298a009472d40f3fe2d08d58446f1f24fff8f8d(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_32512f00a140c06f068f4352c298a009472d40f3fe2d08d58446f1f24fff8f8d__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_32512f00a140c06f068f4352c298a009472d40f3fe2d08d58446f1f24fff8f8d_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function panic_error_0x32() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x32)\n        revert(0, 0x24)\n    }\n\n    function store_literal_in_memory_7481f3df2a424c0755a1ad2356614e9a5a358d461ea2eae1f89cb21cbad00397(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: owner query for nonexist\")\n\n        mstore(add(memPtr, 32), \"ent token\")\n\n    }\n\n    function abi_encode_t_stringliteral_7481f3df2a424c0755a1ad2356614e9a5a358d461ea2eae1f89cb21cbad00397_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 41)\n        store_literal_in_memory_7481f3df2a424c0755a1ad2356614e9a5a358d461ea2eae1f89cb21cbad00397(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_7481f3df2a424c0755a1ad2356614e9a5a358d461ea2eae1f89cb21cbad00397__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_7481f3df2a424c0755a1ad2356614e9a5a358d461ea2eae1f89cb21cbad00397_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function panic_error_0x11() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x11)\n        revert(0, 0x24)\n    }\n\n    function checked_sub_t_uint256(x, y) -> diff {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        if lt(x, y) { panic_error_0x11() }\n\n        diff := sub(x, y)\n    }\n\n    function store_literal_in_memory_7395d4d3901c50cdfcab223d072f9aa36241df5d883e62cbf147ee1b05a9e6ba(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: balance query for the ze\")\n\n        mstore(add(memPtr, 32), \"ro address\")\n\n    }\n\n    function abi_encode_t_stringliteral_7395d4d3901c50cdfcab223d072f9aa36241df5d883e62cbf147ee1b05a9e6ba_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 42)\n        store_literal_in_memory_7395d4d3901c50cdfcab223d072f9aa36241df5d883e62cbf147ee1b05a9e6ba(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_7395d4d3901c50cdfcab223d072f9aa36241df5d883e62cbf147ee1b05a9e6ba__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_7395d4d3901c50cdfcab223d072f9aa36241df5d883e62cbf147ee1b05a9e6ba_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_nonPadded_inplace_fromStack(pos, length) -> updated_pos {\n        updated_pos := pos\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_nonPadded_inplace_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, length)\n    }\n\n    function abi_encode_tuple_packed_t_string_memory_ptr__to_t_string_memory_ptr__nonPadded_inplace_fromStack_reversed(pos , value0) -> end {\n\n        pos := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value0,  pos)\n\n        end := pos\n    }\n\n    function store_literal_in_memory_5e4b22cc47167d59ea7793d947d325ddf59f81f4fb268a2f1ebb9743b3bfcd15(memPtr) {\n\n        mstore(add(memPtr, 0), \"Username is taken\")\n\n    }\n\n    function abi_encode_t_stringliteral_5e4b22cc47167d59ea7793d947d325ddf59f81f4fb268a2f1ebb9743b3bfcd15_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 17)\n        store_literal_in_memory_5e4b22cc47167d59ea7793d947d325ddf59f81f4fb268a2f1ebb9743b3bfcd15(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_5e4b22cc47167d59ea7793d947d325ddf59f81f4fb268a2f1ebb9743b3bfcd15__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_5e4b22cc47167d59ea7793d947d325ddf59f81f4fb268a2f1ebb9743b3bfcd15_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_b682fb5a52014e623035ce66e0e4b5f764a480d8d7a8c9ca4f3828ac3eccfacc(memPtr) {\n\n        mstore(add(memPtr, 0), \"You already have an account!\")\n\n    }\n\n    function abi_encode_t_stringliteral_b682fb5a52014e623035ce66e0e4b5f764a480d8d7a8c9ca4f3828ac3eccfacc_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 28)\n        store_literal_in_memory_b682fb5a52014e623035ce66e0e4b5f764a480d8d7a8c9ca4f3828ac3eccfacc(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_b682fb5a52014e623035ce66e0e4b5f764a480d8d7a8c9ca4f3828ac3eccfacc__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_b682fb5a52014e623035ce66e0e4b5f764a480d8d7a8c9ca4f3828ac3eccfacc_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_ff46cfe62d0502291aea1051daf8c9c6f4d1bc3363075cbc1ed4873c477fc4e8(memPtr) {\n\n        mstore(add(memPtr, 0), \"Username must be between 3 and 1\")\n\n        mstore(add(memPtr, 32), \"2 characters\")\n\n    }\n\n    function abi_encode_t_stringliteral_ff46cfe62d0502291aea1051daf8c9c6f4d1bc3363075cbc1ed4873c477fc4e8_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 44)\n        store_literal_in_memory_ff46cfe62d0502291aea1051daf8c9c6f4d1bc3363075cbc1ed4873c477fc4e8(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_ff46cfe62d0502291aea1051daf8c9c6f4d1bc3363075cbc1ed4873c477fc4e8__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_ff46cfe62d0502291aea1051daf8c9c6f4d1bc3363075cbc1ed4873c477fc4e8_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function increment_t_uint256(value) -> ret {\n        value := cleanup_t_uint256(value)\n        if eq(value, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) { panic_error_0x11() }\n        ret := add(value, 1)\n    }\n\n    function store_literal_in_memory_a2d45c0fba603d40d82d590051761ca952d1ab9d78cca6d0d464d7b6e961a9cb(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721Metadata: URI query for no\")\n\n        mstore(add(memPtr, 32), \"nexistent token\")\n\n    }\n\n    function abi_encode_t_stringliteral_a2d45c0fba603d40d82d590051761ca952d1ab9d78cca6d0d464d7b6e961a9cb_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_a2d45c0fba603d40d82d590051761ca952d1ab9d78cca6d0d464d7b6e961a9cb(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_a2d45c0fba603d40d82d590051761ca952d1ab9d78cca6d0d464d7b6e961a9cb__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_a2d45c0fba603d40d82d590051761ca952d1ab9d78cca6d0d464d7b6e961a9cb_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_packed_t_string_memory_ptr_t_string_memory_ptr__to_t_string_memory_ptr_t_string_memory_ptr__nonPadded_inplace_fromStack_reversed(pos , value1, value0) -> end {\n\n        pos := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value0,  pos)\n\n        pos := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value1,  pos)\n\n        end := pos\n    }\n\n    function store_literal_in_memory_245f15ff17f551913a7a18385165551503906a406f905ac1c2437281a7cd0cfe(memPtr) {\n\n        mstore(add(memPtr, 0), \"Ownable: new owner is the zero a\")\n\n        mstore(add(memPtr, 32), \"ddress\")\n\n    }\n\n    function abi_encode_t_stringliteral_245f15ff17f551913a7a18385165551503906a406f905ac1c2437281a7cd0cfe_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 38)\n        store_literal_in_memory_245f15ff17f551913a7a18385165551503906a406f905ac1c2437281a7cd0cfe(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_245f15ff17f551913a7a18385165551503906a406f905ac1c2437281a7cd0cfe__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_245f15ff17f551913a7a18385165551503906a406f905ac1c2437281a7cd0cfe_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_5797d1ccb08b83980dd0c07ea40d8f6a64d35fff736a19bdd17522954cb0899c(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: operator query for nonex\")\n\n        mstore(add(memPtr, 32), \"istent token\")\n\n    }\n\n    function abi_encode_t_stringliteral_5797d1ccb08b83980dd0c07ea40d8f6a64d35fff736a19bdd17522954cb0899c_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 44)\n        store_literal_in_memory_5797d1ccb08b83980dd0c07ea40d8f6a64d35fff736a19bdd17522954cb0899c(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_5797d1ccb08b83980dd0c07ea40d8f6a64d35fff736a19bdd17522954cb0899c__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_5797d1ccb08b83980dd0c07ea40d8f6a64d35fff736a19bdd17522954cb0899c_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_a01073130a885d6c1c1af6ac75fc3b1c4f9403c235362962bbf528e2bd87d950(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: transfer of token that i\")\n\n        mstore(add(memPtr, 32), \"s not own\")\n\n    }\n\n    function abi_encode_t_stringliteral_a01073130a885d6c1c1af6ac75fc3b1c4f9403c235362962bbf528e2bd87d950_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 41)\n        store_literal_in_memory_a01073130a885d6c1c1af6ac75fc3b1c4f9403c235362962bbf528e2bd87d950(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_a01073130a885d6c1c1af6ac75fc3b1c4f9403c235362962bbf528e2bd87d950__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_a01073130a885d6c1c1af6ac75fc3b1c4f9403c235362962bbf528e2bd87d950_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_455fea98ea03c32d7dd1a6f1426917d80529bf47b3ccbde74e7206e889e709f4(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: transfer to the zero add\")\n\n        mstore(add(memPtr, 32), \"ress\")\n\n    }\n\n    function abi_encode_t_stringliteral_455fea98ea03c32d7dd1a6f1426917d80529bf47b3ccbde74e7206e889e709f4_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 36)\n        store_literal_in_memory_455fea98ea03c32d7dd1a6f1426917d80529bf47b3ccbde74e7206e889e709f4(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_455fea98ea03c32d7dd1a6f1426917d80529bf47b3ccbde74e7206e889e709f4__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_455fea98ea03c32d7dd1a6f1426917d80529bf47b3ccbde74e7206e889e709f4_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function checked_add_t_uint256(x, y) -> sum {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        // overflow, if x > (maxValue - y)\n        if gt(x, sub(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, y)) { panic_error_0x11() }\n\n        sum := add(x, y)\n    }\n\n    function leftAlign_t_uint256(value) -> aligned {\n        aligned := value\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_nonPadded_inplace_fromStack(value, pos) {\n        mstore(pos, leftAlign_t_uint256(cleanup_t_uint256(value)))\n    }\n\n    function abi_encode_tuple_packed_t_uint256__to_t_uint256__nonPadded_inplace_fromStack_reversed(pos , value0) -> end {\n\n        abi_encode_t_uint256_to_t_uint256_nonPadded_inplace_fromStack(value0,  pos)\n        pos := add(pos, 32)\n\n        end := pos\n    }\n\n    function panic_error_0x12() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x12)\n        revert(0, 0x24)\n    }\n\n    function mod_t_uint256(x, y) -> r {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n        if iszero(y) { panic_error_0x12() }\n        r := mod(x, y)\n    }\n\n    function abi_encode_tuple_t_uint256_t_uint256__to_t_uint256_t_uint256__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value1,  add(headStart, 32))\n\n    }\n\n    function store_literal_in_memory_45fe4329685be5ecd250fd0e6a25aea0ea4d0e30fb6a73c118b95749e6d70d05(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: approve to caller\")\n\n    }\n\n    function abi_encode_t_stringliteral_45fe4329685be5ecd250fd0e6a25aea0ea4d0e30fb6a73c118b95749e6d70d05_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 25)\n        store_literal_in_memory_45fe4329685be5ecd250fd0e6a25aea0ea4d0e30fb6a73c118b95749e6d70d05(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_45fe4329685be5ecd250fd0e6a25aea0ea4d0e30fb6a73c118b95749e6d70d05__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_45fe4329685be5ecd250fd0e6a25aea0ea4d0e30fb6a73c118b95749e6d70d05_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_1e766a06da43a53d0f4c380e06e5a342e14d5af1bf8501996c844905530ca84e(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: transfer to non ERC721Re\")\n\n        mstore(add(memPtr, 32), \"ceiver implementer\")\n\n    }\n\n    function abi_encode_t_stringliteral_1e766a06da43a53d0f4c380e06e5a342e14d5af1bf8501996c844905530ca84e_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 50)\n        store_literal_in_memory_1e766a06da43a53d0f4c380e06e5a342e14d5af1bf8501996c844905530ca84e(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_1e766a06da43a53d0f4c380e06e5a342e14d5af1bf8501996c844905530ca84e__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_1e766a06da43a53d0f4c380e06e5a342e14d5af1bf8501996c844905530ca84e_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function checked_div_t_uint256(x, y) -> r {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n        if iszero(y) { panic_error_0x12() }\n\n        r := div(x, y)\n    }\n\n    function array_length_t_bytes_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_bytes_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function abi_encode_t_bytes_memory_ptr_to_t_bytes_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_bytes_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_bytes_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_tuple_t_address_t_address_t_uint256_t_bytes_memory_ptr__to_t_address_t_address_t_uint256_t_bytes_memory_ptr__fromStack_reversed(headStart , value3, value2, value1, value0) -> tail {\n        tail := add(headStart, 128)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_address_to_t_address_fromStack(value1,  add(headStart, 32))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value2,  add(headStart, 64))\n\n        mstore(add(headStart, 96), sub(tail, headStart))\n        tail := abi_encode_t_bytes_memory_ptr_to_t_bytes_memory_ptr_fromStack(value3,  tail)\n\n    }\n\n    function abi_decode_t_bytes4_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_bytes4(value)\n    }\n\n    function abi_decode_tuple_t_bytes4_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes4_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function store_literal_in_memory_8a66f4bb6512ffbfcc3db9b42318eb65f26ac15163eaa9a1e5cfa7bee9d1c7c6(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: mint to the zero address\")\n\n    }\n\n    function abi_encode_t_stringliteral_8a66f4bb6512ffbfcc3db9b42318eb65f26ac15163eaa9a1e5cfa7bee9d1c7c6_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 32)\n        store_literal_in_memory_8a66f4bb6512ffbfcc3db9b42318eb65f26ac15163eaa9a1e5cfa7bee9d1c7c6(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_8a66f4bb6512ffbfcc3db9b42318eb65f26ac15163eaa9a1e5cfa7bee9d1c7c6__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_8a66f4bb6512ffbfcc3db9b42318eb65f26ac15163eaa9a1e5cfa7bee9d1c7c6_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_2a63ce106ef95058ed21fd07c42a10f11dc5c32ac13a4e847923f7759f635d57(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: token already minted\")\n\n    }\n\n    function abi_encode_t_stringliteral_2a63ce106ef95058ed21fd07c42a10f11dc5c32ac13a4e847923f7759f635d57_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 28)\n        store_literal_in_memory_2a63ce106ef95058ed21fd07c42a10f11dc5c32ac13a4e847923f7759f635d57(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_2a63ce106ef95058ed21fd07c42a10f11dc5c32ac13a4e847923f7759f635d57__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_2a63ce106ef95058ed21fd07c42a10f11dc5c32ac13a4e847923f7759f635d57_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n}\n",
+      "contents": "{\n\n    function allocate_unbounded() -> memPtr {\n        memPtr := mload(64)\n    }\n\n    function revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() {\n        revert(0, 0)\n    }\n\n    function revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() {\n        revert(0, 0)\n    }\n\n    function cleanup_t_bytes4(value) -> cleaned {\n        cleaned := and(value, 0xffffffff00000000000000000000000000000000000000000000000000000000)\n    }\n\n    function validator_revert_t_bytes4(value) {\n        if iszero(eq(value, cleanup_t_bytes4(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_bytes4(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bytes4(value)\n    }\n\n    function abi_decode_tuple_t_bytes4(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes4(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function cleanup_t_bool(value) -> cleaned {\n        cleaned := iszero(iszero(value))\n    }\n\n    function abi_encode_t_bool_to_t_bool_fromStack(value, pos) {\n        mstore(pos, cleanup_t_bool(value))\n    }\n\n    function abi_encode_tuple_t_bool__to_t_bool__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_bool_to_t_bool_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function array_length_t_string_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function copy_memory_to_memory(src, dst, length) {\n        let i := 0\n        for { } lt(i, length) { i := add(i, 32) }\n        {\n            mstore(add(dst, i), mload(add(src, i)))\n        }\n        if gt(i, length)\n        {\n            // clear end\n            mstore(add(dst, length), 0)\n        }\n    }\n\n    function round_up_to_mul_of_32(value) -> result {\n        result := and(add(value, 31), not(31))\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_tuple_t_string_memory_ptr__to_t_string_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function cleanup_t_uint256(value) -> cleaned {\n        cleaned := value\n    }\n\n    function validator_revert_t_uint256(value) {\n        if iszero(eq(value, cleanup_t_uint256(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_uint256(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_uint256(value)\n    }\n\n    function abi_decode_tuple_t_uint256(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function cleanup_t_uint160(value) -> cleaned {\n        cleaned := and(value, 0xffffffffffffffffffffffffffffffffffffffff)\n    }\n\n    function cleanup_t_address(value) -> cleaned {\n        cleaned := cleanup_t_uint160(value)\n    }\n\n    function abi_encode_t_address_to_t_address_fromStack(value, pos) {\n        mstore(pos, cleanup_t_address(value))\n    }\n\n    function abi_encode_tuple_t_address__to_t_address__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function validator_revert_t_address(value) {\n        if iszero(eq(value, cleanup_t_address(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_address(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_address(value)\n    }\n\n    function abi_decode_tuple_t_addresst_uint256(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_addresst_uint256(headStart, dataEnd) -> value0, value1, value2 {\n        if slt(sub(dataEnd, headStart), 96) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function revert_error_1b9f4a0a5773e33b91aa01db23bf8c55fce1411167c872835e7fa00a4f17d46d() {\n        revert(0, 0)\n    }\n\n    function revert_error_987264b3b1d58a9c7f8255e93e81c77d86d6299019c33110a076957a3e06e2ae() {\n        revert(0, 0)\n    }\n\n    function panic_error_0x41() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x41)\n        revert(0, 0x24)\n    }\n\n    function finalize_allocation(memPtr, size) {\n        let newFreePtr := add(memPtr, round_up_to_mul_of_32(size))\n        // protect against overflow\n        if or(gt(newFreePtr, 0xffffffffffffffff), lt(newFreePtr, memPtr)) { panic_error_0x41() }\n        mstore(64, newFreePtr)\n    }\n\n    function allocate_memory(size) -> memPtr {\n        memPtr := allocate_unbounded()\n        finalize_allocation(memPtr, size)\n    }\n\n    function array_allocation_size_t_string_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        size := round_up_to_mul_of_32(length)\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function copy_calldata_to_memory(src, dst, length) {\n        calldatacopy(dst, src, length)\n        // clear end\n        mstore(add(dst, length), 0)\n    }\n\n    function abi_decode_available_length_t_string_memory_ptr(src, length, end) -> array {\n        array := allocate_memory(array_allocation_size_t_string_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert_error_987264b3b1d58a9c7f8255e93e81c77d86d6299019c33110a076957a3e06e2ae() }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    // string\n    function abi_decode_t_string_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert_error_1b9f4a0a5773e33b91aa01db23bf8c55fce1411167c872835e7fa00a4f17d46d() }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_string_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_tuple_t_uint256t_string_memory_ptr(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 32))\n            if gt(offset, 0xffffffffffffffff) { revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() }\n\n            value1 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_string_memory_ptr(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := calldataload(add(headStart, 0))\n            if gt(offset, 0xffffffffffffffff) { revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() }\n\n            value0 := abi_decode_t_string_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_fromStack(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function abi_encode_tuple_t_uint256__to_t_uint256__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n    }\n\n    function abi_decode_tuple_t_address(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function array_length_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function array_dataslot_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr(ptr) -> data {\n        data := ptr\n\n        data := add(ptr, 0x20)\n\n    }\n\n    function abi_encode_t_uint256_to_t_uint256(value, pos) {\n        mstore(pos, cleanup_t_uint256(value))\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    // struct IotaHeroFactory.Hero -> struct IotaHeroFactory.Hero\n    function abi_encode_t_struct$_Hero_$3875_memory_ptr_to_t_struct$_Hero_$3875_memory_ptr(value, pos)  -> end  {\n        let tail := add(pos, 0x0100)\n\n        {\n            // id\n\n            let memberValue0 := mload(add(value, 0x00))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x00))\n        }\n\n        {\n            // dna\n\n            let memberValue0 := mload(add(value, 0x20))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x20))\n        }\n\n        {\n            // constitution\n\n            let memberValue0 := mload(add(value, 0x40))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x40))\n        }\n\n        {\n            // strength\n\n            let memberValue0 := mload(add(value, 0x60))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x60))\n        }\n\n        {\n            // agility\n\n            let memberValue0 := mload(add(value, 0x80))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0x80))\n        }\n\n        {\n            // intelligence\n\n            let memberValue0 := mload(add(value, 0xa0))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0xa0))\n        }\n\n        {\n            // restingTill\n\n            let memberValue0 := mload(add(value, 0xc0))\n            abi_encode_t_uint256_to_t_uint256(memberValue0, add(pos, 0xc0))\n        }\n\n        {\n            // name\n\n            let memberValue0 := mload(add(value, 0xe0))\n\n            mstore(add(pos, 0xe0), sub(tail, pos))\n            tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr(memberValue0, tail)\n\n        }\n\n        end := tail\n    }\n\n    function abi_encodeUpdatedPos_t_struct$_Hero_$3875_memory_ptr_to_t_struct$_Hero_$3875_memory_ptr(value0, pos) -> updatedPos {\n        updatedPos := abi_encode_t_struct$_Hero_$3875_memory_ptr_to_t_struct$_Hero_$3875_memory_ptr(value0, pos)\n    }\n\n    function array_nextElement_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr(ptr) -> next {\n        next := add(ptr, 0x20)\n    }\n\n    // struct IotaHeroFactory.Hero[] -> struct IotaHeroFactory.Hero[]\n    function abi_encode_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_fromStack(value, pos)  -> end  {\n        let length := array_length_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_fromStack(pos, length)\n        let headStart := pos\n        let tail := add(pos, mul(length, 0x20))\n        let baseRef := array_dataslot_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr(value)\n        let srcPtr := baseRef\n        for { let i := 0 } lt(i, length) { i := add(i, 1) }\n        {\n            mstore(pos, sub(tail, headStart))\n            let elementValue0 := mload(srcPtr)\n            tail := abi_encodeUpdatedPos_t_struct$_Hero_$3875_memory_ptr_to_t_struct$_Hero_$3875_memory_ptr(elementValue0, tail)\n            srcPtr := array_nextElement_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr(srcPtr)\n            pos := add(pos, 0x20)\n        }\n        pos := tail\n        end := pos\n    }\n\n    function abi_encode_tuple_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr__to_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr__fromStack_reversed(headStart , value0) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_to_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_fromStack(value0,  tail)\n\n    }\n\n    function validator_revert_t_bool(value) {\n        if iszero(eq(value, cleanup_t_bool(value))) { revert(0, 0) }\n    }\n\n    function abi_decode_t_bool(offset, end) -> value {\n        value := calldataload(offset)\n        validator_revert_t_bool(value)\n    }\n\n    function abi_decode_tuple_t_addresst_bool(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_bool(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_encode_tuple_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_string_memory_ptr__to_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_uint256_t_string_memory_ptr__fromStack_reversed(headStart , value7, value6, value5, value4, value3, value2, value1, value0) -> tail {\n        tail := add(headStart, 256)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value1,  add(headStart, 32))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value2,  add(headStart, 64))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value3,  add(headStart, 96))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value4,  add(headStart, 128))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value5,  add(headStart, 160))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value6,  add(headStart, 192))\n\n        mstore(add(headStart, 224), sub(tail, headStart))\n        tail := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_fromStack(value7,  tail)\n\n    }\n\n    function array_allocation_size_t_bytes_memory_ptr(length) -> size {\n        // Make sure we can allocate memory without overflow\n        if gt(length, 0xffffffffffffffff) { panic_error_0x41() }\n\n        size := round_up_to_mul_of_32(length)\n\n        // add length slot\n        size := add(size, 0x20)\n\n    }\n\n    function abi_decode_available_length_t_bytes_memory_ptr(src, length, end) -> array {\n        array := allocate_memory(array_allocation_size_t_bytes_memory_ptr(length))\n        mstore(array, length)\n        let dst := add(array, 0x20)\n        if gt(add(src, length), end) { revert_error_987264b3b1d58a9c7f8255e93e81c77d86d6299019c33110a076957a3e06e2ae() }\n        copy_calldata_to_memory(src, dst, length)\n    }\n\n    // bytes\n    function abi_decode_t_bytes_memory_ptr(offset, end) -> array {\n        if iszero(slt(add(offset, 0x1f), end)) { revert_error_1b9f4a0a5773e33b91aa01db23bf8c55fce1411167c872835e7fa00a4f17d46d() }\n        let length := calldataload(offset)\n        array := abi_decode_available_length_t_bytes_memory_ptr(add(offset, 0x20), length, end)\n    }\n\n    function abi_decode_tuple_t_addresst_addresst_uint256t_bytes_memory_ptr(headStart, dataEnd) -> value0, value1, value2, value3 {\n        if slt(sub(dataEnd, headStart), 128) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 64\n\n            value2 := abi_decode_t_uint256(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := calldataload(add(headStart, 96))\n            if gt(offset, 0xffffffffffffffff) { revert_error_c1322bf8034eace5e0b5c7295db60986aa89aae5e0ea0873e4689e076861a5db() }\n\n            value3 := abi_decode_t_bytes_memory_ptr(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function abi_decode_tuple_t_addresst_address(headStart, dataEnd) -> value0, value1 {\n        if slt(sub(dataEnd, headStart), 64) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n        {\n\n            let offset := 32\n\n            value1 := abi_decode_t_address(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function panic_error_0x22() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x22)\n        revert(0, 0x24)\n    }\n\n    function extract_byte_array_length(data) -> length {\n        length := div(data, 2)\n        let outOfPlaceEncoding := and(data, 1)\n        if iszero(outOfPlaceEncoding) {\n            length := and(length, 0x7f)\n        }\n\n        if eq(outOfPlaceEncoding, lt(length, 32)) {\n            panic_error_0x22()\n        }\n    }\n\n    function store_literal_in_memory_9291e0f44949204f2e9b40e6be090924979d6047b2365868f4e9f027722eb89d(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: approved query for nonex\")\n\n        mstore(add(memPtr, 32), \"istent token\")\n\n    }\n\n    function abi_encode_t_stringliteral_9291e0f44949204f2e9b40e6be090924979d6047b2365868f4e9f027722eb89d_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 44)\n        store_literal_in_memory_9291e0f44949204f2e9b40e6be090924979d6047b2365868f4e9f027722eb89d(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_9291e0f44949204f2e9b40e6be090924979d6047b2365868f4e9f027722eb89d__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_9291e0f44949204f2e9b40e6be090924979d6047b2365868f4e9f027722eb89d_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_b51b4875eede07862961e8f9365c6749f5fe55c6ee5d7a9e42b6912ad0b15942(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: approval to current owne\")\n\n        mstore(add(memPtr, 32), \"r\")\n\n    }\n\n    function abi_encode_t_stringliteral_b51b4875eede07862961e8f9365c6749f5fe55c6ee5d7a9e42b6912ad0b15942_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 33)\n        store_literal_in_memory_b51b4875eede07862961e8f9365c6749f5fe55c6ee5d7a9e42b6912ad0b15942(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_b51b4875eede07862961e8f9365c6749f5fe55c6ee5d7a9e42b6912ad0b15942__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_b51b4875eede07862961e8f9365c6749f5fe55c6ee5d7a9e42b6912ad0b15942_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_6d83cef3e0cb19b8320a9c5feb26b56bbb08f152a8e61b12eca3302d8d68b23d(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: approve caller is not ow\")\n\n        mstore(add(memPtr, 32), \"ner nor approved for all\")\n\n    }\n\n    function abi_encode_t_stringliteral_6d83cef3e0cb19b8320a9c5feb26b56bbb08f152a8e61b12eca3302d8d68b23d_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 56)\n        store_literal_in_memory_6d83cef3e0cb19b8320a9c5feb26b56bbb08f152a8e61b12eca3302d8d68b23d(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_6d83cef3e0cb19b8320a9c5feb26b56bbb08f152a8e61b12eca3302d8d68b23d__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_6d83cef3e0cb19b8320a9c5feb26b56bbb08f152a8e61b12eca3302d8d68b23d_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_c8682f3ad98807db59a6ec6bb812b72fed0a66e3150fa8239699ee83885247f2(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: transfer caller is not o\")\n\n        mstore(add(memPtr, 32), \"wner nor approved\")\n\n    }\n\n    function abi_encode_t_stringliteral_c8682f3ad98807db59a6ec6bb812b72fed0a66e3150fa8239699ee83885247f2_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 49)\n        store_literal_in_memory_c8682f3ad98807db59a6ec6bb812b72fed0a66e3150fa8239699ee83885247f2(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_c8682f3ad98807db59a6ec6bb812b72fed0a66e3150fa8239699ee83885247f2__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_c8682f3ad98807db59a6ec6bb812b72fed0a66e3150fa8239699ee83885247f2_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_9924ebdf1add33d25d4ef888e16131f0a5687b0580a36c21b5c301a6c462effe(memPtr) {\n\n        mstore(add(memPtr, 0), \"Ownable: caller is not the owner\")\n\n    }\n\n    function abi_encode_t_stringliteral_9924ebdf1add33d25d4ef888e16131f0a5687b0580a36c21b5c301a6c462effe_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 32)\n        store_literal_in_memory_9924ebdf1add33d25d4ef888e16131f0a5687b0580a36c21b5c301a6c462effe(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_9924ebdf1add33d25d4ef888e16131f0a5687b0580a36c21b5c301a6c462effe__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_9924ebdf1add33d25d4ef888e16131f0a5687b0580a36c21b5c301a6c462effe_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_b5f4661ac9dab338559a68ff962acf8360f4cf1dc1e43d448d572685b2ba10c2(memPtr) {\n\n        mstore(add(memPtr, 0), \"You don't have an account\")\n\n    }\n\n    function abi_encode_t_stringliteral_b5f4661ac9dab338559a68ff962acf8360f4cf1dc1e43d448d572685b2ba10c2_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 25)\n        store_literal_in_memory_b5f4661ac9dab338559a68ff962acf8360f4cf1dc1e43d448d572685b2ba10c2(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_b5f4661ac9dab338559a68ff962acf8360f4cf1dc1e43d448d572685b2ba10c2__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_b5f4661ac9dab338559a68ff962acf8360f4cf1dc1e43d448d572685b2ba10c2_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_32512f00a140c06f068f4352c298a009472d40f3fe2d08d58446f1f24fff8f8d(memPtr) {\n\n        mstore(add(memPtr, 0), \"The hero name must be between 3 \")\n\n        mstore(add(memPtr, 32), \"and 12 characters\")\n\n    }\n\n    function abi_encode_t_stringliteral_32512f00a140c06f068f4352c298a009472d40f3fe2d08d58446f1f24fff8f8d_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 49)\n        store_literal_in_memory_32512f00a140c06f068f4352c298a009472d40f3fe2d08d58446f1f24fff8f8d(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_32512f00a140c06f068f4352c298a009472d40f3fe2d08d58446f1f24fff8f8d__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_32512f00a140c06f068f4352c298a009472d40f3fe2d08d58446f1f24fff8f8d_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function panic_error_0x32() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x32)\n        revert(0, 0x24)\n    }\n\n    function store_literal_in_memory_7481f3df2a424c0755a1ad2356614e9a5a358d461ea2eae1f89cb21cbad00397(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: owner query for nonexist\")\n\n        mstore(add(memPtr, 32), \"ent token\")\n\n    }\n\n    function abi_encode_t_stringliteral_7481f3df2a424c0755a1ad2356614e9a5a358d461ea2eae1f89cb21cbad00397_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 41)\n        store_literal_in_memory_7481f3df2a424c0755a1ad2356614e9a5a358d461ea2eae1f89cb21cbad00397(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_7481f3df2a424c0755a1ad2356614e9a5a358d461ea2eae1f89cb21cbad00397__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_7481f3df2a424c0755a1ad2356614e9a5a358d461ea2eae1f89cb21cbad00397_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function panic_error_0x11() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x11)\n        revert(0, 0x24)\n    }\n\n    function checked_sub_t_uint256(x, y) -> diff {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        if lt(x, y) { panic_error_0x11() }\n\n        diff := sub(x, y)\n    }\n\n    function store_literal_in_memory_7395d4d3901c50cdfcab223d072f9aa36241df5d883e62cbf147ee1b05a9e6ba(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: balance query for the ze\")\n\n        mstore(add(memPtr, 32), \"ro address\")\n\n    }\n\n    function abi_encode_t_stringliteral_7395d4d3901c50cdfcab223d072f9aa36241df5d883e62cbf147ee1b05a9e6ba_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 42)\n        store_literal_in_memory_7395d4d3901c50cdfcab223d072f9aa36241df5d883e62cbf147ee1b05a9e6ba(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_7395d4d3901c50cdfcab223d072f9aa36241df5d883e62cbf147ee1b05a9e6ba__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_7395d4d3901c50cdfcab223d072f9aa36241df5d883e62cbf147ee1b05a9e6ba_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function array_storeLengthForEncoding_t_string_memory_ptr_nonPadded_inplace_fromStack(pos, length) -> updated_pos {\n        updated_pos := pos\n    }\n\n    function abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value, pos) -> end {\n        let length := array_length_t_string_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_nonPadded_inplace_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, length)\n    }\n\n    function abi_encode_tuple_packed_t_string_memory_ptr__to_t_string_memory_ptr__nonPadded_inplace_fromStack_reversed(pos , value0) -> end {\n\n        pos := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value0,  pos)\n\n        end := pos\n    }\n\n    function store_literal_in_memory_5e4b22cc47167d59ea7793d947d325ddf59f81f4fb268a2f1ebb9743b3bfcd15(memPtr) {\n\n        mstore(add(memPtr, 0), \"Username is taken\")\n\n    }\n\n    function abi_encode_t_stringliteral_5e4b22cc47167d59ea7793d947d325ddf59f81f4fb268a2f1ebb9743b3bfcd15_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 17)\n        store_literal_in_memory_5e4b22cc47167d59ea7793d947d325ddf59f81f4fb268a2f1ebb9743b3bfcd15(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_5e4b22cc47167d59ea7793d947d325ddf59f81f4fb268a2f1ebb9743b3bfcd15__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_5e4b22cc47167d59ea7793d947d325ddf59f81f4fb268a2f1ebb9743b3bfcd15_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_b682fb5a52014e623035ce66e0e4b5f764a480d8d7a8c9ca4f3828ac3eccfacc(memPtr) {\n\n        mstore(add(memPtr, 0), \"You already have an account!\")\n\n    }\n\n    function abi_encode_t_stringliteral_b682fb5a52014e623035ce66e0e4b5f764a480d8d7a8c9ca4f3828ac3eccfacc_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 28)\n        store_literal_in_memory_b682fb5a52014e623035ce66e0e4b5f764a480d8d7a8c9ca4f3828ac3eccfacc(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_b682fb5a52014e623035ce66e0e4b5f764a480d8d7a8c9ca4f3828ac3eccfacc__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_b682fb5a52014e623035ce66e0e4b5f764a480d8d7a8c9ca4f3828ac3eccfacc_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_ff46cfe62d0502291aea1051daf8c9c6f4d1bc3363075cbc1ed4873c477fc4e8(memPtr) {\n\n        mstore(add(memPtr, 0), \"Username must be between 3 and 1\")\n\n        mstore(add(memPtr, 32), \"2 characters\")\n\n    }\n\n    function abi_encode_t_stringliteral_ff46cfe62d0502291aea1051daf8c9c6f4d1bc3363075cbc1ed4873c477fc4e8_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 44)\n        store_literal_in_memory_ff46cfe62d0502291aea1051daf8c9c6f4d1bc3363075cbc1ed4873c477fc4e8(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_ff46cfe62d0502291aea1051daf8c9c6f4d1bc3363075cbc1ed4873c477fc4e8__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_ff46cfe62d0502291aea1051daf8c9c6f4d1bc3363075cbc1ed4873c477fc4e8_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function increment_t_uint256(value) -> ret {\n        value := cleanup_t_uint256(value)\n        if eq(value, 0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff) { panic_error_0x11() }\n        ret := add(value, 1)\n    }\n\n    function store_literal_in_memory_a2d45c0fba603d40d82d590051761ca952d1ab9d78cca6d0d464d7b6e961a9cb(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721Metadata: URI query for no\")\n\n        mstore(add(memPtr, 32), \"nexistent token\")\n\n    }\n\n    function abi_encode_t_stringliteral_a2d45c0fba603d40d82d590051761ca952d1ab9d78cca6d0d464d7b6e961a9cb_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 47)\n        store_literal_in_memory_a2d45c0fba603d40d82d590051761ca952d1ab9d78cca6d0d464d7b6e961a9cb(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_a2d45c0fba603d40d82d590051761ca952d1ab9d78cca6d0d464d7b6e961a9cb__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_a2d45c0fba603d40d82d590051761ca952d1ab9d78cca6d0d464d7b6e961a9cb_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function abi_encode_tuple_packed_t_string_memory_ptr_t_string_memory_ptr__to_t_string_memory_ptr_t_string_memory_ptr__nonPadded_inplace_fromStack_reversed(pos , value1, value0) -> end {\n\n        pos := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value0,  pos)\n\n        pos := abi_encode_t_string_memory_ptr_to_t_string_memory_ptr_nonPadded_inplace_fromStack(value1,  pos)\n\n        end := pos\n    }\n\n    function store_literal_in_memory_245f15ff17f551913a7a18385165551503906a406f905ac1c2437281a7cd0cfe(memPtr) {\n\n        mstore(add(memPtr, 0), \"Ownable: new owner is the zero a\")\n\n        mstore(add(memPtr, 32), \"ddress\")\n\n    }\n\n    function abi_encode_t_stringliteral_245f15ff17f551913a7a18385165551503906a406f905ac1c2437281a7cd0cfe_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 38)\n        store_literal_in_memory_245f15ff17f551913a7a18385165551503906a406f905ac1c2437281a7cd0cfe(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_245f15ff17f551913a7a18385165551503906a406f905ac1c2437281a7cd0cfe__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_245f15ff17f551913a7a18385165551503906a406f905ac1c2437281a7cd0cfe_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_5797d1ccb08b83980dd0c07ea40d8f6a64d35fff736a19bdd17522954cb0899c(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: operator query for nonex\")\n\n        mstore(add(memPtr, 32), \"istent token\")\n\n    }\n\n    function abi_encode_t_stringliteral_5797d1ccb08b83980dd0c07ea40d8f6a64d35fff736a19bdd17522954cb0899c_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 44)\n        store_literal_in_memory_5797d1ccb08b83980dd0c07ea40d8f6a64d35fff736a19bdd17522954cb0899c(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_5797d1ccb08b83980dd0c07ea40d8f6a64d35fff736a19bdd17522954cb0899c__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_5797d1ccb08b83980dd0c07ea40d8f6a64d35fff736a19bdd17522954cb0899c_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_a01073130a885d6c1c1af6ac75fc3b1c4f9403c235362962bbf528e2bd87d950(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: transfer of token that i\")\n\n        mstore(add(memPtr, 32), \"s not own\")\n\n    }\n\n    function abi_encode_t_stringliteral_a01073130a885d6c1c1af6ac75fc3b1c4f9403c235362962bbf528e2bd87d950_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 41)\n        store_literal_in_memory_a01073130a885d6c1c1af6ac75fc3b1c4f9403c235362962bbf528e2bd87d950(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_a01073130a885d6c1c1af6ac75fc3b1c4f9403c235362962bbf528e2bd87d950__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_a01073130a885d6c1c1af6ac75fc3b1c4f9403c235362962bbf528e2bd87d950_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_455fea98ea03c32d7dd1a6f1426917d80529bf47b3ccbde74e7206e889e709f4(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: transfer to the zero add\")\n\n        mstore(add(memPtr, 32), \"ress\")\n\n    }\n\n    function abi_encode_t_stringliteral_455fea98ea03c32d7dd1a6f1426917d80529bf47b3ccbde74e7206e889e709f4_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 36)\n        store_literal_in_memory_455fea98ea03c32d7dd1a6f1426917d80529bf47b3ccbde74e7206e889e709f4(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_455fea98ea03c32d7dd1a6f1426917d80529bf47b3ccbde74e7206e889e709f4__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_455fea98ea03c32d7dd1a6f1426917d80529bf47b3ccbde74e7206e889e709f4_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function checked_add_t_uint256(x, y) -> sum {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n\n        // overflow, if x > (maxValue - y)\n        if gt(x, sub(0xffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff, y)) { panic_error_0x11() }\n\n        sum := add(x, y)\n    }\n\n    function leftAlign_t_uint256(value) -> aligned {\n        aligned := value\n    }\n\n    function abi_encode_t_uint256_to_t_uint256_nonPadded_inplace_fromStack(value, pos) {\n        mstore(pos, leftAlign_t_uint256(cleanup_t_uint256(value)))\n    }\n\n    function abi_encode_tuple_packed_t_uint256__to_t_uint256__nonPadded_inplace_fromStack_reversed(pos , value0) -> end {\n\n        abi_encode_t_uint256_to_t_uint256_nonPadded_inplace_fromStack(value0,  pos)\n        pos := add(pos, 32)\n\n        end := pos\n    }\n\n    function panic_error_0x12() {\n        mstore(0, 35408467139433450592217433187231851964531694900788300625387963629091585785856)\n        mstore(4, 0x12)\n        revert(0, 0x24)\n    }\n\n    function mod_t_uint256(x, y) -> r {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n        if iszero(y) { panic_error_0x12() }\n        r := mod(x, y)\n    }\n\n    function abi_encode_tuple_t_uint256_t_uint256__to_t_uint256_t_uint256__fromStack_reversed(headStart , value1, value0) -> tail {\n        tail := add(headStart, 64)\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value1,  add(headStart, 32))\n\n    }\n\n    function store_literal_in_memory_45fe4329685be5ecd250fd0e6a25aea0ea4d0e30fb6a73c118b95749e6d70d05(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: approve to caller\")\n\n    }\n\n    function abi_encode_t_stringliteral_45fe4329685be5ecd250fd0e6a25aea0ea4d0e30fb6a73c118b95749e6d70d05_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 25)\n        store_literal_in_memory_45fe4329685be5ecd250fd0e6a25aea0ea4d0e30fb6a73c118b95749e6d70d05(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_45fe4329685be5ecd250fd0e6a25aea0ea4d0e30fb6a73c118b95749e6d70d05__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_45fe4329685be5ecd250fd0e6a25aea0ea4d0e30fb6a73c118b95749e6d70d05_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_1e766a06da43a53d0f4c380e06e5a342e14d5af1bf8501996c844905530ca84e(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: transfer to non ERC721Re\")\n\n        mstore(add(memPtr, 32), \"ceiver implementer\")\n\n    }\n\n    function abi_encode_t_stringliteral_1e766a06da43a53d0f4c380e06e5a342e14d5af1bf8501996c844905530ca84e_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 50)\n        store_literal_in_memory_1e766a06da43a53d0f4c380e06e5a342e14d5af1bf8501996c844905530ca84e(pos)\n        end := add(pos, 64)\n    }\n\n    function abi_encode_tuple_t_stringliteral_1e766a06da43a53d0f4c380e06e5a342e14d5af1bf8501996c844905530ca84e__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_1e766a06da43a53d0f4c380e06e5a342e14d5af1bf8501996c844905530ca84e_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function checked_div_t_uint256(x, y) -> r {\n        x := cleanup_t_uint256(x)\n        y := cleanup_t_uint256(y)\n        if iszero(y) { panic_error_0x12() }\n\n        r := div(x, y)\n    }\n\n    function array_length_t_bytes_memory_ptr(value) -> length {\n\n        length := mload(value)\n\n    }\n\n    function array_storeLengthForEncoding_t_bytes_memory_ptr_fromStack(pos, length) -> updated_pos {\n        mstore(pos, length)\n        updated_pos := add(pos, 0x20)\n    }\n\n    function abi_encode_t_bytes_memory_ptr_to_t_bytes_memory_ptr_fromStack(value, pos) -> end {\n        let length := array_length_t_bytes_memory_ptr(value)\n        pos := array_storeLengthForEncoding_t_bytes_memory_ptr_fromStack(pos, length)\n        copy_memory_to_memory(add(value, 0x20), pos, length)\n        end := add(pos, round_up_to_mul_of_32(length))\n    }\n\n    function abi_encode_tuple_t_address_t_address_t_uint256_t_bytes_memory_ptr__to_t_address_t_address_t_uint256_t_bytes_memory_ptr__fromStack_reversed(headStart , value3, value2, value1, value0) -> tail {\n        tail := add(headStart, 128)\n\n        abi_encode_t_address_to_t_address_fromStack(value0,  add(headStart, 0))\n\n        abi_encode_t_address_to_t_address_fromStack(value1,  add(headStart, 32))\n\n        abi_encode_t_uint256_to_t_uint256_fromStack(value2,  add(headStart, 64))\n\n        mstore(add(headStart, 96), sub(tail, headStart))\n        tail := abi_encode_t_bytes_memory_ptr_to_t_bytes_memory_ptr_fromStack(value3,  tail)\n\n    }\n\n    function abi_decode_t_bytes4_fromMemory(offset, end) -> value {\n        value := mload(offset)\n        validator_revert_t_bytes4(value)\n    }\n\n    function abi_decode_tuple_t_bytes4_fromMemory(headStart, dataEnd) -> value0 {\n        if slt(sub(dataEnd, headStart), 32) { revert_error_dbdddcbe895c83990c08b3492a0e83918d802a52331272ac6fdb6a7c4aea3b1b() }\n\n        {\n\n            let offset := 0\n\n            value0 := abi_decode_t_bytes4_fromMemory(add(headStart, offset), dataEnd)\n        }\n\n    }\n\n    function store_literal_in_memory_8a66f4bb6512ffbfcc3db9b42318eb65f26ac15163eaa9a1e5cfa7bee9d1c7c6(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: mint to the zero address\")\n\n    }\n\n    function abi_encode_t_stringliteral_8a66f4bb6512ffbfcc3db9b42318eb65f26ac15163eaa9a1e5cfa7bee9d1c7c6_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 32)\n        store_literal_in_memory_8a66f4bb6512ffbfcc3db9b42318eb65f26ac15163eaa9a1e5cfa7bee9d1c7c6(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_8a66f4bb6512ffbfcc3db9b42318eb65f26ac15163eaa9a1e5cfa7bee9d1c7c6__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_8a66f4bb6512ffbfcc3db9b42318eb65f26ac15163eaa9a1e5cfa7bee9d1c7c6_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n    function store_literal_in_memory_2a63ce106ef95058ed21fd07c42a10f11dc5c32ac13a4e847923f7759f635d57(memPtr) {\n\n        mstore(add(memPtr, 0), \"ERC721: token already minted\")\n\n    }\n\n    function abi_encode_t_stringliteral_2a63ce106ef95058ed21fd07c42a10f11dc5c32ac13a4e847923f7759f635d57_to_t_string_memory_ptr_fromStack(pos) -> end {\n        pos := array_storeLengthForEncoding_t_string_memory_ptr_fromStack(pos, 28)\n        store_literal_in_memory_2a63ce106ef95058ed21fd07c42a10f11dc5c32ac13a4e847923f7759f635d57(pos)\n        end := add(pos, 32)\n    }\n\n    function abi_encode_tuple_t_stringliteral_2a63ce106ef95058ed21fd07c42a10f11dc5c32ac13a4e847923f7759f635d57__to_t_string_memory_ptr__fromStack_reversed(headStart ) -> tail {\n        tail := add(headStart, 32)\n\n        mstore(add(headStart, 0), sub(tail, headStart))\n        tail := abi_encode_t_stringliteral_2a63ce106ef95058ed21fd07c42a10f11dc5c32ac13a4e847923f7759f635d57_to_t_string_memory_ptr_fromStack( tail)\n\n    }\n\n}\n",
       "id": 40,
       "language": "Yul",
       "name": "#utility.yul"
@@ -21270,10 +21270,10 @@
         3584
       ],
       "IotaHeroFactory": [
-        4036
+        4064
       ],
       "IotaHeroUtil": [
-        5526
+        5554
       ],
       "Ownable": [
         104
@@ -21285,12 +21285,12 @@
         2926
       ]
     },
-    "id": 5527,
+    "id": 5555,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5427,
+        "id": 5455,
         "literals": [
           "solidity",
           "^",
@@ -21303,11 +21303,11 @@
       {
         "absolutePath": "project:/contracts/IotaHeroFactory.sol",
         "file": "./IotaHeroFactory.sol",
-        "id": 5428,
+        "id": 5456,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 5527,
-        "sourceUnit": 4037,
+        "scope": 5555,
+        "sourceUnit": 4065,
         "src": "58:31:22",
         "symbolAliases": [],
         "unitAlias": ""
@@ -21317,13 +21317,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 5429,
+              "id": 5457,
               "name": "IotaHeroFactory",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4036,
+              "referencedDeclaration": 4064,
               "src": "118:15:22"
             },
-            "id": 5430,
+            "id": 5458,
             "nodeType": "InheritanceSpecifier",
             "src": "118:15:22"
           }
@@ -21332,10 +21332,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 5526,
+        "id": 5554,
         "linearizedBaseContracts": [
-          5526,
-          4036,
+          5554,
+          4064,
           3584,
           104,
           2243,
@@ -21351,23 +21351,23 @@
         "nodes": [
           {
             "body": {
-              "id": 5453,
+              "id": 5481,
               "nodeType": "Block",
               "src": "188:109:22",
               "statements": [
                 {
                   "assignments": [
-                    5436
+                    5464
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5436,
+                      "id": 5464,
                       "mutability": "mutable",
                       "name": "_owner",
                       "nameLocation": "215:6:22",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5453,
+                      "scope": 5481,
                       "src": "199:22:22",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -21376,7 +21376,7 @@
                         "typeString": "address payable"
                       },
                       "typeName": {
-                        "id": 5435,
+                        "id": 5463,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "199:15:22",
@@ -21389,14 +21389,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5442,
+                  "id": 5470,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 5439,
+                          "id": 5467,
                           "name": "owner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -21407,7 +21407,7 @@
                             "typeString": "function () view returns (address)"
                           }
                         },
-                        "id": 5440,
+                        "id": 5468,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -21430,7 +21430,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 5438,
+                      "id": 5466,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -21442,7 +21442,7 @@
                         "typeString": "type(address payable)"
                       },
                       "typeName": {
-                        "id": 5437,
+                        "id": 5465,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "224:8:22",
@@ -21450,7 +21450,7 @@
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 5441,
+                    "id": 5469,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -21475,14 +21475,14 @@
                         "expression": {
                           "arguments": [
                             {
-                              "id": 5448,
+                              "id": 5476,
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 4294967268,
                               "src": "275:4:22",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IotaHeroUtil_$5526",
+                                "typeIdentifier": "t_contract$_IotaHeroUtil_$5554",
                                 "typeString": "contract IotaHeroUtil"
                               }
                             }
@@ -21490,11 +21490,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IotaHeroUtil_$5526",
+                                "typeIdentifier": "t_contract$_IotaHeroUtil_$5554",
                                 "typeString": "contract IotaHeroUtil"
                               }
                             ],
-                            "id": 5447,
+                            "id": 5475,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -21506,14 +21506,14 @@
                               "typeString": "type(address)"
                             },
                             "typeName": {
-                              "id": 5446,
+                              "id": 5474,
                               "name": "address",
                               "nodeType": "ElementaryTypeName",
                               "src": "267:7:22",
                               "typeDescriptions": {}
                             }
                           },
-                          "id": 5449,
+                          "id": 5477,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -21528,7 +21528,7 @@
                             "typeString": "address"
                           }
                         },
-                        "id": 5450,
+                        "id": 5478,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -21550,18 +21550,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 5443,
+                        "id": 5471,
                         "name": "_owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5436,
+                        "referencedDeclaration": 5464,
                         "src": "251:6:22",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       },
-                      "id": 5445,
+                      "id": 5473,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -21574,7 +21574,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 5451,
+                    "id": 5479,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -21589,22 +21589,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5452,
+                  "id": 5480,
                   "nodeType": "ExpressionStatement",
                   "src": "251:38:22"
                 }
               ]
             },
             "functionSelector": "3ccfd60b",
-            "id": 5454,
+            "id": 5482,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 5433,
+                "id": 5461,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 5432,
+                  "id": 5460,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -21618,18 +21618,18 @@
             "nameLocation": "150:8:22",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5431,
+              "id": 5459,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "158:2:22"
             },
             "returnParameters": {
-              "id": 5434,
+              "id": 5462,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "188:0:22"
             },
-            "scope": 5526,
+            "scope": 5554,
             "src": "141:156:22",
             "stateMutability": "payable",
             "virtual": false,
@@ -21637,32 +21637,32 @@
           },
           {
             "body": {
-              "id": 5463,
+              "id": 5491,
               "nodeType": "Block",
               "src": "362:32:22",
               "statements": [
                 {
                   "expression": {
-                    "id": 5461,
+                    "id": 5489,
                     "name": "heroes",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3851,
+                    "referencedDeclaration": 3879,
                     "src": "380:6:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
                       "typeString": "struct IotaHeroFactory.Hero storage ref[] storage ref"
                     }
                   },
-                  "functionReturnParameters": 5460,
-                  "id": 5462,
+                  "functionReturnParameters": 5488,
+                  "id": 5490,
                   "nodeType": "Return",
                   "src": "373:13:22"
                 }
               ]
             },
             "functionSelector": "9a8d2882",
-            "id": 5464,
+            "id": 5492,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -21670,53 +21670,53 @@
             "nameLocation": "314:9:22",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5455,
+              "id": 5483,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "323:2:22"
             },
             "returnParameters": {
-              "id": 5460,
+              "id": 5488,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5459,
+                  "id": 5487,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5464,
+                  "scope": 5492,
                   "src": "347:13:22",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct IotaHeroFactory.Hero[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 5457,
+                      "id": 5485,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 5456,
+                        "id": 5484,
                         "name": "Hero",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 3847,
+                        "referencedDeclaration": 3875,
                         "src": "347:4:22"
                       },
-                      "referencedDeclaration": 3847,
+                      "referencedDeclaration": 3875,
                       "src": "347:4:22",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                        "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                         "typeString": "struct IotaHeroFactory.Hero"
                       }
                     },
-                    "id": 5458,
+                    "id": 5486,
                     "nodeType": "ArrayTypeName",
                     "src": "347:6:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr",
                       "typeString": "struct IotaHeroFactory.Hero[]"
                     }
                   },
@@ -21725,7 +21725,7 @@
               ],
               "src": "346:15:22"
             },
-            "scope": 5526,
+            "scope": 5554,
             "src": "305:89:22",
             "stateMutability": "view",
             "virtual": false,
@@ -21733,70 +21733,70 @@
           },
           {
             "body": {
-              "id": 5524,
+              "id": 5552,
               "nodeType": "Block",
               "src": "510:318:22",
               "statements": [
                 {
                   "assignments": [
-                    5477
+                    5505
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5477,
+                      "id": 5505,
                       "mutability": "mutable",
                       "name": "ownedHeroes",
                       "nameLocation": "535:11:22",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5524,
+                      "scope": 5552,
                       "src": "521:25:22",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                        "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                         "typeString": "struct IotaHeroFactory.Hero[]"
                       },
                       "typeName": {
                         "baseType": {
-                          "id": 5475,
+                          "id": 5503,
                           "nodeType": "UserDefinedTypeName",
                           "pathNode": {
-                            "id": 5474,
+                            "id": 5502,
                             "name": "Hero",
                             "nodeType": "IdentifierPath",
-                            "referencedDeclaration": 3847,
+                            "referencedDeclaration": 3875,
                             "src": "521:4:22"
                           },
-                          "referencedDeclaration": 3847,
+                          "referencedDeclaration": 3875,
                           "src": "521:4:22",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                            "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                             "typeString": "struct IotaHeroFactory.Hero"
                           }
                         },
-                        "id": 5476,
+                        "id": 5504,
                         "nodeType": "ArrayTypeName",
                         "src": "521:6:22",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr",
+                          "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr",
                           "typeString": "struct IotaHeroFactory.Hero[]"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5486,
+                  "id": 5514,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
-                            "id": 5483,
+                            "id": 5511,
                             "name": "_owner",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5466,
+                            "referencedDeclaration": 5494,
                             "src": "570:6:22",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -21811,7 +21811,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 5482,
+                          "id": 5510,
                           "name": "balanceOf",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -21822,7 +21822,7 @@
                             "typeString": "function (address) view returns (uint256)"
                           }
                         },
-                        "id": 5484,
+                        "id": 5512,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -21845,7 +21845,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 5481,
+                      "id": 5509,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -21853,37 +21853,37 @@
                       "nodeType": "NewExpression",
                       "src": "549:10:22",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_$",
+                        "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_$",
                         "typeString": "function (uint256) pure returns (struct IotaHeroFactory.Hero memory[] memory)"
                       },
                       "typeName": {
                         "baseType": {
-                          "id": 5479,
+                          "id": 5507,
                           "nodeType": "UserDefinedTypeName",
                           "pathNode": {
-                            "id": 5478,
+                            "id": 5506,
                             "name": "Hero",
                             "nodeType": "IdentifierPath",
-                            "referencedDeclaration": 3847,
+                            "referencedDeclaration": 3875,
                             "src": "553:4:22"
                           },
-                          "referencedDeclaration": 3847,
+                          "referencedDeclaration": 3875,
                           "src": "553:4:22",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                            "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                             "typeString": "struct IotaHeroFactory.Hero"
                           }
                         },
-                        "id": 5480,
+                        "id": 5508,
                         "nodeType": "ArrayTypeName",
                         "src": "553:6:22",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr",
+                          "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr",
                           "typeString": "struct IotaHeroFactory.Hero[]"
                         }
                       }
                     },
-                    "id": 5485,
+                    "id": 5513,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -21894,7 +21894,7 @@
                     "src": "549:29:22",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                       "typeString": "struct IotaHeroFactory.Hero memory[] memory"
                     }
                   },
@@ -21903,17 +21903,17 @@
                 },
                 {
                   "assignments": [
-                    5488
+                    5516
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5488,
+                      "id": 5516,
                       "mutability": "mutable",
                       "name": "c",
                       "nameLocation": "597:1:22",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5524,
+                      "scope": 5552,
                       "src": "589:9:22",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -21922,7 +21922,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 5487,
+                        "id": 5515,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "589:7:22",
@@ -21934,10 +21934,10 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5490,
+                  "id": 5518,
                   "initialValue": {
                     "hexValue": "30",
-                    "id": 5489,
+                    "id": 5517,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -21956,7 +21956,7 @@
                 },
                 {
                   "body": {
-                    "id": 5520,
+                    "id": 5548,
                     "nodeType": "Block",
                     "src": "657:135:22",
                     "statements": [
@@ -21966,7 +21966,7 @@
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           },
-                          "id": 5506,
+                          "id": 5534,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -21974,11 +21974,11 @@
                           "leftExpression": {
                             "arguments": [
                               {
-                                "id": 5503,
+                                "id": 5531,
                                 "name": "i",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 5492,
+                                "referencedDeclaration": 5520,
                                 "src": "684:1:22",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -21993,7 +21993,7 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "id": 5502,
+                              "id": 5530,
                               "name": "ownerOf",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -22004,7 +22004,7 @@
                                 "typeString": "function (uint256) view returns (address)"
                               }
                             },
-                            "id": 5504,
+                            "id": 5532,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -22022,11 +22022,11 @@
                           "nodeType": "BinaryOperation",
                           "operator": "==",
                           "rightExpression": {
-                            "id": 5505,
+                            "id": 5533,
                             "name": "_owner",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5466,
+                            "referencedDeclaration": 5494,
                             "src": "690:6:22",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -22039,41 +22039,41 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 5519,
+                        "id": 5547,
                         "nodeType": "IfStatement",
                         "src": "672:109:22",
                         "trueBody": {
-                          "id": 5518,
+                          "id": 5546,
                           "nodeType": "Block",
                           "src": "698:83:22",
                           "statements": [
                             {
                               "expression": {
-                                "id": 5513,
+                                "id": 5541,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "leftHandSide": {
                                   "baseExpression": {
-                                    "id": 5507,
+                                    "id": 5535,
                                     "name": "ownedHeroes",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 5477,
+                                    "referencedDeclaration": 5505,
                                     "src": "717:11:22",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                                       "typeString": "struct IotaHeroFactory.Hero memory[] memory"
                                     }
                                   },
-                                  "id": 5509,
+                                  "id": 5537,
                                   "indexExpression": {
-                                    "id": 5508,
+                                    "id": 5536,
                                     "name": "c",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 5488,
+                                    "referencedDeclaration": 5516,
                                     "src": "729:1:22",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -22087,7 +22087,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "717:14:22",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                                    "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                                     "typeString": "struct IotaHeroFactory.Hero memory"
                                   }
                                 },
@@ -22095,24 +22095,24 @@
                                 "operator": "=",
                                 "rightHandSide": {
                                   "baseExpression": {
-                                    "id": 5510,
+                                    "id": 5538,
                                     "name": "heroes",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 3851,
+                                    "referencedDeclaration": 3879,
                                     "src": "734:6:22",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+                                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
                                       "typeString": "struct IotaHeroFactory.Hero storage ref[] storage ref"
                                     }
                                   },
-                                  "id": 5512,
+                                  "id": 5540,
                                   "indexExpression": {
-                                    "id": 5511,
+                                    "id": 5539,
                                     "name": "i",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 5492,
+                                    "referencedDeclaration": 5520,
                                     "src": "741:1:22",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -22126,23 +22126,23 @@
                                   "nodeType": "IndexAccess",
                                   "src": "734:9:22",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_Hero_$3847_storage",
+                                    "typeIdentifier": "t_struct$_Hero_$3875_storage",
                                     "typeString": "struct IotaHeroFactory.Hero storage ref"
                                   }
                                 },
                                 "src": "717:26:22",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                                   "typeString": "struct IotaHeroFactory.Hero memory"
                                 }
                               },
-                              "id": 5514,
+                              "id": 5542,
                               "nodeType": "ExpressionStatement",
                               "src": "717:26:22"
                             },
                             {
                               "expression": {
-                                "id": 5516,
+                                "id": 5544,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -22152,11 +22152,11 @@
                                 "prefix": false,
                                 "src": "762:3:22",
                                 "subExpression": {
-                                  "id": 5515,
+                                  "id": 5543,
                                   "name": "c",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 5488,
+                                  "referencedDeclaration": 5516,
                                   "src": "762:1:22",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -22168,7 +22168,7 @@
                                   "typeString": "uint256"
                                 }
                               },
-                              "id": 5517,
+                              "id": 5545,
                               "nodeType": "ExpressionStatement",
                               "src": "762:3:22"
                             }
@@ -22182,17 +22182,17 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 5498,
+                    "id": 5526,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 5495,
+                      "id": 5523,
                       "name": "i",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5492,
+                      "referencedDeclaration": 5520,
                       "src": "633:1:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -22203,18 +22203,18 @@
                     "operator": "<",
                     "rightExpression": {
                       "expression": {
-                        "id": 5496,
+                        "id": 5524,
                         "name": "heroes",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3851,
+                        "referencedDeclaration": 3879,
                         "src": "637:6:22",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
                           "typeString": "struct IotaHeroFactory.Hero storage ref[] storage ref"
                         }
                       },
-                      "id": 5497,
+                      "id": 5525,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -22233,20 +22233,20 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 5521,
+                  "id": 5549,
                   "initializationExpression": {
                     "assignments": [
-                      5492
+                      5520
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 5492,
+                        "id": 5520,
                         "mutability": "mutable",
                         "name": "i",
                         "nameLocation": "626:1:22",
                         "nodeType": "VariableDeclaration",
-                        "scope": 5521,
+                        "scope": 5549,
                         "src": "618:9:22",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -22255,7 +22255,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 5491,
+                          "id": 5519,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
                           "src": "618:7:22",
@@ -22267,10 +22267,10 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 5494,
+                    "id": 5522,
                     "initialValue": {
                       "hexValue": "30",
-                      "id": 5493,
+                      "id": 5521,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -22289,7 +22289,7 @@
                   },
                   "loopExpression": {
                     "expression": {
-                      "id": 5500,
+                      "id": 5528,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -22299,11 +22299,11 @@
                       "prefix": false,
                       "src": "652:3:22",
                       "subExpression": {
-                        "id": 5499,
+                        "id": 5527,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5492,
+                        "referencedDeclaration": 5520,
                         "src": "652:1:22",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -22315,7 +22315,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 5501,
+                    "id": 5529,
                     "nodeType": "ExpressionStatement",
                     "src": "652:3:22"
                   },
@@ -22324,26 +22324,26 @@
                 },
                 {
                   "expression": {
-                    "id": 5522,
+                    "id": 5550,
                     "name": "ownedHeroes",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 5477,
+                    "referencedDeclaration": 5505,
                     "src": "809:11:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                       "typeString": "struct IotaHeroFactory.Hero memory[] memory"
                     }
                   },
-                  "functionReturnParameters": 5472,
-                  "id": 5523,
+                  "functionReturnParameters": 5500,
+                  "id": 5551,
                   "nodeType": "Return",
                   "src": "802:18:22"
                 }
               ]
             },
             "functionSelector": "ddf368a2",
-            "id": 5525,
+            "id": 5553,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -22351,17 +22351,17 @@
             "nameLocation": "411:14:22",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5467,
+              "id": 5495,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5466,
+                  "id": 5494,
                   "mutability": "mutable",
                   "name": "_owner",
                   "nameLocation": "434:6:22",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5525,
+                  "scope": 5553,
                   "src": "426:14:22",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -22370,7 +22370,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5465,
+                    "id": 5493,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "426:7:22",
@@ -22386,47 +22386,47 @@
               "src": "425:16:22"
             },
             "returnParameters": {
-              "id": 5472,
+              "id": 5500,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5471,
+                  "id": 5499,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5525,
+                  "scope": 5553,
                   "src": "490:13:22",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct IotaHeroFactory.Hero[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 5469,
+                      "id": 5497,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 5468,
+                        "id": 5496,
                         "name": "Hero",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 3847,
+                        "referencedDeclaration": 3875,
                         "src": "490:4:22"
                       },
-                      "referencedDeclaration": 3847,
+                      "referencedDeclaration": 3875,
                       "src": "490:4:22",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                        "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                         "typeString": "struct IotaHeroFactory.Hero"
                       }
                     },
-                    "id": 5470,
+                    "id": 5498,
                     "nodeType": "ArrayTypeName",
                     "src": "490:6:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr",
                       "typeString": "struct IotaHeroFactory.Hero[]"
                     }
                   },
@@ -22435,14 +22435,14 @@
               ],
               "src": "489:15:22"
             },
-            "scope": 5526,
+            "scope": 5554,
             "src": "402:426:22",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 5527,
+        "scope": 5555,
         "src": "93:740:22",
         "usedErrors": []
       }
@@ -22480,10 +22480,10 @@
         3584
       ],
       "IotaHeroFactory": [
-        4036
+        4064
       ],
       "IotaHeroUtil": [
-        5526
+        5554
       ],
       "Ownable": [
         104
@@ -22495,12 +22495,12 @@
         2926
       ]
     },
-    "id": 5527,
+    "id": 5555,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5427,
+        "id": 5455,
         "literals": [
           "solidity",
           "^",
@@ -22513,11 +22513,11 @@
       {
         "absolutePath": "project:/contracts/IotaHeroFactory.sol",
         "file": "./IotaHeroFactory.sol",
-        "id": 5428,
+        "id": 5456,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 5527,
-        "sourceUnit": 4037,
+        "scope": 5555,
+        "sourceUnit": 4065,
         "src": "58:31:22",
         "symbolAliases": [],
         "unitAlias": ""
@@ -22527,13 +22527,13 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 5429,
+              "id": 5457,
               "name": "IotaHeroFactory",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 4036,
+              "referencedDeclaration": 4064,
               "src": "118:15:22"
             },
-            "id": 5430,
+            "id": 5458,
             "nodeType": "InheritanceSpecifier",
             "src": "118:15:22"
           }
@@ -22542,10 +22542,10 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 5526,
+        "id": 5554,
         "linearizedBaseContracts": [
-          5526,
-          4036,
+          5554,
+          4064,
           3584,
           104,
           2243,
@@ -22561,23 +22561,23 @@
         "nodes": [
           {
             "body": {
-              "id": 5453,
+              "id": 5481,
               "nodeType": "Block",
               "src": "188:109:22",
               "statements": [
                 {
                   "assignments": [
-                    5436
+                    5464
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5436,
+                      "id": 5464,
                       "mutability": "mutable",
                       "name": "_owner",
                       "nameLocation": "215:6:22",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5453,
+                      "scope": 5481,
                       "src": "199:22:22",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -22586,7 +22586,7 @@
                         "typeString": "address payable"
                       },
                       "typeName": {
-                        "id": 5435,
+                        "id": 5463,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "199:15:22",
@@ -22599,14 +22599,14 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5442,
+                  "id": 5470,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [],
                         "expression": {
                           "argumentTypes": [],
-                          "id": 5439,
+                          "id": 5467,
                           "name": "owner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -22617,7 +22617,7 @@
                             "typeString": "function () view returns (address)"
                           }
                         },
-                        "id": 5440,
+                        "id": 5468,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -22640,7 +22640,7 @@
                           "typeString": "address"
                         }
                       ],
-                      "id": 5438,
+                      "id": 5466,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -22652,7 +22652,7 @@
                         "typeString": "type(address payable)"
                       },
                       "typeName": {
-                        "id": 5437,
+                        "id": 5465,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "224:8:22",
@@ -22660,7 +22660,7 @@
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 5441,
+                    "id": 5469,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -22685,14 +22685,14 @@
                         "expression": {
                           "arguments": [
                             {
-                              "id": 5448,
+                              "id": 5476,
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
                               "referencedDeclaration": 4294967268,
                               "src": "275:4:22",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_IotaHeroUtil_$5526",
+                                "typeIdentifier": "t_contract$_IotaHeroUtil_$5554",
                                 "typeString": "contract IotaHeroUtil"
                               }
                             }
@@ -22700,11 +22700,11 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_IotaHeroUtil_$5526",
+                                "typeIdentifier": "t_contract$_IotaHeroUtil_$5554",
                                 "typeString": "contract IotaHeroUtil"
                               }
                             ],
-                            "id": 5447,
+                            "id": 5475,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -22716,14 +22716,14 @@
                               "typeString": "type(address)"
                             },
                             "typeName": {
-                              "id": 5446,
+                              "id": 5474,
                               "name": "address",
                               "nodeType": "ElementaryTypeName",
                               "src": "267:7:22",
                               "typeDescriptions": {}
                             }
                           },
-                          "id": 5449,
+                          "id": 5477,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -22738,7 +22738,7 @@
                             "typeString": "address"
                           }
                         },
-                        "id": 5450,
+                        "id": 5478,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -22760,18 +22760,18 @@
                         }
                       ],
                       "expression": {
-                        "id": 5443,
+                        "id": 5471,
                         "name": "_owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5436,
+                        "referencedDeclaration": 5464,
                         "src": "251:6:22",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address_payable",
                           "typeString": "address payable"
                         }
                       },
-                      "id": 5445,
+                      "id": 5473,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -22784,7 +22784,7 @@
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 5451,
+                    "id": 5479,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -22799,22 +22799,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5452,
+                  "id": 5480,
                   "nodeType": "ExpressionStatement",
                   "src": "251:38:22"
                 }
               ]
             },
             "functionSelector": "3ccfd60b",
-            "id": 5454,
+            "id": 5482,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 5433,
+                "id": 5461,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 5432,
+                  "id": 5460,
                   "name": "onlyOwner",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 46,
@@ -22828,18 +22828,18 @@
             "nameLocation": "150:8:22",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5431,
+              "id": 5459,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "158:2:22"
             },
             "returnParameters": {
-              "id": 5434,
+              "id": 5462,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "188:0:22"
             },
-            "scope": 5526,
+            "scope": 5554,
             "src": "141:156:22",
             "stateMutability": "payable",
             "virtual": false,
@@ -22847,32 +22847,32 @@
           },
           {
             "body": {
-              "id": 5463,
+              "id": 5491,
               "nodeType": "Block",
               "src": "362:32:22",
               "statements": [
                 {
                   "expression": {
-                    "id": 5461,
+                    "id": 5489,
                     "name": "heroes",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3851,
+                    "referencedDeclaration": 3879,
                     "src": "380:6:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
                       "typeString": "struct IotaHeroFactory.Hero storage ref[] storage ref"
                     }
                   },
-                  "functionReturnParameters": 5460,
-                  "id": 5462,
+                  "functionReturnParameters": 5488,
+                  "id": 5490,
                   "nodeType": "Return",
                   "src": "373:13:22"
                 }
               ]
             },
             "functionSelector": "9a8d2882",
-            "id": 5464,
+            "id": 5492,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -22880,53 +22880,53 @@
             "nameLocation": "314:9:22",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5455,
+              "id": 5483,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "323:2:22"
             },
             "returnParameters": {
-              "id": 5460,
+              "id": 5488,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5459,
+                  "id": 5487,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5464,
+                  "scope": 5492,
                   "src": "347:13:22",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct IotaHeroFactory.Hero[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 5457,
+                      "id": 5485,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 5456,
+                        "id": 5484,
                         "name": "Hero",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 3847,
+                        "referencedDeclaration": 3875,
                         "src": "347:4:22"
                       },
-                      "referencedDeclaration": 3847,
+                      "referencedDeclaration": 3875,
                       "src": "347:4:22",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                        "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                         "typeString": "struct IotaHeroFactory.Hero"
                       }
                     },
-                    "id": 5458,
+                    "id": 5486,
                     "nodeType": "ArrayTypeName",
                     "src": "347:6:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr",
                       "typeString": "struct IotaHeroFactory.Hero[]"
                     }
                   },
@@ -22935,7 +22935,7 @@
               ],
               "src": "346:15:22"
             },
-            "scope": 5526,
+            "scope": 5554,
             "src": "305:89:22",
             "stateMutability": "view",
             "virtual": false,
@@ -22943,70 +22943,70 @@
           },
           {
             "body": {
-              "id": 5524,
+              "id": 5552,
               "nodeType": "Block",
               "src": "510:318:22",
               "statements": [
                 {
                   "assignments": [
-                    5477
+                    5505
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5477,
+                      "id": 5505,
                       "mutability": "mutable",
                       "name": "ownedHeroes",
                       "nameLocation": "535:11:22",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5524,
+                      "scope": 5552,
                       "src": "521:25:22",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                        "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                         "typeString": "struct IotaHeroFactory.Hero[]"
                       },
                       "typeName": {
                         "baseType": {
-                          "id": 5475,
+                          "id": 5503,
                           "nodeType": "UserDefinedTypeName",
                           "pathNode": {
-                            "id": 5474,
+                            "id": 5502,
                             "name": "Hero",
                             "nodeType": "IdentifierPath",
-                            "referencedDeclaration": 3847,
+                            "referencedDeclaration": 3875,
                             "src": "521:4:22"
                           },
-                          "referencedDeclaration": 3847,
+                          "referencedDeclaration": 3875,
                           "src": "521:4:22",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                            "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                             "typeString": "struct IotaHeroFactory.Hero"
                           }
                         },
-                        "id": 5476,
+                        "id": 5504,
                         "nodeType": "ArrayTypeName",
                         "src": "521:6:22",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr",
+                          "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr",
                           "typeString": "struct IotaHeroFactory.Hero[]"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5486,
+                  "id": 5514,
                   "initialValue": {
                     "arguments": [
                       {
                         "arguments": [
                           {
-                            "id": 5483,
+                            "id": 5511,
                             "name": "_owner",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5466,
+                            "referencedDeclaration": 5494,
                             "src": "570:6:22",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -23021,7 +23021,7 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 5482,
+                          "id": 5510,
                           "name": "balanceOf",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -23032,7 +23032,7 @@
                             "typeString": "function (address) view returns (uint256)"
                           }
                         },
-                        "id": 5484,
+                        "id": 5512,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -23055,7 +23055,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 5481,
+                      "id": 5509,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -23063,37 +23063,37 @@
                       "nodeType": "NewExpression",
                       "src": "549:10:22",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr_$",
+                        "typeIdentifier": "t_function_objectcreation_pure$_t_uint256_$returns$_t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr_$",
                         "typeString": "function (uint256) pure returns (struct IotaHeroFactory.Hero memory[] memory)"
                       },
                       "typeName": {
                         "baseType": {
-                          "id": 5479,
+                          "id": 5507,
                           "nodeType": "UserDefinedTypeName",
                           "pathNode": {
-                            "id": 5478,
+                            "id": 5506,
                             "name": "Hero",
                             "nodeType": "IdentifierPath",
-                            "referencedDeclaration": 3847,
+                            "referencedDeclaration": 3875,
                             "src": "553:4:22"
                           },
-                          "referencedDeclaration": 3847,
+                          "referencedDeclaration": 3875,
                           "src": "553:4:22",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                            "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                             "typeString": "struct IotaHeroFactory.Hero"
                           }
                         },
-                        "id": 5480,
+                        "id": 5508,
                         "nodeType": "ArrayTypeName",
                         "src": "553:6:22",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr",
+                          "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr",
                           "typeString": "struct IotaHeroFactory.Hero[]"
                         }
                       }
                     },
-                    "id": 5485,
+                    "id": 5513,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -23104,7 +23104,7 @@
                     "src": "549:29:22",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                       "typeString": "struct IotaHeroFactory.Hero memory[] memory"
                     }
                   },
@@ -23113,17 +23113,17 @@
                 },
                 {
                   "assignments": [
-                    5488
+                    5516
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5488,
+                      "id": 5516,
                       "mutability": "mutable",
                       "name": "c",
                       "nameLocation": "597:1:22",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5524,
+                      "scope": 5552,
                       "src": "589:9:22",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -23132,7 +23132,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 5487,
+                        "id": 5515,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "589:7:22",
@@ -23144,10 +23144,10 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5490,
+                  "id": 5518,
                   "initialValue": {
                     "hexValue": "30",
-                    "id": 5489,
+                    "id": 5517,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -23166,7 +23166,7 @@
                 },
                 {
                   "body": {
-                    "id": 5520,
+                    "id": 5548,
                     "nodeType": "Block",
                     "src": "657:135:22",
                     "statements": [
@@ -23176,7 +23176,7 @@
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           },
-                          "id": 5506,
+                          "id": 5534,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -23184,11 +23184,11 @@
                           "leftExpression": {
                             "arguments": [
                               {
-                                "id": 5503,
+                                "id": 5531,
                                 "name": "i",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 5492,
+                                "referencedDeclaration": 5520,
                                 "src": "684:1:22",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -23203,7 +23203,7 @@
                                   "typeString": "uint256"
                                 }
                               ],
-                              "id": 5502,
+                              "id": 5530,
                               "name": "ownerOf",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -23214,7 +23214,7 @@
                                 "typeString": "function (uint256) view returns (address)"
                               }
                             },
-                            "id": 5504,
+                            "id": 5532,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -23232,11 +23232,11 @@
                           "nodeType": "BinaryOperation",
                           "operator": "==",
                           "rightExpression": {
-                            "id": 5505,
+                            "id": 5533,
                             "name": "_owner",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5466,
+                            "referencedDeclaration": 5494,
                             "src": "690:6:22",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -23249,41 +23249,41 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 5519,
+                        "id": 5547,
                         "nodeType": "IfStatement",
                         "src": "672:109:22",
                         "trueBody": {
-                          "id": 5518,
+                          "id": 5546,
                           "nodeType": "Block",
                           "src": "698:83:22",
                           "statements": [
                             {
                               "expression": {
-                                "id": 5513,
+                                "id": 5541,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "leftHandSide": {
                                   "baseExpression": {
-                                    "id": 5507,
+                                    "id": 5535,
                                     "name": "ownedHeroes",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 5477,
+                                    "referencedDeclaration": 5505,
                                     "src": "717:11:22",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                                       "typeString": "struct IotaHeroFactory.Hero memory[] memory"
                                     }
                                   },
-                                  "id": 5509,
+                                  "id": 5537,
                                   "indexExpression": {
-                                    "id": 5508,
+                                    "id": 5536,
                                     "name": "c",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 5488,
+                                    "referencedDeclaration": 5516,
                                     "src": "729:1:22",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -23297,7 +23297,7 @@
                                   "nodeType": "IndexAccess",
                                   "src": "717:14:22",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                                    "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                                     "typeString": "struct IotaHeroFactory.Hero memory"
                                   }
                                 },
@@ -23305,24 +23305,24 @@
                                 "operator": "=",
                                 "rightHandSide": {
                                   "baseExpression": {
-                                    "id": 5510,
+                                    "id": 5538,
                                     "name": "heroes",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 3851,
+                                    "referencedDeclaration": 3879,
                                     "src": "734:6:22",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+                                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
                                       "typeString": "struct IotaHeroFactory.Hero storage ref[] storage ref"
                                     }
                                   },
-                                  "id": 5512,
+                                  "id": 5540,
                                   "indexExpression": {
-                                    "id": 5511,
+                                    "id": 5539,
                                     "name": "i",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 5492,
+                                    "referencedDeclaration": 5520,
                                     "src": "741:1:22",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_uint256",
@@ -23336,23 +23336,23 @@
                                   "nodeType": "IndexAccess",
                                   "src": "734:9:22",
                                   "typeDescriptions": {
-                                    "typeIdentifier": "t_struct$_Hero_$3847_storage",
+                                    "typeIdentifier": "t_struct$_Hero_$3875_storage",
                                     "typeString": "struct IotaHeroFactory.Hero storage ref"
                                   }
                                 },
                                 "src": "717:26:22",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                                  "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                                   "typeString": "struct IotaHeroFactory.Hero memory"
                                 }
                               },
-                              "id": 5514,
+                              "id": 5542,
                               "nodeType": "ExpressionStatement",
                               "src": "717:26:22"
                             },
                             {
                               "expression": {
-                                "id": 5516,
+                                "id": 5544,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -23362,11 +23362,11 @@
                                 "prefix": false,
                                 "src": "762:3:22",
                                 "subExpression": {
-                                  "id": 5515,
+                                  "id": 5543,
                                   "name": "c",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 5488,
+                                  "referencedDeclaration": 5516,
                                   "src": "762:1:22",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -23378,7 +23378,7 @@
                                   "typeString": "uint256"
                                 }
                               },
-                              "id": 5517,
+                              "id": 5545,
                               "nodeType": "ExpressionStatement",
                               "src": "762:3:22"
                             }
@@ -23392,17 +23392,17 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 5498,
+                    "id": 5526,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 5495,
+                      "id": 5523,
                       "name": "i",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5492,
+                      "referencedDeclaration": 5520,
                       "src": "633:1:22",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -23413,18 +23413,18 @@
                     "operator": "<",
                     "rightExpression": {
                       "expression": {
-                        "id": 5496,
+                        "id": 5524,
                         "name": "heroes",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3851,
+                        "referencedDeclaration": 3879,
                         "src": "637:6:22",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
                           "typeString": "struct IotaHeroFactory.Hero storage ref[] storage ref"
                         }
                       },
-                      "id": 5497,
+                      "id": 5525,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -23443,20 +23443,20 @@
                       "typeString": "bool"
                     }
                   },
-                  "id": 5521,
+                  "id": 5549,
                   "initializationExpression": {
                     "assignments": [
-                      5492
+                      5520
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 5492,
+                        "id": 5520,
                         "mutability": "mutable",
                         "name": "i",
                         "nameLocation": "626:1:22",
                         "nodeType": "VariableDeclaration",
-                        "scope": 5521,
+                        "scope": 5549,
                         "src": "618:9:22",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -23465,7 +23465,7 @@
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 5491,
+                          "id": 5519,
                           "name": "uint256",
                           "nodeType": "ElementaryTypeName",
                           "src": "618:7:22",
@@ -23477,10 +23477,10 @@
                         "visibility": "internal"
                       }
                     ],
-                    "id": 5494,
+                    "id": 5522,
                     "initialValue": {
                       "hexValue": "30",
-                      "id": 5493,
+                      "id": 5521,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -23499,7 +23499,7 @@
                   },
                   "loopExpression": {
                     "expression": {
-                      "id": 5500,
+                      "id": 5528,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -23509,11 +23509,11 @@
                       "prefix": false,
                       "src": "652:3:22",
                       "subExpression": {
-                        "id": 5499,
+                        "id": 5527,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5492,
+                        "referencedDeclaration": 5520,
                         "src": "652:1:22",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -23525,7 +23525,7 @@
                         "typeString": "uint256"
                       }
                     },
-                    "id": 5501,
+                    "id": 5529,
                     "nodeType": "ExpressionStatement",
                     "src": "652:3:22"
                   },
@@ -23534,26 +23534,26 @@
                 },
                 {
                   "expression": {
-                    "id": 5522,
+                    "id": 5550,
                     "name": "ownedHeroes",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 5477,
+                    "referencedDeclaration": 5505,
                     "src": "809:11:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                       "typeString": "struct IotaHeroFactory.Hero memory[] memory"
                     }
                   },
-                  "functionReturnParameters": 5472,
-                  "id": 5523,
+                  "functionReturnParameters": 5500,
+                  "id": 5551,
                   "nodeType": "Return",
                   "src": "802:18:22"
                 }
               ]
             },
             "functionSelector": "ddf368a2",
-            "id": 5525,
+            "id": 5553,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -23561,17 +23561,17 @@
             "nameLocation": "411:14:22",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5467,
+              "id": 5495,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5466,
+                  "id": 5494,
                   "mutability": "mutable",
                   "name": "_owner",
                   "nameLocation": "434:6:22",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5525,
+                  "scope": 5553,
                   "src": "426:14:22",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -23580,7 +23580,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5465,
+                    "id": 5493,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "426:7:22",
@@ -23596,47 +23596,47 @@
               "src": "425:16:22"
             },
             "returnParameters": {
-              "id": 5472,
+              "id": 5500,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5471,
+                  "id": 5499,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5525,
+                  "scope": 5553,
                   "src": "490:13:22",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_array$_t_struct$_Hero_$3847_memory_ptr_$dyn_memory_ptr",
+                    "typeIdentifier": "t_array$_t_struct$_Hero_$3875_memory_ptr_$dyn_memory_ptr",
                     "typeString": "struct IotaHeroFactory.Hero[]"
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 5469,
+                      "id": 5497,
                       "nodeType": "UserDefinedTypeName",
                       "pathNode": {
-                        "id": 5468,
+                        "id": 5496,
                         "name": "Hero",
                         "nodeType": "IdentifierPath",
-                        "referencedDeclaration": 3847,
+                        "referencedDeclaration": 3875,
                         "src": "490:4:22"
                       },
-                      "referencedDeclaration": 3847,
+                      "referencedDeclaration": 3875,
                       "src": "490:4:22",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                        "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                         "typeString": "struct IotaHeroFactory.Hero"
                       }
                     },
-                    "id": 5470,
+                    "id": 5498,
                     "nodeType": "ArrayTypeName",
                     "src": "490:6:22",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr",
+                      "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr",
                       "typeString": "struct IotaHeroFactory.Hero[]"
                     }
                   },
@@ -23645,14 +23645,14 @@
               ],
               "src": "489:15:22"
             },
-            "scope": 5526,
+            "scope": 5554,
             "src": "402:426:22",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 5527,
+        "scope": 5555,
         "src": "93:740:22",
         "usedErrors": []
       }
@@ -23665,7 +23665,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-20T19:26:27.022Z",
+  "updatedAt": "2022-01-20T21:31:54.147Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

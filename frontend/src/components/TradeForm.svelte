@@ -69,7 +69,8 @@
           </div>
           <div class="mt-[30px]">
             {#each chosenItemIds as itemId, i}
-              <div class=" m-[10px] flex justify-center"> <!--/*border-2 border-black*/-->
+              <div class=" m-[10px] flex justify-center">
+                <!--/*border-2 border-black*/-->
                 <img
                   on:click={() => pickItem(itemId)}
                   class="mr-2"
@@ -85,7 +86,7 @@
                   type="number"
                   max={inventory[itemId]}
                   class=" min-w-[20%] h-9 my-auto text-center text-xl"
-                  min=0
+                  min="0"
                   placeholder="Amount"
                   bind:value={chosenItemAmounts[i]}
                 />
@@ -100,30 +101,37 @@
           <div class="mx-auto">
             <strong>Select the items you are looking for</strong>
           </div>
-          <div class="mt-[10px]"> <!--/*border-2 border-black*/-->
-          <div><ItemSelector select={pickItemWanted} /></div>
-          {#each wantedItemIds as itemId, i}
-            <div class="m-[10px] flex justify-center">
-              <img
-                on:click={() => pickItemWanted(itemId)}
-                class="mr-2"
-                width="35px"
-                alt={"pic"}
-                src={_uri.replace("json/{id}.json", "image/" + itemId + ".png")}
-              />
-              <input type="hidden" value={itemId} />
-              <input
-                type="number"
-                class="min-w-[20%] h-9 my-auto text-center text-xl"
-                placeholder="Amount"
-                min=0
-                bind:value={wantedAmounts[i]}
-              />
-            </div>
-          {/each}
+          <div class="mt-[10px]">
+            <!--/*border-2 border-black*/-->
+            <div><ItemSelector select={pickItemWanted} /></div>
+            {#each wantedItemIds as itemId, i}
+              <div class="m-[10px] flex justify-center">
+                <img
+                  on:click={() => pickItemWanted(itemId)}
+                  class="mr-2"
+                  width="35px"
+                  alt={"pic"}
+                  src={_uri.replace(
+                    "json/{id}.json",
+                    "image/" + itemId + ".png"
+                  )}
+                />
+                <input type="hidden" value={itemId} />
+                <input
+                  type="number"
+                  class="min-w-[20%] h-9 my-auto text-center text-xl"
+                  placeholder="Amount"
+                  min="0"
+                  bind:value={wantedAmounts[i]}
+                />
+              </div>
+            {/each}
+          </div>
         </div>
+        <button class="btn-sm btn-orange" on:click={() => createTradeAux()}
+          >Create trade!</button
+        >
       </div>
-      <button on:click={() => createTradeAux()}>Create trade!</button>
     </section>
   {/await}
 {/await}

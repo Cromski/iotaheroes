@@ -5,6 +5,7 @@
     getHero,
     getCompletedAdventures,
     goAdventure,
+    isAdventuring,
   } from "../contractHelpers/heroFunctions";
   import HeroSummary from "../components/HeroSummary.svelte";
   import Adventure from "../components/Adventure.svelte";
@@ -13,7 +14,8 @@
 
   $: heroPromise = $hero ? getHeroAux() : "";
   $: eventPromise = $hero ? getCompletedAdventuresAux() : "";
-
+  $: heroAdventuring = $hero ? heroAdventuringAux() : "";
+  let heroAdventuringAux = async () => isAdventuring(id, $hero);
   let getHeroAux = async () => getHero(id, $hero);
   let getCompletedAdventuresAux = async () => getCompletedAdventures(id, $hero);
 
@@ -28,29 +30,35 @@
 </script>
 
 {#await heroPromise}
-  <h1>Getting hero....</h1>
+  <h2>Getting hero....</h2>
 {:then hero}
-  <HeroSummary
-    id={hero.id}
-    dna={hero.dna}
-    xp={hero.xp}
-    mental={hero.mental}
-    physical={hero.physical}
-    level={hero.level}
-    restingTill={hero.restingTill}
-    debug={hero.debug}
-  />
-  <button on:click={GoAdventure}>Go adventure!</button>
+  {#await heroAdventuring}
+    <h2>Checking adventure status</h2>
+  {:then heroStatus}
+    <HeroSummary
+      id={hero.id}
+      dna={hero.dna}
+      constitution={hero.constitution}
+      strength={hero.strength}
+      agility={hero.agility}
+      intelligence={hero.intelligence}
+      restingTill={hero.restingTill}
+      heroAdventuring={heroStatus}
+    />
+    <button class="btn btn-orange" on:click={GoAdventure}>Go adventure!</button>
+  {/await}
 {/await}
-<button on:click={() => goToOverview()}>Go back to hero overview</button>
+<button class="btn btn-orange" on:click={() => goToOverview()}
+  >Go back to hero overview</button
+>
 {#await eventPromise}
-  <h1>Gathering events for this hero...</h1>
+  <h2>Gathering events for this hero...</h2>
 {:then events}
   {#each events as event, i}
     <Adventure
-      name={event.returnValues.name}
-      diceRoll={event.returnValues.rand}
-      adventureType={event.returnValues.adventureType}
+      id={event.returnValues.adventureId}
+      heroId={event.returnValues.heroId}
+      player={event.returnValues.player}
     />
   {/each}
 {/await}

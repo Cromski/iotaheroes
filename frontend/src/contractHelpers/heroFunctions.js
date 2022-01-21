@@ -14,10 +14,16 @@ export const getCompletedAdventures = async (id, heroContract) =>  {
         toBlock: "latest",
         filter: { heroId: id },
       });
+      console.log(response)
       return response;
 }
 export const goAdventure = async (id, heroContract, selectedAccount) => {
     await heroContract.methods.goAdventure(id).send({ from: selectedAccount });
+}
+export const isAdventuring = async (id, heroContract) => {
+    console.log(heroContract)
+    const response = await heroContract.methods.isHeroAdventuring(id).call();
+    return response;
 }
 export const spawnHero = async (heroContract, selectedAccount) => {
     await heroContract.methods.spawnHero().send({ from: selectedAccount });

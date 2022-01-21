@@ -4,8 +4,10 @@
   import SignUp from "./pages/SignUp.svelte";
   import { isSignedUp } from "./contractHelpers/accountFunctions";
   import { hero } from "./contract_stores";
-  import AuthenticatedApp from "./AuthenticatedApp.svelte";
   import NavBar from "./components/NavBar.svelte";
+  import { Modals, closeModal } from "svelte-modals";
+  import { Router } from "svelte-router-spa";
+  import { routes } from "./routes";
 
   $: isSignedUpPromise = $hero ? isSignedUp($hero, $selectedAccount) : "";
 
@@ -20,15 +22,19 @@
   }
 </script>
 
-<main>
-  <NavBar />
-  <h1>IotaHeroes</h1>
+<main class="min-h-screen">
+  <Modals>
+    <div slot="backdrop" class="backdrop" on:click={closeModal} />
+  </Modals>
   {#if $connected}
     {#await isSignedUpPromise}
       <p>Checking if you are signed in..</p>
     {:then isSignedUp}
       {#if isSignedUp}
-        <AuthenticatedApp />
+        <NavBar />
+        <div id="container">
+          <Router {routes} />
+        </div>
       {:else}
         <SignUp fnCallback={signInCallback} />
       {/if}
@@ -43,6 +49,24 @@
   @tailwind components;
   @tailwind utilities;
 
+  @layer base {
+    h1 {
+      @apply text-2xl;
+    }
+    h2 {
+      @apply text-xl;
+    }
+    h3 {
+      @apply text-lg;
+    }
+    a {
+      @apply text-blue-600 underline;
+    }
+  }
+
+  #container {
+    padding-top: 100px;
+  }
   main {
     background: lightgoldenrodyellow;
     text-align: center;
@@ -54,7 +78,33 @@
     font-size: 4em;
     font-weight: 100;
   }
-
+  .backdrop {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .btn {
+    @apply font-bold py-2 px-4 rounded;
+  }
+  .btn-sm {
+    @apply py-1 px-2 rounded;
+  }
+  .btn-blue {
+    @apply bg-blue-500 text-white;
+  }
+  .btn-orange {
+    @apply bg-orange-400 text-white;
+  }
+  .btn-blue:hover {
+    @apply bg-blue-700;
+  }
+  .btn-orange:hover {
+    @apply bg-orange-600;
+  }
   @media (min-width: 640px) {
     main {
       max-width: none;

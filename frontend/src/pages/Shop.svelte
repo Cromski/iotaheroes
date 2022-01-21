@@ -16,7 +16,7 @@
   }
 </script>
 
-<h1>The shop</h1>
+<h2>The shop</h2>
 
 {#await tokenUri}
   <p>Getting token uri...</p>

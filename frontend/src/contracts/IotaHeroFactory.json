@@ -18920,7 +18920,7 @@
         3584
       ],
       "IotaHeroFactory": [
-        4036
+        4064
       ],
       "Ownable": [
         104
@@ -18932,12 +18932,12 @@
         2926
       ]
     },
-    "id": 4037,
+    "id": 4065,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3803,
+        "id": 3831,
         "literals": [
           "solidity",
           "^",
@@ -18950,10 +18950,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
         "file": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
-        "id": 3804,
+        "id": 3832,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4037,
+        "scope": 4065,
         "sourceUnit": 2244,
         "src": "60:57:18",
         "symbolAliases": [],
@@ -18962,10 +18962,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
         "file": "@openzeppelin/contracts/access/Ownable.sol",
-        "id": 3805,
+        "id": 3833,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4037,
+        "scope": 4065,
         "sourceUnit": 105,
         "src": "119:52:18",
         "symbolAliases": [],
@@ -18974,10 +18974,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/utils/math/SafeMath.sol",
         "file": "@openzeppelin/contracts/utils/math/SafeMath.sol",
-        "id": 3806,
+        "id": 3834,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4037,
+        "scope": 4065,
         "sourceUnit": 3275,
         "src": "173:57:18",
         "symbolAliases": [],
@@ -18986,10 +18986,10 @@
       {
         "absolutePath": "project:/contracts/IotaHeroAccount.sol",
         "file": "./IotaHeroAccount.sol",
-        "id": 3807,
+        "id": 3835,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4037,
+        "scope": 4065,
         "sourceUnit": 3585,
         "src": "232:31:18",
         "symbolAliases": [],
@@ -19000,37 +19000,37 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 3808,
+              "id": 3836,
               "name": "ERC721",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 2243,
               "src": "295:6:18"
             },
-            "id": 3809,
+            "id": 3837,
             "nodeType": "InheritanceSpecifier",
             "src": "295:6:18"
           },
           {
             "baseName": {
-              "id": 3810,
+              "id": 3838,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 104,
               "src": "303:7:18"
             },
-            "id": 3811,
+            "id": 3839,
             "nodeType": "InheritanceSpecifier",
             "src": "303:7:18"
           },
           {
             "baseName": {
-              "id": 3812,
+              "id": 3840,
               "name": "IotaHeroAccount",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 3584,
               "src": "312:15:18"
             },
-            "id": 3813,
+            "id": 3841,
             "nodeType": "InheritanceSpecifier",
             "src": "312:15:18"
           }
@@ -19039,9 +19039,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 4036,
+        "id": 4064,
         "linearizedBaseContracts": [
-          4036,
+          4064,
           3584,
           104,
           2243,
@@ -19057,12 +19057,12 @@
         "nodes": [
           {
             "body": {
-              "id": 3820,
+              "id": 3848,
               "nodeType": "Block",
               "src": "374:2:18",
               "statements": []
             },
-            "id": 3821,
+            "id": 3849,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
@@ -19070,7 +19070,7 @@
                 "arguments": [
                   {
                     "hexValue": "496f74614865726f",
-                    "id": 3816,
+                    "id": 3844,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -19086,7 +19086,7 @@
                   },
                   {
                     "hexValue": "4948",
-                    "id": 3817,
+                    "id": 3845,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -19101,10 +19101,10 @@
                     "value": "IH"
                   }
                 ],
-                "id": 3818,
+                "id": 3846,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 3815,
+                  "id": 3843,
                   "name": "ERC721",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 2243,
@@ -19118,27 +19118,27 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3814,
+              "id": 3842,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "346:2:18"
             },
             "returnParameters": {
-              "id": 3819,
+              "id": 3847,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "374:0:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "335:41:18",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 3824,
+            "id": 3852,
             "libraryName": {
-              "id": 3822,
+              "id": 3850,
               "name": "SafeMath",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 3274,
@@ -19147,7 +19147,7 @@
             "nodeType": "UsingForDirective",
             "src": "384:27:18",
             "typeName": {
-              "id": 3823,
+              "id": 3851,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "403:7:18",
@@ -19159,12 +19159,12 @@
           },
           {
             "constant": false,
-            "id": 3827,
+            "id": 3855,
             "mutability": "mutable",
             "name": "heroIdCounter",
             "nameLocation": "427:13:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4036,
+            "scope": 4064,
             "src": "419:25:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -19173,7 +19173,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3825,
+              "id": 3853,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "419:7:18",
@@ -19184,7 +19184,7 @@
             },
             "value": {
               "hexValue": "30",
-              "id": 3826,
+              "id": 3854,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -19202,12 +19202,12 @@
           },
           {
             "constant": false,
-            "id": 3830,
+            "id": 3858,
             "mutability": "mutable",
             "name": "adventureCoolDown",
             "nameLocation": "459:17:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4036,
+            "scope": 4064,
             "src": "451:38:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -19216,7 +19216,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3828,
+              "id": 3856,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "451:7:18",
@@ -19227,7 +19227,7 @@
             },
             "value": {
               "hexValue": "3330",
-              "id": 3829,
+              "id": 3857,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -19246,16 +19246,16 @@
           },
           {
             "canonicalName": "IotaHeroFactory.Hero",
-            "id": 3847,
+            "id": 3875,
             "members": [
               {
                 "constant": false,
-                "id": 3832,
+                "id": 3860,
                 "mutability": "mutable",
                 "name": "id",
                 "nameLocation": "527:2:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "519:10:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19264,7 +19264,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3831,
+                  "id": 3859,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "519:7:18",
@@ -19277,12 +19277,12 @@
               },
               {
                 "constant": false,
-                "id": 3834,
+                "id": 3862,
                 "mutability": "mutable",
                 "name": "dna",
                 "nameLocation": "548:3:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "540:11:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19291,7 +19291,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3833,
+                  "id": 3861,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "540:7:18",
@@ -19304,12 +19304,12 @@
               },
               {
                 "constant": false,
-                "id": 3836,
+                "id": 3864,
                 "mutability": "mutable",
                 "name": "constitution",
                 "nameLocation": "570:12:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "562:20:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19318,7 +19318,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3835,
+                  "id": 3863,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "562:7:18",
@@ -19331,12 +19331,12 @@
               },
               {
                 "constant": false,
-                "id": 3838,
+                "id": 3866,
                 "mutability": "mutable",
                 "name": "strength",
                 "nameLocation": "601:8:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "593:16:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19345,7 +19345,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3837,
+                  "id": 3865,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "593:7:18",
@@ -19358,12 +19358,12 @@
               },
               {
                 "constant": false,
-                "id": 3840,
+                "id": 3868,
                 "mutability": "mutable",
                 "name": "agility",
                 "nameLocation": "628:7:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "620:15:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19372,7 +19372,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3839,
+                  "id": 3867,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "620:7:18",
@@ -19385,12 +19385,12 @@
               },
               {
                 "constant": false,
-                "id": 3842,
+                "id": 3870,
                 "mutability": "mutable",
                 "name": "intelligence",
                 "nameLocation": "654:12:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "646:20:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19399,7 +19399,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3841,
+                  "id": 3869,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "646:7:18",
@@ -19412,12 +19412,12 @@
               },
               {
                 "constant": false,
-                "id": 3844,
+                "id": 3872,
                 "mutability": "mutable",
                 "name": "restingTill",
                 "nameLocation": "685:11:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "677:19:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19426,7 +19426,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3843,
+                  "id": 3871,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "677:7:18",
@@ -19439,12 +19439,12 @@
               },
               {
                 "constant": false,
-                "id": 3846,
+                "id": 3874,
                 "mutability": "mutable",
                 "name": "name",
                 "nameLocation": "714:4:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "707:11:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -19453,7 +19453,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 3845,
+                  "id": 3873,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "707:6:18",
@@ -19468,49 +19468,49 @@
             "name": "Hero",
             "nameLocation": "503:4:18",
             "nodeType": "StructDefinition",
-            "scope": 4036,
+            "scope": 4064,
             "src": "496:230:18",
             "visibility": "public"
           },
           {
             "constant": false,
             "functionSelector": "a8d4a03b",
-            "id": 3851,
+            "id": 3879,
             "mutability": "mutable",
             "name": "heroes",
             "nameLocation": "748:6:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4036,
+            "scope": 4064,
             "src": "734:20:18",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
               "typeString": "struct IotaHeroFactory.Hero[]"
             },
             "typeName": {
               "baseType": {
-                "id": 3849,
+                "id": 3877,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 3848,
+                  "id": 3876,
                   "name": "Hero",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3847,
+                  "referencedDeclaration": 3875,
                   "src": "734:4:18"
                 },
-                "referencedDeclaration": 3847,
+                "referencedDeclaration": 3875,
                 "src": "734:4:18",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                  "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                   "typeString": "struct IotaHeroFactory.Hero"
                 }
               },
-              "id": 3850,
+              "id": 3878,
               "nodeType": "ArrayTypeName",
               "src": "734:6:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr",
                 "typeString": "struct IotaHeroFactory.Hero[]"
               }
             },
@@ -19518,7 +19518,7 @@
           },
           {
             "body": {
-              "id": 3866,
+              "id": 3894,
               "nodeType": "Block",
               "src": "801:77:18",
               "statements": [
@@ -19530,14 +19530,14 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 3862,
+                        "id": 3890,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "expression": {
-                            "id": 3856,
+                            "id": 3884,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -19548,7 +19548,7 @@
                               "typeString": "msg"
                             }
                           },
-                          "id": 3857,
+                          "id": 3885,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -19566,11 +19566,11 @@
                         "rightExpression": {
                           "arguments": [
                             {
-                              "id": 3860,
+                              "id": 3888,
                               "name": "_heroId",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3853,
+                              "referencedDeclaration": 3881,
                               "src": "849:7:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -19586,7 +19586,7 @@
                               }
                             ],
                             "expression": {
-                              "id": 3858,
+                              "id": 3886,
                               "name": "ERC721",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -19597,7 +19597,7 @@
                                 "typeString": "type(contract ERC721)"
                               }
                             },
-                            "id": 3859,
+                            "id": 3887,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -19611,7 +19611,7 @@
                               "typeString": "function (uint256) view returns (address)"
                             }
                           },
-                          "id": 3861,
+                          "id": 3889,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -19640,7 +19640,7 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3855,
+                      "id": 3883,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -19654,7 +19654,7 @@
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3863,
+                    "id": 3891,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -19669,33 +19669,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3864,
+                  "id": 3892,
                   "nodeType": "ExpressionStatement",
                   "src": "812:46:18"
                 },
                 {
-                  "id": 3865,
+                  "id": 3893,
                   "nodeType": "PlaceholderStatement",
                   "src": "869:1:18"
                 }
               ]
             },
-            "id": 3867,
+            "id": 3895,
             "name": "onlyOwnerOf",
             "nameLocation": "772:11:18",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 3854,
+              "id": 3882,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3853,
+                  "id": 3881,
                   "mutability": "mutable",
                   "name": "_heroId",
                   "nameLocation": "792:7:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3867,
+                  "scope": 3895,
                   "src": "784:15:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -19704,7 +19704,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3852,
+                    "id": 3880,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "784:7:18",
@@ -19724,23 +19724,23 @@
           },
           {
             "body": {
-              "id": 3889,
+              "id": 3917,
               "nodeType": "Block",
               "src": "930:223:18",
               "statements": [
                 {
                   "assignments": [
-                    3872
+                    3900
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3872,
+                      "id": 3900,
                       "mutability": "mutable",
                       "name": "stringLength",
                       "nameLocation": "949:12:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3889,
+                      "scope": 3917,
                       "src": "941:20:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -19749,7 +19749,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 3871,
+                        "id": 3899,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "941:7:18",
@@ -19761,15 +19761,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3876,
+                  "id": 3904,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 3874,
+                        "id": 3902,
                         "name": "_name",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3869,
+                        "referencedDeclaration": 3897,
                         "src": "980:5:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -19784,7 +19784,7 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 3873,
+                      "id": 3901,
                       "name": "utfStringLength",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -19795,7 +19795,7 @@
                         "typeString": "function (string memory) pure returns (uint256)"
                       }
                     },
-                    "id": 3875,
+                    "id": 3903,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -19821,7 +19821,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 3884,
+                        "id": 3912,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -19831,17 +19831,17 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 3880,
+                          "id": 3908,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
-                            "id": 3878,
+                            "id": 3906,
                             "name": "stringLength",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3872,
+                            "referencedDeclaration": 3900,
                             "src": "1019:12:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -19852,7 +19852,7 @@
                           "operator": "<",
                           "rightExpression": {
                             "hexValue": "3133",
-                            "id": 3879,
+                            "id": 3907,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -19879,17 +19879,17 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 3883,
+                          "id": 3911,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
-                            "id": 3881,
+                            "id": 3909,
                             "name": "stringLength",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3872,
+                            "referencedDeclaration": 3900,
                             "src": "1040:12:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -19900,7 +19900,7 @@
                           "operator": ">",
                           "rightExpression": {
                             "hexValue": "32",
-                            "id": 3882,
+                            "id": 3910,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -19928,7 +19928,7 @@
                       },
                       {
                         "hexValue": "546865206865726f206e616d65206d757374206265206265747765656e203320616e642031322063686172616374657273",
-                        "id": 3885,
+                        "id": 3913,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -19954,7 +19954,7 @@
                           "typeString": "literal_string \"The hero name must be between 3 and 12 characters\""
                         }
                       ],
-                      "id": 3877,
+                      "id": 3905,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -19968,7 +19968,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 3886,
+                    "id": 3914,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -19983,33 +19983,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3887,
+                  "id": 3915,
                   "nodeType": "ExpressionStatement",
                   "src": "997:136:18"
                 },
                 {
-                  "id": 3888,
+                  "id": 3916,
                   "nodeType": "PlaceholderStatement",
                   "src": "1144:1:18"
                 }
               ]
             },
-            "id": 3890,
+            "id": 3918,
             "name": "nameValidLength",
             "nameLocation": "893:15:18",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 3870,
+              "id": 3898,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3869,
+                  "id": 3897,
                   "mutability": "mutable",
                   "name": "_name",
                   "nameLocation": "923:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3890,
+                  "scope": 3918,
                   "src": "909:19:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -20018,7 +20018,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 3868,
+                    "id": 3896,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "909:6:18",
@@ -20038,71 +20038,71 @@
           },
           {
             "body": {
-              "id": 3918,
+              "id": 3946,
               "nodeType": "Block",
               "src": "1322:82:18",
               "statements": [
                 {
                   "assignments": [
-                    3907
+                    3935
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3907,
+                      "id": 3935,
                       "mutability": "mutable",
                       "name": "hero",
                       "nameLocation": "1346:4:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3918,
+                      "scope": 3946,
                       "src": "1333:17:18",
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                        "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                         "typeString": "struct IotaHeroFactory.Hero"
                       },
                       "typeName": {
-                        "id": 3906,
+                        "id": 3934,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 3905,
+                          "id": 3933,
                           "name": "Hero",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 3847,
+                          "referencedDeclaration": 3875,
                           "src": "1333:4:18"
                         },
-                        "referencedDeclaration": 3847,
+                        "referencedDeclaration": 3875,
                         "src": "1333:4:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                          "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                           "typeString": "struct IotaHeroFactory.Hero"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3911,
+                  "id": 3939,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 3908,
+                      "id": 3936,
                       "name": "heroes",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3851,
+                      "referencedDeclaration": 3879,
                       "src": "1353:6:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
                         "typeString": "struct IotaHeroFactory.Hero storage ref[] storage ref"
                       }
                     },
-                    "id": 3910,
+                    "id": 3938,
                     "indexExpression": {
-                      "id": 3909,
+                      "id": 3937,
                       "name": "_heroId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3892,
+                      "referencedDeclaration": 3920,
                       "src": "1360:7:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -20116,7 +20116,7 @@
                     "nodeType": "IndexAccess",
                     "src": "1353:15:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Hero_$3847_storage",
+                      "typeIdentifier": "t_struct$_Hero_$3875_storage",
                       "typeString": "struct IotaHeroFactory.Hero storage ref"
                     }
                   },
@@ -20125,32 +20125,32 @@
                 },
                 {
                   "expression": {
-                    "id": 3916,
+                    "id": 3944,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "expression": {
-                        "id": 3912,
+                        "id": 3940,
                         "name": "hero",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3907,
+                        "referencedDeclaration": 3935,
                         "src": "1379:4:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                          "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                           "typeString": "struct IotaHeroFactory.Hero storage pointer"
                         }
                       },
-                      "id": 3914,
+                      "id": 3942,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "name",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3846,
+                      "referencedDeclaration": 3874,
                       "src": "1379:9:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -20160,11 +20160,11 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 3915,
+                      "id": 3943,
                       "name": "_name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3894,
+                      "referencedDeclaration": 3922,
                       "src": "1391:5:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -20177,22 +20177,22 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 3917,
+                  "id": 3945,
                   "nodeType": "ExpressionStatement",
                   "src": "1379:17:18"
                 }
               ]
             },
             "functionSelector": "48646f7b",
-            "id": 3919,
+            "id": 3947,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 3897,
+                "id": 3925,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 3896,
+                  "id": 3924,
                   "name": "hasAccount",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 3367,
@@ -20204,11 +20204,11 @@
               {
                 "arguments": [
                   {
-                    "id": 3899,
+                    "id": 3927,
                     "name": "_heroId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3892,
+                    "referencedDeclaration": 3920,
                     "src": "1276:7:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -20216,13 +20216,13 @@
                     }
                   }
                 ],
-                "id": 3900,
+                "id": 3928,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 3898,
+                  "id": 3926,
                   "name": "onlyOwnerOf",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3867,
+                  "referencedDeclaration": 3895,
                   "src": "1264:11:18"
                 },
                 "nodeType": "ModifierInvocation",
@@ -20231,11 +20231,11 @@
               {
                 "arguments": [
                   {
-                    "id": 3902,
+                    "id": 3930,
                     "name": "_name",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3894,
+                    "referencedDeclaration": 3922,
                     "src": "1310:5:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -20243,13 +20243,13 @@
                     }
                   }
                 ],
-                "id": 3903,
+                "id": 3931,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 3901,
+                  "id": 3929,
                   "name": "nameValidLength",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3890,
+                  "referencedDeclaration": 3918,
                   "src": "1294:15:18"
                 },
                 "nodeType": "ModifierInvocation",
@@ -20260,17 +20260,17 @@
             "nameLocation": "1170:10:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3895,
+              "id": 3923,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3892,
+                  "id": 3920,
                   "mutability": "mutable",
                   "name": "_heroId",
                   "nameLocation": "1189:7:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3919,
+                  "scope": 3947,
                   "src": "1181:15:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -20279,7 +20279,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3891,
+                    "id": 3919,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1181:7:18",
@@ -20292,12 +20292,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 3894,
+                  "id": 3922,
                   "mutability": "mutable",
                   "name": "_name",
                   "nameLocation": "1212:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3919,
+                  "scope": 3947,
                   "src": "1198:19:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -20306,7 +20306,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 3893,
+                    "id": 3921,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1198:6:18",
@@ -20321,12 +20321,12 @@
               "src": "1180:38:18"
             },
             "returnParameters": {
-              "id": 3904,
+              "id": 3932,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1322:0:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "1161:243:18",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -20334,7 +20334,7 @@
           },
           {
             "body": {
-              "id": 3934,
+              "id": 3962,
               "nodeType": "Block",
               "src": "1480:63:18",
               "statements": [
@@ -20346,32 +20346,32 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 3931,
+                        "id": 3959,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "expression": {
-                            "id": 3927,
+                            "id": 3955,
                             "name": "hero",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3922,
+                            "referencedDeclaration": 3950,
                             "src": "1499:4:18",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                              "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                               "typeString": "struct IotaHeroFactory.Hero memory"
                             }
                           },
-                          "id": 3928,
+                          "id": 3956,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "restingTill",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3844,
+                          "referencedDeclaration": 3872,
                           "src": "1499:16:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -20382,7 +20382,7 @@
                         "operator": "<=",
                         "rightExpression": {
                           "expression": {
-                            "id": 3929,
+                            "id": 3957,
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -20393,7 +20393,7 @@
                               "typeString": "block"
                             }
                           },
-                          "id": 3930,
+                          "id": 3958,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -20413,7 +20413,7 @@
                         }
                       }
                     ],
-                    "id": 3932,
+                    "id": 3960,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -20426,14 +20426,14 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 3926,
-                  "id": 3933,
+                  "functionReturnParameters": 3954,
+                  "id": 3961,
                   "nodeType": "Return",
                   "src": "1491:44:18"
                 }
               ]
             },
-            "id": 3935,
+            "id": 3963,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -20441,38 +20441,38 @@
             "nameLocation": "1421:11:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3923,
+              "id": 3951,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3922,
+                  "id": 3950,
                   "mutability": "mutable",
                   "name": "hero",
                   "nameLocation": "1445:4:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3935,
+                  "scope": 3963,
                   "src": "1433:16:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                    "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                     "typeString": "struct IotaHeroFactory.Hero"
                   },
                   "typeName": {
-                    "id": 3921,
+                    "id": 3949,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 3920,
+                      "id": 3948,
                       "name": "Hero",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 3847,
+                      "referencedDeclaration": 3875,
                       "src": "1433:4:18"
                     },
-                    "referencedDeclaration": 3847,
+                    "referencedDeclaration": 3875,
                     "src": "1433:4:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                      "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                       "typeString": "struct IotaHeroFactory.Hero"
                     }
                   },
@@ -20482,17 +20482,17 @@
               "src": "1432:18:18"
             },
             "returnParameters": {
-              "id": 3926,
+              "id": 3954,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3925,
+                  "id": 3953,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3935,
+                  "scope": 3963,
                   "src": "1474:4:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -20501,7 +20501,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3924,
+                    "id": 3952,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1474:4:18",
@@ -20515,7 +20515,7 @@
               ],
               "src": "1473:6:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "1412:131:18",
             "stateMutability": "view",
             "virtual": false,
@@ -20523,23 +20523,23 @@
           },
           {
             "body": {
-              "id": 3963,
+              "id": 3991,
               "nodeType": "Block",
               "src": "1621:154:18",
               "statements": [
                 {
                   "assignments": [
-                    3943
+                    3971
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3943,
+                      "id": 3971,
                       "mutability": "mutable",
                       "name": "psrand",
                       "nameLocation": "1640:6:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3963,
+                      "scope": 3991,
                       "src": "1632:14:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -20548,7 +20548,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 3942,
+                        "id": 3970,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1632:7:18",
@@ -20560,7 +20560,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3956,
+                  "id": 3984,
                   "initialValue": {
                     "arguments": [
                       {
@@ -20572,14 +20572,14 @@
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
                                 },
-                                "id": 3952,
+                                "id": 3980,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "leftExpression": {
                                   "expression": {
-                                    "id": 3949,
+                                    "id": 3977,
                                     "name": "block",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
@@ -20590,7 +20590,7 @@
                                       "typeString": "block"
                                     }
                                   },
-                                  "id": 3950,
+                                  "id": 3978,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
@@ -20606,11 +20606,11 @@
                                 "nodeType": "BinaryOperation",
                                 "operator": "+",
                                 "rightExpression": {
-                                  "id": 3951,
+                                  "id": 3979,
                                   "name": "nonce",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 3937,
+                                  "referencedDeclaration": 3965,
                                   "src": "1716:5:18",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -20632,7 +20632,7 @@
                                 }
                               ],
                               "expression": {
-                                "id": 3947,
+                                "id": 3975,
                                 "name": "abi",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -20643,7 +20643,7 @@
                                   "typeString": "abi"
                                 }
                               },
-                              "id": 3948,
+                              "id": 3976,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -20656,7 +20656,7 @@
                                 "typeString": "function () pure returns (bytes memory)"
                               }
                             },
-                            "id": 3953,
+                            "id": 3981,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -20679,7 +20679,7 @@
                               "typeString": "bytes memory"
                             }
                           ],
-                          "id": 3946,
+                          "id": 3974,
                           "name": "keccak256",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -20690,7 +20690,7 @@
                             "typeString": "function (bytes memory) pure returns (bytes32)"
                           }
                         },
-                        "id": 3954,
+                        "id": 3982,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -20713,7 +20713,7 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 3945,
+                      "id": 3973,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -20725,14 +20725,14 @@
                         "typeString": "type(uint256)"
                       },
                       "typeName": {
-                        "id": 3944,
+                        "id": 3972,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1649:7:18",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 3955,
+                    "id": 3983,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -20756,17 +20756,17 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 3961,
+                    "id": 3989,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 3957,
+                      "id": 3985,
                       "name": "psrand",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3943,
+                      "referencedDeclaration": 3971,
                       "src": "1752:6:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -20780,14 +20780,14 @@
                         "typeIdentifier": "t_rational_1000000000000_by_1",
                         "typeString": "int_const 1000000000000"
                       },
-                      "id": 3960,
+                      "id": 3988,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "leftExpression": {
                         "hexValue": "3130",
-                        "id": 3958,
+                        "id": 3986,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -20805,7 +20805,7 @@
                       "operator": "**",
                       "rightExpression": {
                         "hexValue": "3132",
-                        "id": 3959,
+                        "id": 3987,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -20831,14 +20831,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 3941,
-                  "id": 3962,
+                  "functionReturnParameters": 3969,
+                  "id": 3990,
                   "nodeType": "Return",
                   "src": "1745:22:18"
                 }
               ]
             },
-            "id": 3964,
+            "id": 3992,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -20846,17 +20846,17 @@
             "nameLocation": "1560:13:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3938,
+              "id": 3966,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3937,
+                  "id": 3965,
                   "mutability": "mutable",
                   "name": "nonce",
                   "nameLocation": "1582:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3964,
+                  "scope": 3992,
                   "src": "1574:13:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -20865,7 +20865,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3936,
+                    "id": 3964,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1574:7:18",
@@ -20880,17 +20880,17 @@
               "src": "1573:15:18"
             },
             "returnParameters": {
-              "id": 3941,
+              "id": 3969,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3940,
+                  "id": 3968,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3964,
+                  "scope": 3992,
                   "src": "1612:7:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -20899,7 +20899,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3939,
+                    "id": 3967,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1612:7:18",
@@ -20913,7 +20913,7 @@
               ],
               "src": "1611:9:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "1551:224:18",
             "stateMutability": "view",
             "virtual": false,
@@ -20921,23 +20921,23 @@
           },
           {
             "anonymous": false,
-            "id": 3972,
+            "id": 4000,
             "name": "HeroMinted",
             "nameLocation": "1789:10:18",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 3971,
+              "id": 3999,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3966,
+                  "id": 3994,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "owner",
                   "nameLocation": "1816:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3972,
+                  "scope": 4000,
                   "src": "1800:21:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -20946,7 +20946,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3965,
+                    "id": 3993,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1800:7:18",
@@ -20960,13 +20960,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3968,
+                  "id": 3996,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "1831:2:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3972,
+                  "scope": 4000,
                   "src": "1823:10:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -20975,7 +20975,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3967,
+                    "id": 3995,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1823:7:18",
@@ -20988,13 +20988,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3970,
+                  "id": 3998,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "dna",
                   "nameLocation": "1843:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3972,
+                  "scope": 4000,
                   "src": "1835:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -21003,7 +21003,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3969,
+                    "id": 3997,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1835:7:18",
@@ -21021,59 +21021,59 @@
           },
           {
             "body": {
-              "id": 4018,
+              "id": 4046,
               "nodeType": "Block",
               "src": "1898:396:18",
               "statements": [
                 {
                   "assignments": [
-                    3979
+                    4007
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3979,
+                      "id": 4007,
                       "mutability": "mutable",
                       "name": "hero",
                       "nameLocation": "1921:4:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4018,
+                      "scope": 4046,
                       "src": "1909:16:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                        "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                         "typeString": "struct IotaHeroFactory.Hero"
                       },
                       "typeName": {
-                        "id": 3978,
+                        "id": 4006,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 3977,
+                          "id": 4005,
                           "name": "Hero",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 3847,
+                          "referencedDeclaration": 3875,
                           "src": "1909:4:18"
                         },
-                        "referencedDeclaration": 3847,
+                        "referencedDeclaration": 3875,
                         "src": "1909:4:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                          "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                           "typeString": "struct IotaHeroFactory.Hero"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3991,
+                  "id": 4019,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 3981,
+                        "id": 4009,
                         "name": "heroIdCounter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3827,
+                        "referencedDeclaration": 3855,
                         "src": "1947:13:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -21081,11 +21081,11 @@
                         }
                       },
                       {
-                        "id": 3982,
+                        "id": 4010,
                         "name": "_dna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3974,
+                        "referencedDeclaration": 4002,
                         "src": "1975:4:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -21094,7 +21094,7 @@
                       },
                       {
                         "hexValue": "3230",
-                        "id": 3983,
+                        "id": 4011,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -21110,7 +21110,7 @@
                       },
                       {
                         "hexValue": "3130",
-                        "id": 3984,
+                        "id": 4012,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -21126,7 +21126,7 @@
                       },
                       {
                         "hexValue": "3130",
-                        "id": 3985,
+                        "id": 4013,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -21142,7 +21142,7 @@
                       },
                       {
                         "hexValue": "3130",
-                        "id": 3986,
+                        "id": 4014,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -21158,7 +21158,7 @@
                       },
                       {
                         "expression": {
-                          "id": 3987,
+                          "id": 4015,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -21169,7 +21169,7 @@
                             "typeString": "block"
                           }
                         },
-                        "id": 3988,
+                        "id": 4016,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -21184,7 +21184,7 @@
                       },
                       {
                         "hexValue": "",
-                        "id": 3989,
+                        "id": 4017,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -21234,18 +21234,18 @@
                           "typeString": "literal_string \"\""
                         }
                       ],
-                      "id": 3980,
+                      "id": 4008,
                       "name": "Hero",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3847,
+                      "referencedDeclaration": 3875,
                       "src": "1928:4:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Hero_$3847_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Hero_$3875_storage_ptr_$",
                         "typeString": "type(struct IotaHeroFactory.Hero storage pointer)"
                       }
                     },
-                    "id": 3990,
+                    "id": 4018,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -21256,7 +21256,7 @@
                     "src": "1928:177:18",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                      "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                       "typeString": "struct IotaHeroFactory.Hero memory"
                     }
                   },
@@ -21267,14 +21267,14 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 3995,
+                        "id": 4023,
                         "name": "hero",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3979,
+                        "referencedDeclaration": 4007,
                         "src": "2128:4:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                          "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                           "typeString": "struct IotaHeroFactory.Hero memory"
                         }
                       }
@@ -21282,23 +21282,23 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                          "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                           "typeString": "struct IotaHeroFactory.Hero memory"
                         }
                       ],
                       "expression": {
-                        "id": 3992,
+                        "id": 4020,
                         "name": "heroes",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3851,
+                        "referencedDeclaration": 3879,
                         "src": "2116:6:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
                           "typeString": "struct IotaHeroFactory.Hero storage ref[] storage ref"
                         }
                       },
-                      "id": 3994,
+                      "id": 4022,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -21307,11 +21307,11 @@
                       "nodeType": "MemberAccess",
                       "src": "2116:11:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr_$_t_struct$_Hero_$3847_storage_$returns$__$bound_to$_t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr_$_t_struct$_Hero_$3875_storage_$returns$__$bound_to$_t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr_$",
                         "typeString": "function (struct IotaHeroFactory.Hero storage ref[] storage pointer,struct IotaHeroFactory.Hero storage ref)"
                       }
                     },
-                    "id": 3996,
+                    "id": 4024,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -21326,7 +21326,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3997,
+                  "id": 4025,
                   "nodeType": "ExpressionStatement",
                   "src": "2116:17:18"
                 },
@@ -21335,7 +21335,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 3999,
+                          "id": 4027,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -21346,7 +21346,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 4000,
+                        "id": 4028,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -21360,11 +21360,11 @@
                         }
                       },
                       {
-                        "id": 4001,
+                        "id": 4029,
                         "name": "heroIdCounter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3827,
+                        "referencedDeclaration": 3855,
                         "src": "2166:13:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -21383,7 +21383,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3998,
+                      "id": 4026,
                       "name": "_safeMint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -21397,7 +21397,7 @@
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 4002,
+                    "id": 4030,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -21412,7 +21412,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4003,
+                  "id": 4031,
                   "nodeType": "ExpressionStatement",
                   "src": "2144:36:18"
                 },
@@ -21421,7 +21421,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 4005,
+                          "id": 4033,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -21432,7 +21432,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 4006,
+                        "id": 4034,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -21446,11 +21446,11 @@
                         }
                       },
                       {
-                        "id": 4007,
+                        "id": 4035,
                         "name": "heroIdCounter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3827,
+                        "referencedDeclaration": 3855,
                         "src": "2219:13:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -21458,11 +21458,11 @@
                         }
                       },
                       {
-                        "id": 4008,
+                        "id": 4036,
                         "name": "_dna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3974,
+                        "referencedDeclaration": 4002,
                         "src": "2234:4:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -21485,18 +21485,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4004,
+                      "id": 4032,
                       "name": "HeroMinted",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3972,
+                      "referencedDeclaration": 4000,
                       "src": "2196:10:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256,uint256)"
                       }
                     },
-                    "id": 4009,
+                    "id": 4037,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -21511,23 +21511,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4010,
+                  "id": 4038,
                   "nodeType": "EmitStatement",
                   "src": "2191:48:18"
                 },
                 {
                   "expression": {
-                    "id": 4016,
+                    "id": 4044,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 4011,
+                      "id": 4039,
                       "name": "heroIdCounter",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3827,
+                      "referencedDeclaration": 3855,
                       "src": "2250:13:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -21540,7 +21540,7 @@
                       "arguments": [
                         {
                           "hexValue": "31",
-                          "id": 4014,
+                          "id": 4042,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -21563,18 +21563,18 @@
                           }
                         ],
                         "expression": {
-                          "id": 4012,
+                          "id": 4040,
                           "name": "heroIdCounter",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3827,
+                          "referencedDeclaration": 3855,
                           "src": "2266:13:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "id": 4013,
+                        "id": 4041,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -21588,7 +21588,7 @@
                           "typeString": "function (uint256,uint256) pure returns (uint256)"
                         }
                       },
-                      "id": 4015,
+                      "id": 4043,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -21609,13 +21609,13 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 4017,
+                  "id": 4045,
                   "nodeType": "ExpressionStatement",
                   "src": "2250:36:18"
                 }
               ]
             },
-            "id": 4019,
+            "id": 4047,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -21623,17 +21623,17 @@
             "nameLocation": "1865:9:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3975,
+              "id": 4003,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3974,
+                  "id": 4002,
                   "mutability": "mutable",
                   "name": "_dna",
                   "nameLocation": "1883:4:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4019,
+                  "scope": 4047,
                   "src": "1875:12:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -21642,7 +21642,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3973,
+                    "id": 4001,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1875:7:18",
@@ -21657,12 +21657,12 @@
               "src": "1874:14:18"
             },
             "returnParameters": {
-              "id": 3976,
+              "id": 4004,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1898:0:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "1856:438:18",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -21670,23 +21670,23 @@
           },
           {
             "body": {
-              "id": 4034,
+              "id": 4062,
               "nodeType": "Block",
               "src": "2341:86:18",
               "statements": [
                 {
                   "assignments": [
-                    4025
+                    4053
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4025,
+                      "id": 4053,
                       "mutability": "mutable",
                       "name": "dna",
                       "nameLocation": "2360:3:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4034,
+                      "scope": 4062,
                       "src": "2352:11:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -21695,7 +21695,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4024,
+                        "id": 4052,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "2352:7:18",
@@ -21707,15 +21707,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4029,
+                  "id": 4057,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4027,
+                        "id": 4055,
                         "name": "heroIdCounter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3827,
+                        "referencedDeclaration": 3855,
                         "src": "2380:13:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -21730,18 +21730,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4026,
+                      "id": 4054,
                       "name": "_pseudoRandom",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3964,
+                      "referencedDeclaration": 3992,
                       "src": "2366:13:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (uint256) view returns (uint256)"
                       }
                     },
-                    "id": 4028,
+                    "id": 4056,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -21763,11 +21763,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 4031,
+                        "id": 4059,
                         "name": "dna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4025,
+                        "referencedDeclaration": 4053,
                         "src": "2415:3:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -21782,18 +21782,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4030,
+                      "id": 4058,
                       "name": "_mintHero",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4019,
+                      "referencedDeclaration": 4047,
                       "src": "2405:9:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 4032,
+                    "id": 4060,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -21808,22 +21808,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4033,
+                  "id": 4061,
                   "nodeType": "ExpressionStatement",
                   "src": "2405:14:18"
                 }
               ]
             },
             "functionSelector": "9f72ed76",
-            "id": 4035,
+            "id": 4063,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 4022,
+                "id": 4050,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 4021,
+                  "id": 4049,
                   "name": "hasAccount",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 3367,
@@ -21837,25 +21837,25 @@
             "nameLocation": "2311:9:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4020,
+              "id": 4048,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2320:2:18"
             },
             "returnParameters": {
-              "id": 4023,
+              "id": 4051,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2341:0:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "2302:125:18",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 4037,
+        "scope": 4065,
         "src": "267:2163:18",
         "usedErrors": []
       }
@@ -21893,7 +21893,7 @@
         3584
       ],
       "IotaHeroFactory": [
-        4036
+        4064
       ],
       "Ownable": [
         104
@@ -21905,12 +21905,12 @@
         2926
       ]
     },
-    "id": 4037,
+    "id": 4065,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 3803,
+        "id": 3831,
         "literals": [
           "solidity",
           "^",
@@ -21923,10 +21923,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
         "file": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
-        "id": 3804,
+        "id": 3832,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4037,
+        "scope": 4065,
         "sourceUnit": 2244,
         "src": "60:57:18",
         "symbolAliases": [],
@@ -21935,10 +21935,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/access/Ownable.sol",
         "file": "@openzeppelin/contracts/access/Ownable.sol",
-        "id": 3805,
+        "id": 3833,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4037,
+        "scope": 4065,
         "sourceUnit": 105,
         "src": "119:52:18",
         "symbolAliases": [],
@@ -21947,10 +21947,10 @@
       {
         "absolutePath": "@openzeppelin/contracts/utils/math/SafeMath.sol",
         "file": "@openzeppelin/contracts/utils/math/SafeMath.sol",
-        "id": 3806,
+        "id": 3834,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4037,
+        "scope": 4065,
         "sourceUnit": 3275,
         "src": "173:57:18",
         "symbolAliases": [],
@@ -21959,10 +21959,10 @@
       {
         "absolutePath": "project:/contracts/IotaHeroAccount.sol",
         "file": "./IotaHeroAccount.sol",
-        "id": 3807,
+        "id": 3835,
         "nameLocation": "-1:-1:-1",
         "nodeType": "ImportDirective",
-        "scope": 4037,
+        "scope": 4065,
         "sourceUnit": 3585,
         "src": "232:31:18",
         "symbolAliases": [],
@@ -21973,37 +21973,37 @@
         "baseContracts": [
           {
             "baseName": {
-              "id": 3808,
+              "id": 3836,
               "name": "ERC721",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 2243,
               "src": "295:6:18"
             },
-            "id": 3809,
+            "id": 3837,
             "nodeType": "InheritanceSpecifier",
             "src": "295:6:18"
           },
           {
             "baseName": {
-              "id": 3810,
+              "id": 3838,
               "name": "Ownable",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 104,
               "src": "303:7:18"
             },
-            "id": 3811,
+            "id": 3839,
             "nodeType": "InheritanceSpecifier",
             "src": "303:7:18"
           },
           {
             "baseName": {
-              "id": 3812,
+              "id": 3840,
               "name": "IotaHeroAccount",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 3584,
               "src": "312:15:18"
             },
-            "id": 3813,
+            "id": 3841,
             "nodeType": "InheritanceSpecifier",
             "src": "312:15:18"
           }
@@ -22012,9 +22012,9 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "fullyImplemented": true,
-        "id": 4036,
+        "id": 4064,
         "linearizedBaseContracts": [
-          4036,
+          4064,
           3584,
           104,
           2243,
@@ -22030,12 +22030,12 @@
         "nodes": [
           {
             "body": {
-              "id": 3820,
+              "id": 3848,
               "nodeType": "Block",
               "src": "374:2:18",
               "statements": []
             },
-            "id": 3821,
+            "id": 3849,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [
@@ -22043,7 +22043,7 @@
                 "arguments": [
                   {
                     "hexValue": "496f74614865726f",
-                    "id": 3816,
+                    "id": 3844,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -22059,7 +22059,7 @@
                   },
                   {
                     "hexValue": "4948",
-                    "id": 3817,
+                    "id": 3845,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -22074,10 +22074,10 @@
                     "value": "IH"
                   }
                 ],
-                "id": 3818,
+                "id": 3846,
                 "kind": "baseConstructorSpecifier",
                 "modifierName": {
-                  "id": 3815,
+                  "id": 3843,
                   "name": "ERC721",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 2243,
@@ -22091,27 +22091,27 @@
             "nameLocation": "-1:-1:-1",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3814,
+              "id": 3842,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "346:2:18"
             },
             "returnParameters": {
-              "id": 3819,
+              "id": 3847,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "374:0:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "335:41:18",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           },
           {
-            "id": 3824,
+            "id": 3852,
             "libraryName": {
-              "id": 3822,
+              "id": 3850,
               "name": "SafeMath",
               "nodeType": "IdentifierPath",
               "referencedDeclaration": 3274,
@@ -22120,7 +22120,7 @@
             "nodeType": "UsingForDirective",
             "src": "384:27:18",
             "typeName": {
-              "id": 3823,
+              "id": 3851,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "403:7:18",
@@ -22132,12 +22132,12 @@
           },
           {
             "constant": false,
-            "id": 3827,
+            "id": 3855,
             "mutability": "mutable",
             "name": "heroIdCounter",
             "nameLocation": "427:13:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4036,
+            "scope": 4064,
             "src": "419:25:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -22146,7 +22146,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3825,
+              "id": 3853,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "419:7:18",
@@ -22157,7 +22157,7 @@
             },
             "value": {
               "hexValue": "30",
-              "id": 3826,
+              "id": 3854,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -22175,12 +22175,12 @@
           },
           {
             "constant": false,
-            "id": 3830,
+            "id": 3858,
             "mutability": "mutable",
             "name": "adventureCoolDown",
             "nameLocation": "459:17:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4036,
+            "scope": 4064,
             "src": "451:38:18",
             "stateVariable": true,
             "storageLocation": "default",
@@ -22189,7 +22189,7 @@
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 3828,
+              "id": 3856,
               "name": "uint256",
               "nodeType": "ElementaryTypeName",
               "src": "451:7:18",
@@ -22200,7 +22200,7 @@
             },
             "value": {
               "hexValue": "3330",
-              "id": 3829,
+              "id": 3857,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -22219,16 +22219,16 @@
           },
           {
             "canonicalName": "IotaHeroFactory.Hero",
-            "id": 3847,
+            "id": 3875,
             "members": [
               {
                 "constant": false,
-                "id": 3832,
+                "id": 3860,
                 "mutability": "mutable",
                 "name": "id",
                 "nameLocation": "527:2:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "519:10:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -22237,7 +22237,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3831,
+                  "id": 3859,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "519:7:18",
@@ -22250,12 +22250,12 @@
               },
               {
                 "constant": false,
-                "id": 3834,
+                "id": 3862,
                 "mutability": "mutable",
                 "name": "dna",
                 "nameLocation": "548:3:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "540:11:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -22264,7 +22264,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3833,
+                  "id": 3861,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "540:7:18",
@@ -22277,12 +22277,12 @@
               },
               {
                 "constant": false,
-                "id": 3836,
+                "id": 3864,
                 "mutability": "mutable",
                 "name": "constitution",
                 "nameLocation": "570:12:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "562:20:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -22291,7 +22291,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3835,
+                  "id": 3863,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "562:7:18",
@@ -22304,12 +22304,12 @@
               },
               {
                 "constant": false,
-                "id": 3838,
+                "id": 3866,
                 "mutability": "mutable",
                 "name": "strength",
                 "nameLocation": "601:8:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "593:16:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -22318,7 +22318,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3837,
+                  "id": 3865,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "593:7:18",
@@ -22331,12 +22331,12 @@
               },
               {
                 "constant": false,
-                "id": 3840,
+                "id": 3868,
                 "mutability": "mutable",
                 "name": "agility",
                 "nameLocation": "628:7:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "620:15:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -22345,7 +22345,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3839,
+                  "id": 3867,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "620:7:18",
@@ -22358,12 +22358,12 @@
               },
               {
                 "constant": false,
-                "id": 3842,
+                "id": 3870,
                 "mutability": "mutable",
                 "name": "intelligence",
                 "nameLocation": "654:12:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "646:20:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -22372,7 +22372,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3841,
+                  "id": 3869,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "646:7:18",
@@ -22385,12 +22385,12 @@
               },
               {
                 "constant": false,
-                "id": 3844,
+                "id": 3872,
                 "mutability": "mutable",
                 "name": "restingTill",
                 "nameLocation": "685:11:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "677:19:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -22399,7 +22399,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 3843,
+                  "id": 3871,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "677:7:18",
@@ -22412,12 +22412,12 @@
               },
               {
                 "constant": false,
-                "id": 3846,
+                "id": 3874,
                 "mutability": "mutable",
                 "name": "name",
                 "nameLocation": "714:4:18",
                 "nodeType": "VariableDeclaration",
-                "scope": 3847,
+                "scope": 3875,
                 "src": "707:11:18",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -22426,7 +22426,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 3845,
+                  "id": 3873,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "707:6:18",
@@ -22441,49 +22441,49 @@
             "name": "Hero",
             "nameLocation": "503:4:18",
             "nodeType": "StructDefinition",
-            "scope": 4036,
+            "scope": 4064,
             "src": "496:230:18",
             "visibility": "public"
           },
           {
             "constant": false,
             "functionSelector": "a8d4a03b",
-            "id": 3851,
+            "id": 3879,
             "mutability": "mutable",
             "name": "heroes",
             "nameLocation": "748:6:18",
             "nodeType": "VariableDeclaration",
-            "scope": 4036,
+            "scope": 4064,
             "src": "734:20:18",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+              "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
               "typeString": "struct IotaHeroFactory.Hero[]"
             },
             "typeName": {
               "baseType": {
-                "id": 3849,
+                "id": 3877,
                 "nodeType": "UserDefinedTypeName",
                 "pathNode": {
-                  "id": 3848,
+                  "id": 3876,
                   "name": "Hero",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3847,
+                  "referencedDeclaration": 3875,
                   "src": "734:4:18"
                 },
-                "referencedDeclaration": 3847,
+                "referencedDeclaration": 3875,
                 "src": "734:4:18",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                  "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                   "typeString": "struct IotaHeroFactory.Hero"
                 }
               },
-              "id": 3850,
+              "id": 3878,
               "nodeType": "ArrayTypeName",
               "src": "734:6:18",
               "typeDescriptions": {
-                "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr",
+                "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr",
                 "typeString": "struct IotaHeroFactory.Hero[]"
               }
             },
@@ -22491,7 +22491,7 @@
           },
           {
             "body": {
-              "id": 3866,
+              "id": 3894,
               "nodeType": "Block",
               "src": "801:77:18",
               "statements": [
@@ -22503,14 +22503,14 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 3862,
+                        "id": 3890,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "expression": {
-                            "id": 3856,
+                            "id": 3884,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -22521,7 +22521,7 @@
                               "typeString": "msg"
                             }
                           },
-                          "id": 3857,
+                          "id": 3885,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -22539,11 +22539,11 @@
                         "rightExpression": {
                           "arguments": [
                             {
-                              "id": 3860,
+                              "id": 3888,
                               "name": "_heroId",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 3853,
+                              "referencedDeclaration": 3881,
                               "src": "849:7:18",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -22559,7 +22559,7 @@
                               }
                             ],
                             "expression": {
-                              "id": 3858,
+                              "id": 3886,
                               "name": "ERC721",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
@@ -22570,7 +22570,7 @@
                                 "typeString": "type(contract ERC721)"
                               }
                             },
-                            "id": 3859,
+                            "id": 3887,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -22584,7 +22584,7 @@
                               "typeString": "function (uint256) view returns (address)"
                             }
                           },
-                          "id": 3861,
+                          "id": 3889,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -22613,7 +22613,7 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 3855,
+                      "id": 3883,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -22627,7 +22627,7 @@
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 3863,
+                    "id": 3891,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -22642,33 +22642,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3864,
+                  "id": 3892,
                   "nodeType": "ExpressionStatement",
                   "src": "812:46:18"
                 },
                 {
-                  "id": 3865,
+                  "id": 3893,
                   "nodeType": "PlaceholderStatement",
                   "src": "869:1:18"
                 }
               ]
             },
-            "id": 3867,
+            "id": 3895,
             "name": "onlyOwnerOf",
             "nameLocation": "772:11:18",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 3854,
+              "id": 3882,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3853,
+                  "id": 3881,
                   "mutability": "mutable",
                   "name": "_heroId",
                   "nameLocation": "792:7:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3867,
+                  "scope": 3895,
                   "src": "784:15:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -22677,7 +22677,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3852,
+                    "id": 3880,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "784:7:18",
@@ -22697,23 +22697,23 @@
           },
           {
             "body": {
-              "id": 3889,
+              "id": 3917,
               "nodeType": "Block",
               "src": "930:223:18",
               "statements": [
                 {
                   "assignments": [
-                    3872
+                    3900
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3872,
+                      "id": 3900,
                       "mutability": "mutable",
                       "name": "stringLength",
                       "nameLocation": "949:12:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3889,
+                      "scope": 3917,
                       "src": "941:20:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -22722,7 +22722,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 3871,
+                        "id": 3899,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "941:7:18",
@@ -22734,15 +22734,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3876,
+                  "id": 3904,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 3874,
+                        "id": 3902,
                         "name": "_name",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3869,
+                        "referencedDeclaration": 3897,
                         "src": "980:5:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory_ptr",
@@ -22757,7 +22757,7 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 3873,
+                      "id": 3901,
                       "name": "utfStringLength",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -22768,7 +22768,7 @@
                         "typeString": "function (string memory) pure returns (uint256)"
                       }
                     },
-                    "id": 3875,
+                    "id": 3903,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -22794,7 +22794,7 @@
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 3884,
+                        "id": 3912,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -22804,17 +22804,17 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 3880,
+                          "id": 3908,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
-                            "id": 3878,
+                            "id": 3906,
                             "name": "stringLength",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3872,
+                            "referencedDeclaration": 3900,
                             "src": "1019:12:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -22825,7 +22825,7 @@
                           "operator": "<",
                           "rightExpression": {
                             "hexValue": "3133",
-                            "id": 3879,
+                            "id": 3907,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -22852,17 +22852,17 @@
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           },
-                          "id": 3883,
+                          "id": 3911,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "leftExpression": {
-                            "id": 3881,
+                            "id": 3909,
                             "name": "stringLength",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3872,
+                            "referencedDeclaration": 3900,
                             "src": "1040:12:18",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -22873,7 +22873,7 @@
                           "operator": ">",
                           "rightExpression": {
                             "hexValue": "32",
-                            "id": 3882,
+                            "id": 3910,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -22901,7 +22901,7 @@
                       },
                       {
                         "hexValue": "546865206865726f206e616d65206d757374206265206265747765656e203320616e642031322063686172616374657273",
-                        "id": 3885,
+                        "id": 3913,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -22927,7 +22927,7 @@
                           "typeString": "literal_string \"The hero name must be between 3 and 12 characters\""
                         }
                       ],
-                      "id": 3877,
+                      "id": 3905,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -22941,7 +22941,7 @@
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 3886,
+                    "id": 3914,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -22956,33 +22956,33 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3887,
+                  "id": 3915,
                   "nodeType": "ExpressionStatement",
                   "src": "997:136:18"
                 },
                 {
-                  "id": 3888,
+                  "id": 3916,
                   "nodeType": "PlaceholderStatement",
                   "src": "1144:1:18"
                 }
               ]
             },
-            "id": 3890,
+            "id": 3918,
             "name": "nameValidLength",
             "nameLocation": "893:15:18",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 3870,
+              "id": 3898,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3869,
+                  "id": 3897,
                   "mutability": "mutable",
                   "name": "_name",
                   "nameLocation": "923:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3890,
+                  "scope": 3918,
                   "src": "909:19:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -22991,7 +22991,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 3868,
+                    "id": 3896,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "909:6:18",
@@ -23011,71 +23011,71 @@
           },
           {
             "body": {
-              "id": 3918,
+              "id": 3946,
               "nodeType": "Block",
               "src": "1322:82:18",
               "statements": [
                 {
                   "assignments": [
-                    3907
+                    3935
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3907,
+                      "id": 3935,
                       "mutability": "mutable",
                       "name": "hero",
                       "nameLocation": "1346:4:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3918,
+                      "scope": 3946,
                       "src": "1333:17:18",
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                        "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                         "typeString": "struct IotaHeroFactory.Hero"
                       },
                       "typeName": {
-                        "id": 3906,
+                        "id": 3934,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 3905,
+                          "id": 3933,
                           "name": "Hero",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 3847,
+                          "referencedDeclaration": 3875,
                           "src": "1333:4:18"
                         },
-                        "referencedDeclaration": 3847,
+                        "referencedDeclaration": 3875,
                         "src": "1333:4:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                          "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                           "typeString": "struct IotaHeroFactory.Hero"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3911,
+                  "id": 3939,
                   "initialValue": {
                     "baseExpression": {
-                      "id": 3908,
+                      "id": 3936,
                       "name": "heroes",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3851,
+                      "referencedDeclaration": 3879,
                       "src": "1353:6:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+                        "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
                         "typeString": "struct IotaHeroFactory.Hero storage ref[] storage ref"
                       }
                     },
-                    "id": 3910,
+                    "id": 3938,
                     "indexExpression": {
-                      "id": 3909,
+                      "id": 3937,
                       "name": "_heroId",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3892,
+                      "referencedDeclaration": 3920,
                       "src": "1360:7:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -23089,7 +23089,7 @@
                     "nodeType": "IndexAccess",
                     "src": "1353:15:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Hero_$3847_storage",
+                      "typeIdentifier": "t_struct$_Hero_$3875_storage",
                       "typeString": "struct IotaHeroFactory.Hero storage ref"
                     }
                   },
@@ -23098,32 +23098,32 @@
                 },
                 {
                   "expression": {
-                    "id": 3916,
+                    "id": 3944,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "expression": {
-                        "id": 3912,
+                        "id": 3940,
                         "name": "hero",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3907,
+                        "referencedDeclaration": 3935,
                         "src": "1379:4:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                          "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                           "typeString": "struct IotaHeroFactory.Hero storage pointer"
                         }
                       },
-                      "id": 3914,
+                      "id": 3942,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "name",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 3846,
+                      "referencedDeclaration": 3874,
                       "src": "1379:9:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -23133,11 +23133,11 @@
                     "nodeType": "Assignment",
                     "operator": "=",
                     "rightHandSide": {
-                      "id": 3915,
+                      "id": 3943,
                       "name": "_name",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3894,
+                      "referencedDeclaration": 3922,
                       "src": "1391:5:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -23150,22 +23150,22 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 3917,
+                  "id": 3945,
                   "nodeType": "ExpressionStatement",
                   "src": "1379:17:18"
                 }
               ]
             },
             "functionSelector": "48646f7b",
-            "id": 3919,
+            "id": 3947,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 3897,
+                "id": 3925,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 3896,
+                  "id": 3924,
                   "name": "hasAccount",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 3367,
@@ -23177,11 +23177,11 @@
               {
                 "arguments": [
                   {
-                    "id": 3899,
+                    "id": 3927,
                     "name": "_heroId",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3892,
+                    "referencedDeclaration": 3920,
                     "src": "1276:7:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
@@ -23189,13 +23189,13 @@
                     }
                   }
                 ],
-                "id": 3900,
+                "id": 3928,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 3898,
+                  "id": 3926,
                   "name": "onlyOwnerOf",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3867,
+                  "referencedDeclaration": 3895,
                   "src": "1264:11:18"
                 },
                 "nodeType": "ModifierInvocation",
@@ -23204,11 +23204,11 @@
               {
                 "arguments": [
                   {
-                    "id": 3902,
+                    "id": 3930,
                     "name": "_name",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 3894,
+                    "referencedDeclaration": 3922,
                     "src": "1310:5:18",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_memory_ptr",
@@ -23216,13 +23216,13 @@
                     }
                   }
                 ],
-                "id": 3903,
+                "id": 3931,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 3901,
+                  "id": 3929,
                   "name": "nameValidLength",
                   "nodeType": "IdentifierPath",
-                  "referencedDeclaration": 3890,
+                  "referencedDeclaration": 3918,
                   "src": "1294:15:18"
                 },
                 "nodeType": "ModifierInvocation",
@@ -23233,17 +23233,17 @@
             "nameLocation": "1170:10:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3895,
+              "id": 3923,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3892,
+                  "id": 3920,
                   "mutability": "mutable",
                   "name": "_heroId",
                   "nameLocation": "1189:7:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3919,
+                  "scope": 3947,
                   "src": "1181:15:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -23252,7 +23252,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3891,
+                    "id": 3919,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1181:7:18",
@@ -23265,12 +23265,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 3894,
+                  "id": 3922,
                   "mutability": "mutable",
                   "name": "_name",
                   "nameLocation": "1212:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3919,
+                  "scope": 3947,
                   "src": "1198:19:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -23279,7 +23279,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 3893,
+                    "id": 3921,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1198:6:18",
@@ -23294,12 +23294,12 @@
               "src": "1180:38:18"
             },
             "returnParameters": {
-              "id": 3904,
+              "id": 3932,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1322:0:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "1161:243:18",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -23307,7 +23307,7 @@
           },
           {
             "body": {
-              "id": 3934,
+              "id": 3962,
               "nodeType": "Block",
               "src": "1480:63:18",
               "statements": [
@@ -23319,32 +23319,32 @@
                           "typeIdentifier": "t_uint256",
                           "typeString": "uint256"
                         },
-                        "id": 3931,
+                        "id": 3959,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "expression": {
-                            "id": 3927,
+                            "id": 3955,
                             "name": "hero",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 3922,
+                            "referencedDeclaration": 3950,
                             "src": "1499:4:18",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                              "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                               "typeString": "struct IotaHeroFactory.Hero memory"
                             }
                           },
-                          "id": 3928,
+                          "id": 3956,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "restingTill",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 3844,
+                          "referencedDeclaration": 3872,
                           "src": "1499:16:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
@@ -23355,7 +23355,7 @@
                         "operator": "<=",
                         "rightExpression": {
                           "expression": {
-                            "id": 3929,
+                            "id": 3957,
                             "name": "block",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -23366,7 +23366,7 @@
                               "typeString": "block"
                             }
                           },
-                          "id": 3930,
+                          "id": 3958,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -23386,7 +23386,7 @@
                         }
                       }
                     ],
-                    "id": 3932,
+                    "id": 3960,
                     "isConstant": false,
                     "isInlineArray": false,
                     "isLValue": false,
@@ -23399,14 +23399,14 @@
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 3926,
-                  "id": 3933,
+                  "functionReturnParameters": 3954,
+                  "id": 3961,
                   "nodeType": "Return",
                   "src": "1491:44:18"
                 }
               ]
             },
-            "id": 3935,
+            "id": 3963,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -23414,38 +23414,38 @@
             "nameLocation": "1421:11:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3923,
+              "id": 3951,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3922,
+                  "id": 3950,
                   "mutability": "mutable",
                   "name": "hero",
                   "nameLocation": "1445:4:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3935,
+                  "scope": 3963,
                   "src": "1433:16:18",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                    "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                     "typeString": "struct IotaHeroFactory.Hero"
                   },
                   "typeName": {
-                    "id": 3921,
+                    "id": 3949,
                     "nodeType": "UserDefinedTypeName",
                     "pathNode": {
-                      "id": 3920,
+                      "id": 3948,
                       "name": "Hero",
                       "nodeType": "IdentifierPath",
-                      "referencedDeclaration": 3847,
+                      "referencedDeclaration": 3875,
                       "src": "1433:4:18"
                     },
-                    "referencedDeclaration": 3847,
+                    "referencedDeclaration": 3875,
                     "src": "1433:4:18",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                      "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                       "typeString": "struct IotaHeroFactory.Hero"
                     }
                   },
@@ -23455,17 +23455,17 @@
               "src": "1432:18:18"
             },
             "returnParameters": {
-              "id": 3926,
+              "id": 3954,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3925,
+                  "id": 3953,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3935,
+                  "scope": 3963,
                   "src": "1474:4:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -23474,7 +23474,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 3924,
+                    "id": 3952,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1474:4:18",
@@ -23488,7 +23488,7 @@
               ],
               "src": "1473:6:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "1412:131:18",
             "stateMutability": "view",
             "virtual": false,
@@ -23496,23 +23496,23 @@
           },
           {
             "body": {
-              "id": 3963,
+              "id": 3991,
               "nodeType": "Block",
               "src": "1621:154:18",
               "statements": [
                 {
                   "assignments": [
-                    3943
+                    3971
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3943,
+                      "id": 3971,
                       "mutability": "mutable",
                       "name": "psrand",
                       "nameLocation": "1640:6:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 3963,
+                      "scope": 3991,
                       "src": "1632:14:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -23521,7 +23521,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 3942,
+                        "id": 3970,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1632:7:18",
@@ -23533,7 +23533,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3956,
+                  "id": 3984,
                   "initialValue": {
                     "arguments": [
                       {
@@ -23545,14 +23545,14 @@
                                   "typeIdentifier": "t_uint256",
                                   "typeString": "uint256"
                                 },
-                                "id": 3952,
+                                "id": 3980,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
                                 "lValueRequested": false,
                                 "leftExpression": {
                                   "expression": {
-                                    "id": 3949,
+                                    "id": 3977,
                                     "name": "block",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
@@ -23563,7 +23563,7 @@
                                       "typeString": "block"
                                     }
                                   },
-                                  "id": 3950,
+                                  "id": 3978,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": false,
@@ -23579,11 +23579,11 @@
                                 "nodeType": "BinaryOperation",
                                 "operator": "+",
                                 "rightExpression": {
-                                  "id": 3951,
+                                  "id": 3979,
                                   "name": "nonce",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 3937,
+                                  "referencedDeclaration": 3965,
                                   "src": "1716:5:18",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_uint256",
@@ -23605,7 +23605,7 @@
                                 }
                               ],
                               "expression": {
-                                "id": 3947,
+                                "id": 3975,
                                 "name": "abi",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
@@ -23616,7 +23616,7 @@
                                   "typeString": "abi"
                                 }
                               },
-                              "id": 3948,
+                              "id": 3976,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -23629,7 +23629,7 @@
                                 "typeString": "function () pure returns (bytes memory)"
                               }
                             },
-                            "id": 3953,
+                            "id": 3981,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -23652,7 +23652,7 @@
                               "typeString": "bytes memory"
                             }
                           ],
-                          "id": 3946,
+                          "id": 3974,
                           "name": "keccak256",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -23663,7 +23663,7 @@
                             "typeString": "function (bytes memory) pure returns (bytes32)"
                           }
                         },
-                        "id": 3954,
+                        "id": 3982,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -23686,7 +23686,7 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 3945,
+                      "id": 3973,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -23698,14 +23698,14 @@
                         "typeString": "type(uint256)"
                       },
                       "typeName": {
-                        "id": 3944,
+                        "id": 3972,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "1649:7:18",
                         "typeDescriptions": {}
                       }
                     },
-                    "id": 3955,
+                    "id": 3983,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -23729,17 +23729,17 @@
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 3961,
+                    "id": 3989,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
-                      "id": 3957,
+                      "id": 3985,
                       "name": "psrand",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3943,
+                      "referencedDeclaration": 3971,
                       "src": "1752:6:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -23753,14 +23753,14 @@
                         "typeIdentifier": "t_rational_1000000000000_by_1",
                         "typeString": "int_const 1000000000000"
                       },
-                      "id": 3960,
+                      "id": 3988,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
                       "lValueRequested": false,
                       "leftExpression": {
                         "hexValue": "3130",
-                        "id": 3958,
+                        "id": 3986,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -23778,7 +23778,7 @@
                       "operator": "**",
                       "rightExpression": {
                         "hexValue": "3132",
-                        "id": 3959,
+                        "id": 3987,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -23804,14 +23804,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 3941,
-                  "id": 3962,
+                  "functionReturnParameters": 3969,
+                  "id": 3990,
                   "nodeType": "Return",
                   "src": "1745:22:18"
                 }
               ]
             },
-            "id": 3964,
+            "id": 3992,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -23819,17 +23819,17 @@
             "nameLocation": "1560:13:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3938,
+              "id": 3966,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3937,
+                  "id": 3965,
                   "mutability": "mutable",
                   "name": "nonce",
                   "nameLocation": "1582:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3964,
+                  "scope": 3992,
                   "src": "1574:13:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -23838,7 +23838,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3936,
+                    "id": 3964,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1574:7:18",
@@ -23853,17 +23853,17 @@
               "src": "1573:15:18"
             },
             "returnParameters": {
-              "id": 3941,
+              "id": 3969,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3940,
+                  "id": 3968,
                   "mutability": "mutable",
                   "name": "",
                   "nameLocation": "-1:-1:-1",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3964,
+                  "scope": 3992,
                   "src": "1612:7:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -23872,7 +23872,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3939,
+                    "id": 3967,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1612:7:18",
@@ -23886,7 +23886,7 @@
               ],
               "src": "1611:9:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "1551:224:18",
             "stateMutability": "view",
             "virtual": false,
@@ -23894,23 +23894,23 @@
           },
           {
             "anonymous": false,
-            "id": 3972,
+            "id": 4000,
             "name": "HeroMinted",
             "nameLocation": "1789:10:18",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 3971,
+              "id": 3999,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3966,
+                  "id": 3994,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "owner",
                   "nameLocation": "1816:5:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3972,
+                  "scope": 4000,
                   "src": "1800:21:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -23919,7 +23919,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 3965,
+                    "id": 3993,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1800:7:18",
@@ -23933,13 +23933,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3968,
+                  "id": 3996,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "id",
                   "nameLocation": "1831:2:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3972,
+                  "scope": 4000,
                   "src": "1823:10:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -23948,7 +23948,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3967,
+                    "id": 3995,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1823:7:18",
@@ -23961,13 +23961,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 3970,
+                  "id": 3998,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "dna",
                   "nameLocation": "1843:3:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 3972,
+                  "scope": 4000,
                   "src": "1835:11:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -23976,7 +23976,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3969,
+                    "id": 3997,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1835:7:18",
@@ -23994,59 +23994,59 @@
           },
           {
             "body": {
-              "id": 4018,
+              "id": 4046,
               "nodeType": "Block",
               "src": "1898:396:18",
               "statements": [
                 {
                   "assignments": [
-                    3979
+                    4007
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 3979,
+                      "id": 4007,
                       "mutability": "mutable",
                       "name": "hero",
                       "nameLocation": "1921:4:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4018,
+                      "scope": 4046,
                       "src": "1909:16:18",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                        "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                         "typeString": "struct IotaHeroFactory.Hero"
                       },
                       "typeName": {
-                        "id": 3978,
+                        "id": 4006,
                         "nodeType": "UserDefinedTypeName",
                         "pathNode": {
-                          "id": 3977,
+                          "id": 4005,
                           "name": "Hero",
                           "nodeType": "IdentifierPath",
-                          "referencedDeclaration": 3847,
+                          "referencedDeclaration": 3875,
                           "src": "1909:4:18"
                         },
-                        "referencedDeclaration": 3847,
+                        "referencedDeclaration": 3875,
                         "src": "1909:4:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Hero_$3847_storage_ptr",
+                          "typeIdentifier": "t_struct$_Hero_$3875_storage_ptr",
                           "typeString": "struct IotaHeroFactory.Hero"
                         }
                       },
                       "visibility": "internal"
                     }
                   ],
-                  "id": 3991,
+                  "id": 4019,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 3981,
+                        "id": 4009,
                         "name": "heroIdCounter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3827,
+                        "referencedDeclaration": 3855,
                         "src": "1947:13:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -24054,11 +24054,11 @@
                         }
                       },
                       {
-                        "id": 3982,
+                        "id": 4010,
                         "name": "_dna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3974,
+                        "referencedDeclaration": 4002,
                         "src": "1975:4:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -24067,7 +24067,7 @@
                       },
                       {
                         "hexValue": "3230",
-                        "id": 3983,
+                        "id": 4011,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -24083,7 +24083,7 @@
                       },
                       {
                         "hexValue": "3130",
-                        "id": 3984,
+                        "id": 4012,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -24099,7 +24099,7 @@
                       },
                       {
                         "hexValue": "3130",
-                        "id": 3985,
+                        "id": 4013,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -24115,7 +24115,7 @@
                       },
                       {
                         "hexValue": "3130",
-                        "id": 3986,
+                        "id": 4014,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -24131,7 +24131,7 @@
                       },
                       {
                         "expression": {
-                          "id": 3987,
+                          "id": 4015,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -24142,7 +24142,7 @@
                             "typeString": "block"
                           }
                         },
-                        "id": 3988,
+                        "id": 4016,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -24157,7 +24157,7 @@
                       },
                       {
                         "hexValue": "",
-                        "id": 3989,
+                        "id": 4017,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -24207,18 +24207,18 @@
                           "typeString": "literal_string \"\""
                         }
                       ],
-                      "id": 3980,
+                      "id": 4008,
                       "name": "Hero",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3847,
+                      "referencedDeclaration": 3875,
                       "src": "1928:4:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Hero_$3847_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Hero_$3875_storage_ptr_$",
                         "typeString": "type(struct IotaHeroFactory.Hero storage pointer)"
                       }
                     },
-                    "id": 3990,
+                    "id": 4018,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -24229,7 +24229,7 @@
                     "src": "1928:177:18",
                     "tryCall": false,
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                      "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                       "typeString": "struct IotaHeroFactory.Hero memory"
                     }
                   },
@@ -24240,14 +24240,14 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 3995,
+                        "id": 4023,
                         "name": "hero",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3979,
+                        "referencedDeclaration": 4007,
                         "src": "2128:4:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                          "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                           "typeString": "struct IotaHeroFactory.Hero memory"
                         }
                       }
@@ -24255,23 +24255,23 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Hero_$3847_memory_ptr",
+                          "typeIdentifier": "t_struct$_Hero_$3875_memory_ptr",
                           "typeString": "struct IotaHeroFactory.Hero memory"
                         }
                       ],
                       "expression": {
-                        "id": 3992,
+                        "id": 4020,
                         "name": "heroes",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3851,
+                        "referencedDeclaration": 3879,
                         "src": "2116:6:18",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_array$_t_struct$_Hero_$3847_storage_$dyn_storage",
+                          "typeIdentifier": "t_array$_t_struct$_Hero_$3875_storage_$dyn_storage",
                           "typeString": "struct IotaHeroFactory.Hero storage ref[] storage ref"
                         }
                       },
-                      "id": 3994,
+                      "id": 4022,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -24280,11 +24280,11 @@
                       "nodeType": "MemberAccess",
                       "src": "2116:11:18",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr_$_t_struct$_Hero_$3847_storage_$returns$__$bound_to$_t_array$_t_struct$_Hero_$3847_storage_$dyn_storage_ptr_$",
+                        "typeIdentifier": "t_function_arraypush_nonpayable$_t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr_$_t_struct$_Hero_$3875_storage_$returns$__$bound_to$_t_array$_t_struct$_Hero_$3875_storage_$dyn_storage_ptr_$",
                         "typeString": "function (struct IotaHeroFactory.Hero storage ref[] storage pointer,struct IotaHeroFactory.Hero storage ref)"
                       }
                     },
-                    "id": 3996,
+                    "id": 4024,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -24299,7 +24299,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 3997,
+                  "id": 4025,
                   "nodeType": "ExpressionStatement",
                   "src": "2116:17:18"
                 },
@@ -24308,7 +24308,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 3999,
+                          "id": 4027,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -24319,7 +24319,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 4000,
+                        "id": 4028,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -24333,11 +24333,11 @@
                         }
                       },
                       {
-                        "id": 4001,
+                        "id": 4029,
                         "name": "heroIdCounter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3827,
+                        "referencedDeclaration": 3855,
                         "src": "2166:13:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -24356,7 +24356,7 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 3998,
+                      "id": 4026,
                       "name": "_safeMint",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -24370,7 +24370,7 @@
                         "typeString": "function (address,uint256)"
                       }
                     },
-                    "id": 4002,
+                    "id": 4030,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -24385,7 +24385,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4003,
+                  "id": 4031,
                   "nodeType": "ExpressionStatement",
                   "src": "2144:36:18"
                 },
@@ -24394,7 +24394,7 @@
                     "arguments": [
                       {
                         "expression": {
-                          "id": 4005,
+                          "id": 4033,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -24405,7 +24405,7 @@
                             "typeString": "msg"
                           }
                         },
-                        "id": 4006,
+                        "id": 4034,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -24419,11 +24419,11 @@
                         }
                       },
                       {
-                        "id": 4007,
+                        "id": 4035,
                         "name": "heroIdCounter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3827,
+                        "referencedDeclaration": 3855,
                         "src": "2219:13:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -24431,11 +24431,11 @@
                         }
                       },
                       {
-                        "id": 4008,
+                        "id": 4036,
                         "name": "_dna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3974,
+                        "referencedDeclaration": 4002,
                         "src": "2234:4:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -24458,18 +24458,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4004,
+                      "id": 4032,
                       "name": "HeroMinted",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3972,
+                      "referencedDeclaration": 4000,
                       "src": "2196:10:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_uint256_$_t_uint256_$returns$__$",
                         "typeString": "function (address,uint256,uint256)"
                       }
                     },
-                    "id": 4009,
+                    "id": 4037,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -24484,23 +24484,23 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4010,
+                  "id": 4038,
                   "nodeType": "EmitStatement",
                   "src": "2191:48:18"
                 },
                 {
                   "expression": {
-                    "id": 4016,
+                    "id": 4044,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
-                      "id": 4011,
+                      "id": 4039,
                       "name": "heroIdCounter",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3827,
+                      "referencedDeclaration": 3855,
                       "src": "2250:13:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -24513,7 +24513,7 @@
                       "arguments": [
                         {
                           "hexValue": "31",
-                          "id": 4014,
+                          "id": 4042,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -24536,18 +24536,18 @@
                           }
                         ],
                         "expression": {
-                          "id": 4012,
+                          "id": 4040,
                           "name": "heroIdCounter",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 3827,
+                          "referencedDeclaration": 3855,
                           "src": "2266:13:18",
                           "typeDescriptions": {
                             "typeIdentifier": "t_uint256",
                             "typeString": "uint256"
                           }
                         },
-                        "id": 4013,
+                        "id": 4041,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -24561,7 +24561,7 @@
                           "typeString": "function (uint256,uint256) pure returns (uint256)"
                         }
                       },
-                      "id": 4015,
+                      "id": 4043,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -24582,13 +24582,13 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 4017,
+                  "id": 4045,
                   "nodeType": "ExpressionStatement",
                   "src": "2250:36:18"
                 }
               ]
             },
-            "id": 4019,
+            "id": 4047,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -24596,17 +24596,17 @@
             "nameLocation": "1865:9:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 3975,
+              "id": 4003,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 3974,
+                  "id": 4002,
                   "mutability": "mutable",
                   "name": "_dna",
                   "nameLocation": "1883:4:18",
                   "nodeType": "VariableDeclaration",
-                  "scope": 4019,
+                  "scope": 4047,
                   "src": "1875:12:18",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -24615,7 +24615,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 3973,
+                    "id": 4001,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "1875:7:18",
@@ -24630,12 +24630,12 @@
               "src": "1874:14:18"
             },
             "returnParameters": {
-              "id": 3976,
+              "id": 4004,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1898:0:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "1856:438:18",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -24643,23 +24643,23 @@
           },
           {
             "body": {
-              "id": 4034,
+              "id": 4062,
               "nodeType": "Block",
               "src": "2341:86:18",
               "statements": [
                 {
                   "assignments": [
-                    4025
+                    4053
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 4025,
+                      "id": 4053,
                       "mutability": "mutable",
                       "name": "dna",
                       "nameLocation": "2360:3:18",
                       "nodeType": "VariableDeclaration",
-                      "scope": 4034,
+                      "scope": 4062,
                       "src": "2352:11:18",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -24668,7 +24668,7 @@
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 4024,
+                        "id": 4052,
                         "name": "uint256",
                         "nodeType": "ElementaryTypeName",
                         "src": "2352:7:18",
@@ -24680,15 +24680,15 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 4029,
+                  "id": 4057,
                   "initialValue": {
                     "arguments": [
                       {
-                        "id": 4027,
+                        "id": 4055,
                         "name": "heroIdCounter",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 3827,
+                        "referencedDeclaration": 3855,
                         "src": "2380:13:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -24703,18 +24703,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4026,
+                      "id": 4054,
                       "name": "_pseudoRandom",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 3964,
+                      "referencedDeclaration": 3992,
                       "src": "2366:13:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$_t_uint256_$returns$_t_uint256_$",
                         "typeString": "function (uint256) view returns (uint256)"
                       }
                     },
-                    "id": 4028,
+                    "id": 4056,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -24736,11 +24736,11 @@
                   "expression": {
                     "arguments": [
                       {
-                        "id": 4031,
+                        "id": 4059,
                         "name": "dna",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 4025,
+                        "referencedDeclaration": 4053,
                         "src": "2415:3:18",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -24755,18 +24755,18 @@
                           "typeString": "uint256"
                         }
                       ],
-                      "id": 4030,
+                      "id": 4058,
                       "name": "_mintHero",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 4019,
+                      "referencedDeclaration": 4047,
                       "src": "2405:9:18",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$returns$__$",
                         "typeString": "function (uint256)"
                       }
                     },
-                    "id": 4032,
+                    "id": 4060,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -24781,22 +24781,22 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 4033,
+                  "id": 4061,
                   "nodeType": "ExpressionStatement",
                   "src": "2405:14:18"
                 }
               ]
             },
             "functionSelector": "9f72ed76",
-            "id": 4035,
+            "id": 4063,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
-                "id": 4022,
+                "id": 4050,
                 "kind": "modifierInvocation",
                 "modifierName": {
-                  "id": 4021,
+                  "id": 4049,
                   "name": "hasAccount",
                   "nodeType": "IdentifierPath",
                   "referencedDeclaration": 3367,
@@ -24810,25 +24810,25 @@
             "nameLocation": "2311:9:18",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 4020,
+              "id": 4048,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2320:2:18"
             },
             "returnParameters": {
-              "id": 4023,
+              "id": 4051,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2341:0:18"
             },
-            "scope": 4036,
+            "scope": 4064,
             "src": "2302:125:18",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 4037,
+        "scope": 4065,
         "src": "267:2163:18",
         "usedErrors": []
       }
@@ -24841,7 +24841,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-01-20T19:26:26.902Z",
+  "updatedAt": "2022-01-20T21:31:53.999Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

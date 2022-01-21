@@ -32,6 +32,14 @@ router.get('/items', async function(req,res)
 
     res.json(jsonArr)
 })
+router.get('/adventure/:id.json', function(req, res) {
+    var id = req.params.id;
+    var j;
+    fs.readFile('./erc1155_metadata/adventure/'+id+'.json', (err, json) => {
+        j = JSON.parse(json);       
+        res.json(j);
+    });
+})
 router.get('/item/json/:id.json', function(req, res) {
     var id = req.params.id;
     var j;

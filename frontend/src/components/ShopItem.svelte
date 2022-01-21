@@ -34,7 +34,10 @@
       />
       <p>Quantity: <strong>{qty}</strong></p>
       <p>Price: <strong>{$web3.utils.fromWei(price)}</strong></p>
-      <button on:click={() => buyAction(productId, 1, price)}>Buy!</button>
+      <button
+        class="btn-sm btn-orange"
+        on:click={() => buyAction(productId, 1, price)}>Buy!</button
+      >
     </div>
   {/await}
 </div>

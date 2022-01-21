@@ -49,7 +49,7 @@
   }
 </script>
 
-<h1>IotaHeroes Trading Post</h1>
+<h2>IotaHeroes Trading Post</h2>
 {#await approvedStatus}
   <p>Checking approval status...</p>
 {:then isApproved}
@@ -58,7 +58,7 @@
       Before you can trade on the trading post, you must approve the marketplace
       to use your tokens
     </p>
-    <button on:click={approveAllAux}>Approve</button>
+    <button class="btn-sm btn-orange" on:click={approveAllAux}>Approve</button>
   {:else}
     <p>
       You have approved the trade contract and are able to trade on the
