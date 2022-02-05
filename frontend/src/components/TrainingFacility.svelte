@@ -1,5 +1,5 @@
 <script>
-  import StatPie from "./statPie.svelte";
+  import StatPie from "./StatPie.svelte";
   export let facility;
   export let canUpgradeAt;
   export let upgradeFunction;
