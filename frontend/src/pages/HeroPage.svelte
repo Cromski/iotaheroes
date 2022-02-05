@@ -31,7 +31,7 @@
 </script>
 
 {#await heroPromise}
-  <h2>Getting hero....</h2>
+  <h2>Getting hero...</h2>
 {:then hero}
   <HeroSummary {hero} />
   <button
