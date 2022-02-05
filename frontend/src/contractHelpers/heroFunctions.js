@@ -17,6 +17,8 @@ export const getHeroes = async (heroContract,adventureContract, selectedAccount)
     return heroesWithStatus;
 }
 export const getHero = async (id, heroContract, adventureContract) => {
+    console.log(heroContract)
+
     const hero = await heroContract.methods.heroes(id).call();
     const heroStatus = await getHeroAdventureStatus(id,adventureContract);
     addHeroStatus(hero,heroStatus);

@@ -13,7 +13,7 @@
     isApprovedForAll,
     approveAll,
   } from "../contractHelpers/tokenFunctions";
-  import TrainingFacility from "../components/TrainingFacility.svelte";
+  import TrainingFacilityUpgrades from "../components/TrainingFacilityUpgrades.svelte";
 
   $: facilityPromise = $facility ? getFacilitiesAux() : "";
   $: basePricePromise = $facility ? getBasePrice($facility) : "";
@@ -73,7 +73,7 @@
           {#key facilityPromise}
             <div class="flex flex-wrap justify-center mt-10">
               {#each facilities as facility}
-                <TrainingFacility
+                <TrainingFacilityUpgrades
                   {canUpgradeAt}
                   {facility}
                   upgradeFunction={upgradeFacility}

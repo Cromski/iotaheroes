@@ -16,6 +16,11 @@ export const addressReadyToUpgradeAt = async (facilityContract, selectedAccount)
     const response = await facilityContract.methods.getAddressCanUpgradeAt(selectedAccount).call();
     return response;
 }
+export const heroReadyToTrainAt = async (facilityContract, heroId) => {
+    const response = await facilityContract.methods.getHeroCanTrainAt(heroId).call();
+    return response;
+}
+
 export const upgradeFacilityById = async (facilityId, facilityContract,selectedAccount) => {
     await facilityContract.methods.upgradeFacility(facilityId).send({from:selectedAccount});
 }

@@ -25,6 +25,9 @@
   function goToOverview() {
     location.href = "/";
   }
+  function goTrain() {
+    location.href = "/train/" + id;
+  }
 </script>
 
 {#await heroPromise}
@@ -37,6 +40,7 @@
     on:click={GoAdventure}>Go adventure!</button
   >
 {/await}
+<button class="btn btn-orange" on:click={() => goTrain()}>Go train</button>
 <button class="btn btn-orange" on:click={() => goToOverview()}
   >Go back to hero overview</button
 >

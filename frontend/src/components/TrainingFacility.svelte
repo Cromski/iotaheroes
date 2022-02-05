@@ -1,18 +1,13 @@
 <script>
   import StatPie from "./StatPie.svelte";
   export let facility;
-  export let canUpgradeAt;
-  export let upgradeFunction;
-  export let basePrice;
+
   let totalStats =
     (+facility.consGain +
       +facility.strGain +
       +facility.agiGain +
       +facility.intGain) *
     facility.level;
-  $: readyToUpgrade = canUpgradeAt > Date.now() / 1000;
-
-  console.log(basePrice);
 </script>
 
 <div class="grid justify-items-center">
@@ -37,18 +32,5 @@
     <li>
       Total: {totalStats}
     </li>
-    <li>
-      <strong
-        >Cost to upgrade: {Number(basePrice) *
-          (Number(facility.level) + 1)}</strong
-      >
-    </li>
   </ul>
-
-  <button
-    disabled={readyToUpgrade ? "disabled" : ""}
-    class="btn btn-orange"
-    on:click={() => upgradeFunction(facility.id, facility.level)}
-    >Upgrade!</button
-  >
 </div>
