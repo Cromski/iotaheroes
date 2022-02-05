@@ -1,17 +1,38 @@
 import { defaultEvmStores, makeContractStore, web3, chainId } from "svelte-web3";
 import IotaHeroAdventure from "./contracts/IotaHeroAdventure.json";
+import IotaHeroFactory from "./contracts/IotaHeroFactory.json";
 import IotaHeroGameTokens from "./contracts/IotaHeroGameTokens.json";
 import IotaHeroTokenTrade from "./contracts/IotaHeroTokenTrade.json";
 import IotaHeroStore from "./contracts/IotaHeroStore.json";
+import IotaHeroTrainingFacility from "./contracts/IotaHeroTrainingFacility.json"
 
 import { derived } from 'svelte/store';
 
 export const hero = derived([web3, chainId], ([$web3, $chainId]) => {  
     if ($web3.eth && $chainId) {
+        const deployedNetwork = IotaHeroFactory.networks[$chainId];
+        console.log(deployedNetwork)
+        return new $web3.eth.Contract(
+            IotaHeroFactory.abi, deployedNetwork.address, {});
+    }
+    return null;
+})
+
+export const adventure = derived([web3, chainId], ([$web3, $chainId]) => {  
+    if ($web3.eth && $chainId) {
         const deployedNetwork = IotaHeroAdventure.networks[$chainId];
         console.log(deployedNetwork)
         return new $web3.eth.Contract(
         IotaHeroAdventure.abi, deployedNetwork.address, {});
+    }
+    return null;
+})
+export const facility = derived([web3, chainId], ([$web3, $chainId]) => {  
+    if ($web3.eth && $chainId) {
+        const deployedNetwork = IotaHeroTrainingFacility.networks[$chainId];
+        console.log(deployedNetwork)
+        return new $web3.eth.Contract(
+            IotaHeroTrainingFacility.abi, deployedNetwork.address, {});
     }
     return null;
 })

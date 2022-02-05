@@ -28,6 +28,10 @@
   </div>
   <div class="flex justify-end w-3/4">
     <!-- right side -->
+    <button
+      on:click={() => (location.href = "/upgrade")}
+      class="mr-3 h-16 w-24 border-none text-lg hover:underline">UPGRADE</button
+    >
     {#await inventoryPromise}
       ...
     {:then inventory}

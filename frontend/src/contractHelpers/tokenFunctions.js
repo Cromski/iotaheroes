@@ -3,9 +3,9 @@ export const getTokenUri = async (tokenContract) => {
     const response = await tokenContract.methods.uri(0).call();
     return response;
 }
-export const isApprovedForAll = async (tradeContract, tokenContract, selectedAccount) =>
+export const isApprovedForAll = async (operator, tokenContract, selectedAccount) =>
 {    const response = await tokenContract.methods
-      .isApprovedForAll(selectedAccount, tradeContract._address)
+      .isApprovedForAll(selectedAccount, operator._address)
       .call();
     return response;
 }
@@ -18,9 +18,9 @@ export const getInventory = async (tokenContract, selectedAccount) => {
     .call();
     return response
 }
-export const approveAll = async (tradeContract, tokenContract,selectedAccount) => {
+export const approveAll = async (operator, tokenContract,selectedAccount) => {
     await tokenContract.methods
-    .setApprovalForAll(tradeContract._address, true)
+    .setApprovalForAll(operator._address, true)
     .send({ from: selectedAccount });
 }
 export const getAllItems = async () => {

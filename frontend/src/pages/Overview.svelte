@@ -1,11 +1,11 @@
 <script>
   import { getHeroes, spawnHero } from "../contractHelpers/heroFunctions";
-  import { hero } from "../contract_stores";
+  import { adventure, hero } from "../contract_stores";
   import HeroSummary from "../components/HeroSummary.svelte";
   import { selectedAccount } from "svelte-web3";
   $: heroesPromise = $hero ? getHeroesAux() : "";
 
-  let getHeroesAux = async () => getHeroes($hero, $selectedAccount);
+  let getHeroesAux = async () => getHeroes($hero, $adventure, $selectedAccount);
 
   async function spawnHeroAux() {
     await spawnHero($hero, $selectedAccount);
@@ -24,15 +24,7 @@
   <div class="flex flex-wrap justify-center mt-10">
     {#each heroes as hero, i}
       <div>
-        <HeroSummary
-          id={hero.id}
-          dna={hero.dna}
-          constitution={hero.constitution}
-          strength={hero.strength}
-          agility={hero.agility}
-          intelligence={hero.intelligence}
-          restingTill={hero.restingTill}
-        />
+        <HeroSummary {hero} />
         <button class="btn-sm btn-orange" on:click={goToHeroPage(hero.id)}
           >Select hero</button
         >
