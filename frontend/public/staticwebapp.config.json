@@ -3,5 +3,8 @@
         {
             "route": "/upgrade"
         }
-    ]
+    ],
+    "navigationFallback": {
+        "rewrite": "/index.html"
+      }
 }
