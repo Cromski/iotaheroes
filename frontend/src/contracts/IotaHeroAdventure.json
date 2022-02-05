@@ -16360,11 +16360,61 @@
           ],
           "name": "Transfer",
           "type": "event"
+        },
+        "0xbcb585d59fbf23e95ea561b810c6f7b83b556ddc1c9d222aefcaeb7d324aaccc": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "player",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "heroId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "adventureId",
+              "type": "uint256"
+            }
+          ],
+          "name": "AdventureCompleted",
+          "type": "event"
+        },
+        "0x86e3966eac95125f1d265e0199935edf15bc4146fb0a2db534a3207b87e5e7c5": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "player",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "heroId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "adventureId",
+              "type": "uint256"
+            }
+          ],
+          "name": "AdventureInitiated",
+          "type": "event"
         }
       },
       "links": {},
-      "address": "0x81bC9d34A2656587e35561Ee0e47768961b5cE9b",
-      "transactionHash": "0x216461833329fbeec97bf9d66fea6d679408bec808f4d8825b6b7bb3fb99a9c1"
+      "address": "0x265Eb73CA53d50d13bacC63eD79D0c942c448AA0",
+      "transactionHash": "0x29862b156e01db7b3b9176b08cf80d7215ed26f488d31834653ab579a10155e5"
     },
     "1337": {
       "events": {
@@ -16744,7 +16794,7 @@
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-02-05T19:57:53.184Z",
+  "updatedAt": "2022-02-05T23:06:22.091Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
