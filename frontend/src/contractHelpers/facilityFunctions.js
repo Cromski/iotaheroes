@@ -1,6 +1,6 @@
-export const getFacilities = async (facilityContract) => {
+export const getFacilities = async (facilityContract, selectedAccount) => {
     console.log(facilityContract)
-    const response = await facilityContract.methods.getFacilitiesWithUserLevels().call();
+    const response = await facilityContract.methods.getFacilitiesWithUserLevels().call({from:selectedAccount});
     let facilitiesWithLevel = [];
     response[0].forEach((facility, i) => {
         facilitiesWithLevel.push({...facility, level: response[1][i]})

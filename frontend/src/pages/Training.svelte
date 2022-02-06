@@ -15,7 +15,7 @@
   $: facilityPromise = $facility ? getFacilitiesAux() : "";
   $: heroReadyPromise = $facility ? getHeroReadyAux() : "";
 
-  let getFacilitiesAux = async () => getFacilities($facility);
+  let getFacilitiesAux = async () => getFacilities($facility, $selectedAccount);
   let getHeroReadyAux = async () => heroReadyToTrainAt($facility, id);
 
   async function train(facilityId) {

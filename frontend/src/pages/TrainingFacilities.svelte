@@ -21,7 +21,7 @@
   $: readyToUpgradePromise = $facility
     ? addressReadyToUpgradeAt($facility, $selectedAccount)
     : "";
-  let getFacilitiesAux = async () => getFacilities($facility);
+  let getFacilitiesAux = async () => getFacilities($facility, $selectedAccount);
   let isApprovedForAllAux = async () =>
     isApprovedForAll($facility, $token, $selectedAccount);
 
