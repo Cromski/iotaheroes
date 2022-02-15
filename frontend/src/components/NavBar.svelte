@@ -17,14 +17,16 @@
 </script>
 
 <div
-  class="fixed top-0 border-0 bg-[lightgoldenrodyellow] w-full h-16 flex border-b-2 border-black-600 border-off-set-4"
+  class="fixed top-0 border-0  w-full h-16 flex border-b-2 border-black-600 border-off-set-4"
 >
   <!-- navbar start -->
   <div on:click={() => (location.href = "/")} class=" flex justify-start w-1/4">
     <!-- left side -->
-    <button class=" px-9 text-2xl text-[#ff3e00] font-thin border-none ml-11"
-      >IOTAHEROES</button
-    >
+    <img
+      alt="IotaHeroes"
+      src="/logo.PNG"
+      class=" px-9 text-2xl text-[#ff3e00] font-thin border-none ml-11"
+    />
   </div>
   <div class="flex justify-end w-3/4">
     <!-- right side -->

@@ -1,6 +1,6 @@
 export const getAdventure = async (id) => {
     console.log(id)
-    const res = await fetch("http://localhost:8080/api/adventure/"+id+".json")
+    const res = await fetch("process.env.API_URL"+"/adventure/"+id)
     const json = res.json() 
     return json;
 }

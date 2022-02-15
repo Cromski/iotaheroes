@@ -12,6 +12,7 @@
   let wantedAmounts = [0];
 
   const pickItem = (id) => {
+    console.log(id);
     if (!chosenItemIds.includes(id)) {
       chosenItemIds = [...chosenItemIds, id];
       chosenItemAmounts = [...chosenItemAmounts, 0];
@@ -76,10 +77,7 @@
                   class="mr-2"
                   width="35px"
                   alt={"pic"}
-                  src={_uri.replace(
-                    "json/{id}.json",
-                    "image/" + itemId + ".png"
-                  )}
+                  src={"process.env.API_URL" + "/Item/" + itemId + ".png"}
                 />
                 <input type="hidden" value={itemId} />
                 <input
@@ -111,10 +109,7 @@
                   class="mr-2"
                   width="35px"
                   alt={"pic"}
-                  src={_uri.replace(
-                    "json/{id}.json",
-                    "image/" + itemId + ".png"
-                  )}
+                  src={"process.env.API_URL" + "/Item/" + itemId + ".png"}
                 />
                 <input type="hidden" value={itemId} />
                 <input

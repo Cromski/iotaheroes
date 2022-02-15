@@ -5,7 +5,7 @@
   export let isOpen;
 
   export let inventory;
-  export let uri;
+  export let uri = "process.env.API_URL" + "/item/{id}";
 </script>
 
 {#if isOpen}

@@ -1,5 +1,6 @@
 <script>
   import Time from "svelte-time";
+  import { getLevelProgress } from "../util/heroXP";
   export let hero;
 </script>
 
@@ -14,6 +15,7 @@
     <li>id: {hero.id}</li>
     <!-- <li>dna: {dna}</li> -->
     <li>HP: {hero.constitution}</li>
+    <li>Strength level: {getLevelProgress(hero.strength).currentLevel}</li>
     <li>Strength: {hero.strength}</li>
     <li>Agility: {hero.agility}</li>
     <li>Intelligence: {hero.intelligence}</li>

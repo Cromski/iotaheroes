@@ -10,7 +10,7 @@
   import Adventure from "../components/Adventure.svelte";
   export let currentRoute;
   let id = currentRoute.namedParams.id;
-
+  // console.log("Api url", process.env.API_URL);
   $: heroPromise = $hero ? getHeroAux() : "";
   $: eventPromise = $adventure ? getCompletedAdventuresAux() : "";
   let getHeroAux = async () => getHero(id, $hero, $adventure);

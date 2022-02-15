@@ -7,6 +7,7 @@
   async function getMetadata() {
     const url = uri.replace("{id}", itemId);
     const resp = await fetch(url);
+    console.log(resp);
     const json = await resp.json();
     return json;
   }
@@ -24,7 +25,7 @@
       class="border-solid mx-auto"
       width="50px"
       alt={data.description}
-      src={data.image}
+      src={"process.env.API_URL" + "/Item/" + data.id + ".png"}
     />
   {/await}
 </div>

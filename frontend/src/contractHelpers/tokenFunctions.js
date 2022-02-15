@@ -1,7 +1,10 @@
 export const getTokenUri = async (tokenContract) => {
     console.log(tokenContract)
     const response = await tokenContract.methods.uri(0).call();
-    return response;
+    // Need to overwrite this while testing..
+    console.log(response)
+    return "process.env.API_URL"+"/item/{id}";
+    //return response;
 }
 export const isApprovedForAll = async (operator, tokenContract, selectedAccount) =>
 {    const response = await tokenContract.methods
@@ -24,7 +27,7 @@ export const approveAll = async (operator, tokenContract,selectedAccount) => {
     .send({ from: selectedAccount });
 }
 export const getAllItems = async () => {
-    const res = await fetch("http://localhost:8080/api/items")
+    const res = await fetch("process.env.API_URL" + "/item")
     const json = res.json() 
     return json;
 }

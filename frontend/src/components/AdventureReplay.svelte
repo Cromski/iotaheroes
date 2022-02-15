@@ -20,10 +20,11 @@
       isOpen = true;
     }
   };
-  let maxHeroHP = adventure.Hero.Constitution;
-  let maxEncounterHP = adventure.Encounters[0].Attributes.Constitution;
-  let currentHeroHP = [adventure.Hero.Constitution];
-  let currentEncounterHP = [adventure.Encounters[0].Attributes.Constitution];
+  console.log(adventure);
+  let maxHeroHP = adventure.hero.constitution;
+  let maxEncounterHP = adventure.encounters[0].attributes.constitution;
+  let currentHeroHP = [adventure.hero.constitution];
+  let currentEncounterHP = [adventure.encounters[0].attributes.constitution];
   let currentHeroRoll = 0;
   let currentEncounterRoll = 0;
   let interval;
@@ -41,14 +42,14 @@
   $: encounterColor = `hsl(${encounterColorNormalized[0]}, 100%, 60%)`;
 
   function play() {
-    var logCount = adventure.Encounters[0].EncounterLogs.length;
+    var logCount = adventure.encounters[0].encounterLogs.length;
     var iter = 0;
     loot = adventure.Loot;
 
     interval = setInterval(function () {
-      var log = adventure.Encounters[0].EncounterLogs[iter];
-      currentHeroHP[0] = log.HeroConstitution;
-      currentEncounterHP[0] = log.EncounterConstitution;
+      var log = adventure.encounters[0].encounterLogs[iter];
+      currentHeroHP[0] = log.heroConstitution;
+      currentEncounterHP[0] = log.encounterConstitution;
       if (iter == logCount - 1) {
         replayComplete = true;
         // loot = adventure.Loot;
@@ -58,8 +59,8 @@
           final = "You won!";
         }
       } else {
-        currentHeroRoll = log.HeroRoll;
-        currentEncounterRoll = log.EncounterRoll;
+        currentHeroRoll = log.heroRoll;
+        currentEncounterRoll = log.encounterRoll;
       }
 
       iter++;
@@ -71,15 +72,15 @@
   function reset() {
     clearInterval(interval);
     replayComplete = false;
-    currentHeroHP = [adventure.Hero.Constitution];
-    currentEncounterHP = [adventure.Encounters[0].Attributes.Constitution];
+    currentHeroHP = [adventure.hero.constitution];
+    currentEncounterHP = [adventure.encounters[0].attributes.constitution];
   }
 </script>
 
 <div>
   Adventure Id: {adventure.Id}
-  {#if adventure.CompletedAt}
-    (<Time live={1 * 1000} relative timestamp={adventure.CompletedAt} />)
+  {#if adventure.completedAt}
+    (<Time live={1 * 1000} relative timestamp={adventure.completedAt} />)
   {/if}
   <strong on:click={toggle}>Replay</strong>
 </div>
@@ -94,11 +95,11 @@
             class="outline outline-offset-2 outline-4 grid grid-cols-3"
           >
             <div class="col-span-3">You looted these items:</div>
-            {#each loot.TokenIds as lootItem, i}
+            {#each adventure.loot.tokenIds as lootItem, i}
               <Item
                 uri={tokenUri}
-                itemId={loot.TokenIds[i]}
-                qty={loot.Amounts[i]}
+                itemId={adventure.loot.tokenIds[i]}
+                qty={adventure.loot.amounts[i]}
               />
             {/each}
           </div>
