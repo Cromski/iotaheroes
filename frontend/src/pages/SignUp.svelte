@@ -20,7 +20,18 @@
   }
 </script>
 
-<h2>Please sign up here</h2>
-<p>Just enter a username to create a user!</p>
-<input bind:value={username} type="text" />
-<button class="btn-sm btn-orange" on:click={() => signUpAux()}>Sign up</button>
+<img
+  alt="IotaHeroes"
+  src="/logo.PNG"
+  class="w-1/2 mx-auto text-2xl text-[#ff3e00] font-thin border-none"
+/>
+<div id="signupContainer" class="">
+  <div class="">
+    <h1>Start your journey today!</h1>
+    <h2>Just enter a username to create a user!</h2>
+    <input bind:value={username} type="text" placeholder=" Enter username..." />
+    <button class="m-2 btn-sm btn-orange" on:click={() => signUpAux()}
+      >Sign up</button
+    >
+  </div>
+</div>

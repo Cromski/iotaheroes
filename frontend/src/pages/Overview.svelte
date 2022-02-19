@@ -3,6 +3,7 @@
   import { adventure, hero } from "../contract_stores";
   import HeroSummary from "../components/HeroSummary.svelte";
   import { selectedAccount } from "svelte-web3";
+  import HeroSummarySmall from "../components/HeroSummarySmall.svelte";
   $: heroesPromise = $hero ? getHeroesAux() : "";
 
   let getHeroesAux = async () => getHeroes($hero, $adventure, $selectedAccount);
@@ -20,11 +21,11 @@
 {#await heroesPromise}
   <h3>Getting heroes....</h3>
 {:then heroes}
-  <h2>Your heroes</h2>
+  <h1>Your heroes</h1>
   <div class="flex flex-wrap justify-center mt-10">
     {#each heroes as hero, i}
       <div>
-        <HeroSummary {hero} />
+        <HeroSummarySmall {hero} />
         <button class="btn-sm btn-orange" on:click={goToHeroPage(hero.id)}
           >Select hero</button
         >

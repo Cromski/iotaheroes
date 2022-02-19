@@ -7,6 +7,7 @@
   var str = getLevelProgress(hero.strength);
   var agi = getLevelProgress(hero.agility);
   var int = getLevelProgress(hero.intelligence);
+
   console.log(str);
   //    src="https://www.gravatar.com/avatar/{hero.dna}?s=150&d=identicon"
   //      src={"process.env.API_URL" + "/hero/" + hero.id}
