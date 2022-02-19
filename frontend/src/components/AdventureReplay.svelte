@@ -11,15 +11,21 @@
   let isOpen = false;
   let replayComplete = false;
   let loot;
-  const toggle = () => {
+  const toggle = (playAdventure) => {
     if (isOpen) {
       reset();
       isOpen = false;
     } else {
-      play();
+      if (playAdventure) {
+        play(1500);
+      } else {
+        play(1);
+      }
+
       isOpen = true;
     }
   };
+
   console.log(adventure);
   let maxHeroHP = adventure.hero.constitution;
   let maxEncounterHP = adventure.encounters[0].attributes.constitution;
@@ -41,7 +47,7 @@
   $: encounterLightColor = `hsl(${encounterColorNormalized[0]}, 65%, 80%)`;
   $: encounterColor = `hsl(${encounterColorNormalized[0]}, 100%, 60%)`;
 
-  function play() {
+  function play(delay) {
     var logCount = adventure.encounters[0].encounterLogs.length;
     var iter = 0;
     loot = adventure.Loot;
@@ -53,7 +59,7 @@
       if (iter == logCount - 1) {
         replayComplete = true;
         // loot = adventure.Loot;
-        if (currentHeroHP == 0) {
+        if (currentHeroHP <= 0) {
           final = "You passed out :(";
         } else {
           final = "You won!";
@@ -67,7 +73,7 @@
       if (iter == logCount) {
         clearInterval(interval);
       }
-    }, 1500);
+    }, delay);
   }
   function reset() {
     clearInterval(interval);
@@ -82,7 +88,8 @@
   {#if adventure.completedAt}
     (<Time live={1 * 1000} relative timestamp={adventure.completedAt} />)
   {/if}
-  <strong on:click={toggle}>Replay</strong>
+  <strong style="cursor:pointer" on:click={() => toggle(true)}>Replay</strong> |
+  <strong style="cursor:pointer" on:click={() => toggle(false)}>Summary</strong>
 </div>
 {#if isOpen}
   <div transition:slide={{ duration: 300 }}>
@@ -90,19 +97,21 @@
       {#if replayComplete}
         <div class="grow row-span-full col-start-3 col-span-2 self-center">
           <strong>{final}</strong>
-          <div
-            transition:slide={{ duration: 300 }}
-            class="outline outline-offset-2 outline-4 grid grid-cols-3"
-          >
-            <div class="col-span-3">You looted these items:</div>
-            {#each adventure.loot.tokenIds as lootItem, i}
-              <Item
-                uri={tokenUri}
-                itemId={adventure.loot.tokenIds[i]}
-                qty={adventure.loot.amounts[i]}
-              />
-            {/each}
-          </div>
+          {#if adventure.loot.tokenIds.length > 0}
+            <div
+              transition:slide={{ duration: 300 }}
+              class="outline outline-offset-2 outline-4 grid grid-cols-3"
+            >
+              <div class="col-span-3">You looted these items:</div>
+              {#each adventure.loot.tokenIds as lootItem, i}
+                <Item
+                  uri={tokenUri}
+                  itemId={adventure.loot.tokenIds[i]}
+                  qty={adventure.loot.amounts[i]}
+                />
+              {/each}
+            </div>
+          {/if}
         </div>
       {/if}
       <div

@@ -8,6 +8,7 @@
   } from "../contractHelpers/adventureFunctions";
   import HeroSummary from "../components/HeroSummary.svelte";
   import Adventure from "../components/Adventure.svelte";
+  import HeroActionTabs from "../components/HeroActionTabs.svelte";
   export let currentRoute;
   let id = currentRoute.namedParams.id;
   // console.log("Api url", process.env.API_URL);
@@ -22,11 +23,9 @@
     heroPromise = getHeroAux();
     eventPromise = getCompletedAdventuresAux();
   }
-  function goToOverview() {
-    location.href = "/";
-  }
-  function goTrain() {
-    location.href = "/train/" + id;
+  function refreshHeroData() {
+    console.log("Queued hero for refresh");
+    heroPromise = getHeroAux();
   }
 </script>
 
@@ -34,16 +33,9 @@
   <h2>Getting hero...</h2>
 {:then hero}
   <HeroSummary {hero} />
-  <button
-    disabled={hero.isAdventuring ? "disabled" : ""}
-    class="btn btn-orange"
-    on:click={GoAdventure}>Go adventure!</button
-  >
+  <HeroActionTabs {hero} {refreshHeroData} adventureFunction={GoAdventure} />
 {/await}
-<button class="btn btn-orange" on:click={() => goTrain()}>Go train</button>
-<button class="btn btn-orange" on:click={() => goToOverview()}
-  >Go back to hero overview</button
->
+
 {#await eventPromise}
   <h2>Gathering events for this hero...</h2>
 {:then events}

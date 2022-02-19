@@ -15,7 +15,6 @@ const routes = [
     { name: 'trade', component: TradingPost},
     { name: 'shop/:id', component: Shop},
     { name: 'upgrade', component: TrainingFacilities},
-    { name: 'train/:id', component: Training}
 
   ]
   
