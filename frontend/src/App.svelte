@@ -65,10 +65,20 @@
   }
 
   #container {
+    padding: 50px;
     padding-top: 100px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin-left: 20%;
+    margin-right: 20%;
+    border: 2px solid black;
   }
   main {
-    background: lightgoldenrodyellow;
+    background-image: url("/adventure1.PNG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: lightgoldenrodyellow;
+
     text-align: center;
   }
 

@@ -9,17 +9,20 @@
     heroReadyToTrainAt,
   } from "../contractHelpers/facilityFunctions";
   import TrainingFacilityTraining from "../components/TrainingFacilityTraining.svelte";
-  export let currentRoute;
-  let id = currentRoute.namedParams.id;
+  export let hero;
+  let id = hero.id;
+  export let refreshHeroData;
 
   $: facilityPromise = $facility ? getFacilitiesAux() : "";
   $: heroReadyPromise = $facility ? getHeroReadyAux() : "";
 
-  let getFacilitiesAux = async () => getFacilities($facility, $selectedAccount);
+  let getFacilitiesAux = async () =>
+    getFacilities($facility, $selectedAccount, true);
   let getHeroReadyAux = async () => heroReadyToTrainAt($facility, id);
 
   async function train(facilityId) {
     await trainAtFacility(id, facilityId, $facility, $selectedAccount);
+    refreshHeroData();
     facilityPromise = getFacilitiesAux();
     heroReadyPromise = getHeroReadyAux();
   }
@@ -45,6 +48,7 @@
     {#if facilities.length != 0}
       {#key facilityPromise}
         <div class="flex flex-wrap justify-center mt-10">
+          <button on:click={() => refreshHeroData()}>tester</button>
           {#each facilities as facility}
             <TrainingFacilityTraining
               {facility}

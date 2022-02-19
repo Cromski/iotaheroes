@@ -11,19 +11,26 @@
   let isOpen = false;
   let replayComplete = false;
   let loot;
-  const toggle = () => {
+  const toggle = (playAdventure) => {
     if (isOpen) {
       reset();
       isOpen = false;
     } else {
-      play();
+      if (playAdventure) {
+        play(1500);
+      } else {
+        play(1);
+      }
+
       isOpen = true;
     }
   };
-  let maxHeroHP = adventure.Hero.Constitution;
-  let maxEncounterHP = adventure.Encounters[0].Attributes.Constitution;
-  let currentHeroHP = [adventure.Hero.Constitution];
-  let currentEncounterHP = [adventure.Encounters[0].Attributes.Constitution];
+
+  console.log(adventure);
+  let maxHeroHP = adventure.hero.constitution;
+  let maxEncounterHP = adventure.encounters[0].attributes.constitution;
+  let currentHeroHP = [adventure.hero.constitution];
+  let currentEncounterHP = [adventure.encounters[0].attributes.constitution];
   let currentHeroRoll = 0;
   let currentEncounterRoll = 0;
   let interval;
@@ -40,48 +47,49 @@
   $: encounterLightColor = `hsl(${encounterColorNormalized[0]}, 65%, 80%)`;
   $: encounterColor = `hsl(${encounterColorNormalized[0]}, 100%, 60%)`;
 
-  function play() {
-    var logCount = adventure.Encounters[0].EncounterLogs.length;
+  function play(delay) {
+    var logCount = adventure.encounters[0].encounterLogs.length;
     var iter = 0;
     loot = adventure.Loot;
 
     interval = setInterval(function () {
-      var log = adventure.Encounters[0].EncounterLogs[iter];
-      currentHeroHP[0] = log.HeroConstitution;
-      currentEncounterHP[0] = log.EncounterConstitution;
+      var log = adventure.encounters[0].encounterLogs[iter];
+      currentHeroHP[0] = log.heroConstitution;
+      currentEncounterHP[0] = log.encounterConstitution;
       if (iter == logCount - 1) {
         replayComplete = true;
         // loot = adventure.Loot;
-        if (currentHeroHP == 0) {
+        if (currentHeroHP <= 0) {
           final = "You passed out :(";
         } else {
           final = "You won!";
         }
       } else {
-        currentHeroRoll = log.HeroRoll;
-        currentEncounterRoll = log.EncounterRoll;
+        currentHeroRoll = log.heroRoll;
+        currentEncounterRoll = log.encounterRoll;
       }
 
       iter++;
       if (iter == logCount) {
         clearInterval(interval);
       }
-    }, 1500);
+    }, delay);
   }
   function reset() {
     clearInterval(interval);
     replayComplete = false;
-    currentHeroHP = [adventure.Hero.Constitution];
-    currentEncounterHP = [adventure.Encounters[0].Attributes.Constitution];
+    currentHeroHP = [adventure.hero.constitution];
+    currentEncounterHP = [adventure.encounters[0].attributes.constitution];
   }
 </script>
 
 <div>
   Adventure Id: {adventure.Id}
-  {#if adventure.CompletedAt}
-    (<Time live={1 * 1000} relative timestamp={adventure.CompletedAt} />)
+  {#if adventure.completedAt}
+    (<Time live={1 * 1000} relative timestamp={adventure.completedAt} />)
   {/if}
-  <strong on:click={toggle}>Replay</strong>
+  <strong style="cursor:pointer" on:click={() => toggle(true)}>Replay</strong> |
+  <strong style="cursor:pointer" on:click={() => toggle(false)}>Summary</strong>
 </div>
 {#if isOpen}
   <div transition:slide={{ duration: 300 }}>
@@ -89,19 +97,21 @@
       {#if replayComplete}
         <div class="grow row-span-full col-start-3 col-span-2 self-center">
           <strong>{final}</strong>
-          <div
-            transition:slide={{ duration: 300 }}
-            class="outline outline-offset-2 outline-4 grid grid-cols-3"
-          >
-            <div class="col-span-3">You looted these items:</div>
-            {#each loot.TokenIds as lootItem, i}
-              <Item
-                uri={tokenUri}
-                itemId={loot.TokenIds[i]}
-                qty={loot.Amounts[i]}
-              />
-            {/each}
-          </div>
+          {#if adventure.loot.tokenIds.length > 0}
+            <div
+              transition:slide={{ duration: 300 }}
+              class="outline outline-offset-2 outline-4 grid grid-cols-3"
+            >
+              <div class="col-span-3">You looted these items:</div>
+              {#each adventure.loot.tokenIds as lootItem, i}
+                <Item
+                  uri={tokenUri}
+                  itemId={adventure.loot.tokenIds[i]}
+                  qty={adventure.loot.amounts[i]}
+                />
+              {/each}
+            </div>
+          {/if}
         </div>
       {/if}
       <div

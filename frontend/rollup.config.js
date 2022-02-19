@@ -6,9 +6,14 @@ import { terser } from 'rollup-plugin-terser';
 import css from 'rollup-plugin-css-only';
 import json from '@rollup/plugin-json';
 import sveltePreprocess from 'svelte-preprocess'
+import {config} from 'dotenv';
+import replace from '@rollup/plugin-replace';
 
 const production = !process.env.ROLLUP_WATCH;
+config()
+console.log("Prod build: ",production)
 
+console.log("from build", process.env.API_URL)
 function serve() {
 	let server;
 
@@ -39,6 +44,11 @@ export default {
 		file: 'public/build/bundle.js'
 	},
 	plugins: [
+		replace({
+			'process.env.isProd': production,
+			'process.env.API_URL': process.env.API_URL,
+			...config().parsed
+        }),
 		svelte({
 			compilerOptions: {
 				// enable run-time checks when not in production
