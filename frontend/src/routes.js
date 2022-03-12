@@ -3,7 +3,7 @@ import HeroPage from "./pages/HeroPage.svelte"
 import TradingPost from "./pages/TradingPost.svelte"
 import Shop from "./pages/Shop.svelte"
 import TrainingFacilities from "./pages/TrainingFacilities.svelte"
-import Training from "./pages/Training.svelte"
+import HeroMarketplace from "./pages/HeroMarketplace.svelte"
 
 
 const routes = [
@@ -13,6 +13,7 @@ const routes = [
     },
     { name: 'hero/:id', component: HeroPage },
     { name: 'trade', component: TradingPost},
+    { name: 'heromarket', component: HeroMarketplace},
     { name: 'shop/:id', component: Shop},
     { name: 'upgrade', component: TrainingFacilities},
 

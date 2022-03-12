@@ -28,6 +28,19 @@ export const getHero = async (id, heroContract, adventureContract) => {
 export const spawnHero = async (heroContract, selectedAccount) => {
     await heroContract.methods.spawnHero().send({ from: selectedAccount });
 }
+export const isApprovedForAll = async (operator, heroContract, selectedAccount) =>
+{    const response = await heroContract.methods
+      .isApprovedForAll(selectedAccount, operator._address)
+      .call();
+    return response;
+}
+
+export const approveAll = async (operator, heroContract,selectedAccount) => {
+    await heroContract.methods
+    .setApprovalForAll(operator._address, true)
+    .send({ from: selectedAccount });
+}
+
 
 const addHeroStatus = (hero, heroStatus) => {
     hero.readyToAdventure = heroStatus[1];

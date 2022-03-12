@@ -4,6 +4,8 @@ import IotaHeroFactory from "./contracts/IotaHeroFactory.json";
 import IotaHeroGameTokens from "./contracts/IotaHeroGameTokens.json";
 import IotaHeroTokenTrade from "./contracts/IotaHeroTokenTrade.json";
 import IotaHeroStore from "./contracts/IotaHeroStore.json";
+import IotaHeroesMarket from "./contracts/IotaHeroesMarket.json";
+
 import IotaHeroTrainingFacility from "./contracts/IotaHeroTrainingFacility.json"
 
 import { derived } from 'svelte/store';
@@ -57,6 +59,14 @@ export const shop = derived([web3, chainId], ([$web3, $chainId]) => {
         const deployedNetwork = IotaHeroStore.networks[$chainId];
         return new $web3.eth.Contract(
             IotaHeroStore.abi, deployedNetwork.address);
+    }
+    return null;
+})
+export const heromarket = derived([web3, chainId], ([$web3, $chainId]) => {  
+    if ($chainId && $web3.eth) {
+        const deployedNetwork = IotaHeroesMarket.networks[$chainId];
+        return new $web3.eth.Contract(
+            IotaHeroesMarket.abi, deployedNetwork.address);
     }
     return null;
 })

@@ -1,18 +1,18 @@
 <script>
   import { Tabs, Tab, TabList, TabPanel } from "svelte-tabs";
   import Training from "../pages/Training.svelte";
+  import AdventureHistory from "./Adventure/AdventureHistory.svelte";
+  import ListHero from "./HeroesMarket/ListHero.svelte";
   export let hero;
   export let adventureFunction;
   export let refreshHeroData;
-  function goTrain() {
-    location.href = "/train/" + hero.id;
-  }
 </script>
 
 <Tabs>
   <TabList>
     <Tab>Adventure</Tab>
     <Tab>Training</Tab>
+    <Tab>Sell</Tab>
   </TabList>
 
   <TabPanel>
@@ -21,16 +21,20 @@
       class="btn btn-orange"
       on:click={adventureFunction}>Go adventure!</button
     >
+    <AdventureHistory heroId={hero.id} />
   </TabPanel>
 
   <TabPanel>
     <Training {hero} {refreshHeroData} />
   </TabPanel>
+  <TabPanel>
+    <ListHero heroId={hero.id} />
+  </TabPanel>
 </Tabs>
 
 <style>
   :global(.svelte-tabs li.svelte-tabs__tab) {
-    width: 49%;
+    width: 32%;
     font-weight: bold;
     font-size: larger;
     color: rgb(251 146 60);

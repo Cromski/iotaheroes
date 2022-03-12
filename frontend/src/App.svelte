@@ -41,7 +41,7 @@
       <p>Checking if you are signed in..</p>
     {:then isSignedUp}
       {#if isSignedUp}
-        <div class="flex">
+        <div class="flex w-full">
           <NavBar />
           <div id="container" class="">
             <Router {routes} />
