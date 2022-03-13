@@ -1,7 +1,7 @@
 <script>
   import { hero, adventure } from "../../contract_stores";
   import { getHero } from "../../contractHelpers/heroFunctions";
-  import HeroSummarySmall from "../HeroSummarySmall.svelte";
+  import HeroSummary from "../HeroSummary.svelte";
 
   export let tradeId;
   export let heroId;
@@ -15,11 +15,14 @@
 {#await heroPromise}
   <h2>Getting hero...</h2>
 {:then hero}
-  <div
-    class="hover:shadow-2xl shadow-black cursor-pointer hover:-translate-y-1 hover:scale-110  transition ease-in-out m-2 outline outline-offset-2 outline-2 relative pb-5"
-    on:click={() => (location.href = "/heromarket/" + tradeId)}
-  >
-    <HeroSummarySmall {hero} />
+  <div class="outline outline-offset-2 outline-2 relative">
+    <HeroSummary {hero} />
     <span class="absolute right-0"><strong>{price}</strong>i</span>
+    <div class="">
+      <button
+        class="btn btn-orange"
+        on:click={() => buyFunction(tradeId, price)}>Buy!</button
+      >
+    </div>
   </div>
 {/await}

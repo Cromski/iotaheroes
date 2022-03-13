@@ -1,6 +1,8 @@
 <script>
   import Time from "svelte-time";
   import { getLevelProgress } from "../util/heroXP";
+  import StatPie from "./StatPie.svelte";
+  import StatPieSmall from "./StatPieSmall.svelte";
   export let hero;
 
   var str = getLevelProgress(hero.strength);
@@ -12,18 +14,16 @@
   //      src={"process.env.API_URL" + "/hero/" + hero.id}
 </script>
 
-<div class="px-3 pt-3">
+<div class=" px-1 pt-1 relative">
+  <span class="absolute left-0 top-0"><strong>#{hero.id}</strong></span>
   <img
-    class="outline outline-offset-2 outline-4 justify-self-auto"
-    src="https://www.gravatar.com/avatar/{hero.dna}?s=150&d=identicon"
+    class="justify-self-auto w-36"
+    src={"process.env.API_URL" + "/hero/" + hero.id}
     alt="avatar"
     style="border-style:solid"
   />
-  <ul class="p-2" style="list-style:none;">
-    <li>id: {hero.id}</li>
-    <!-- <li>dna: {dna}</li> -->
-    <li>Total level: {total}</li>
-    <li>
+  <span class=""><strong>Total level: {total}</strong></span>
+  <!-- <li>
       Ready: <strong
         ><Time
           live={1 * 1000}
@@ -31,10 +31,15 @@
           timestamp={hero.readyToAdventure * 1000}
         /></strong
       >
-    </li>
-    {#if hero.isAdventuring}
-      <li>Hero is currently on an adventure</li>
-    {/if}
-    <li />
-  </ul>
+    </li> -->
+  {#if hero.isAdventuring}
+    <span>Hero is currently on an adventure</span>
+  {/if}
+  <div class="w-9 top-0 right-0 absolute">
+    <StatPieSmall
+      str={str.currentLevel}
+      int={int.currentLevel}
+      agi={agi.currentLevel}
+    />
+  </div>
 </div>

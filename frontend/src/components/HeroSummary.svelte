@@ -17,7 +17,7 @@
   <div class="flex-auto">
     <img
       class="outline outline-offset-2 outline-4 justify-self-auto w-64"
-      src="https://www.gravatar.com/avatar/{hero.dna}?s=150&d=identicon"
+      src={"process.env.API_URL" + "/hero/" + hero.id}
       alt="avatar"
       style="border-style:solid"
     />

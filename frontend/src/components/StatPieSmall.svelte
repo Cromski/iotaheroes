@@ -3,8 +3,6 @@
   export let str;
   export let agi;
   export let int;
-  export let width;
-  console.log(str);
   let data = {
     labels: ["Strength", "Agility", "Intelligence"],
     datasets: [
@@ -19,13 +17,22 @@
 
   let options = {
     responsive: true,
+
     plugins: {
       legend: {
         display: false,
+      },
+      tooltip: {
+        enabled: false,
+        // callbacks: {
+        //   label: function (context) {
+        //     return context.parsed;
+        //   },
+        // },
       },
     },
     maintainAspectRatio: true,
   };
 </script>
 
-<Pie {width} {data} {options} />
+<Pie {data} {options} />

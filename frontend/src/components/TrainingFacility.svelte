@@ -23,10 +23,9 @@
 
     <li>
       <StatPie
-        str={facility.strGain}
-        agi={facility.agiGain}
-        int={facility.intGain}
-        level={facility.level}
+        str={facility.strGain * facility.level}
+        agi={facility.agiGain * facility.level}
+        int={facility.intGain * facility.level}
       />
     </li>
     <li>

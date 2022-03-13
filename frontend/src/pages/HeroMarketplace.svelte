@@ -17,17 +17,18 @@
   }
 </script>
 
-<h2>IotaHeroes Market</h2>
+<h1>IotaHeroes Market</h1>
 {#await getTradesPromise}
   <p>Getting trades..</p>
 {:then trades}
-  <h2>Hero listings:</h2>
-  {#each trades as trade, i}
-    <HeroListing
-      tradeId={trade.tradeId}
-      price={trade.price}
-      heroId={trade.itemId}
-      buyFunction={tradeFulfiller}
-    />
-  {/each}
+  <div class=" my-5 flex flex-wrap">
+    {#each trades as trade, i}
+      <HeroListing
+        tradeId={trade.tradeId}
+        price={trade.price}
+        heroId={trade.itemId}
+        buyFunction={tradeFulfiller}
+      />
+    {/each}
+  </div>
 {/await}
