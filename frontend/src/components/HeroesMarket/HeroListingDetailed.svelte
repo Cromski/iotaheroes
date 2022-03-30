@@ -3,26 +3,25 @@
   import { getHero } from "../../contractHelpers/heroFunctions";
   import HeroSummary from "../HeroSummary.svelte";
 
-  export let tradeId;
-  export let heroId;
-  export let price;
+  export let trade;
   export let buyFunction;
 
-  $: heroPromise = $hero ? getHeroAux() : "";
-  let getHeroAux = async () => getHero(heroId, $hero, $adventure);
+  $: heroPromise = $hero && trade ? getHeroAux() : "";
+  let getHeroAux = async () => getHero(trade.itemId, $hero, $adventure);
 </script>
 
 {#await heroPromise}
-  <h2>Getting hero...</h2>
+  <h2>Fetching listing...</h2>
 {:then hero}
-  <div class="outline outline-offset-2 outline-2 relative">
+  <div class="outline outline-offset-2 outline-2 relative m-3">
     <HeroSummary {hero} />
-    <span class="absolute right-0"><strong>{price}</strong>i</span>
+    <span class="absolute right-0"><strong>{trade.price}</strong>i</span>
     <div class="">
       <button
         class="btn btn-orange"
-        on:click={() => buyFunction(tradeId, price)}>Buy!</button
+        on:click={() => buyFunction(trade.tradeId, trade.price)}>Buy!</button
       >
     </div>
   </div>
 {/await}
+<hr />

@@ -2,7 +2,6 @@ export const getTokenUri = async (tokenContract) => {
     console.log(tokenContract)
     const response = await tokenContract.methods.uri(0).call();
     // Need to overwrite this while testing..
-    console.log(response)
     return "process.env.API_URL"+"/item/{id}";
     //return response;
 }
@@ -15,10 +14,11 @@ export const isApprovedForAll = async (operator, tokenContract, selectedAccount)
 export const getInventory = async (tokenContract, selectedAccount) => {
     const response = await tokenContract.methods
     .balanceOfBatch(
-    Array(100).fill(selectedAccount),
-    Array.from(Array(100).keys())
+    Array(5000).fill(selectedAccount),
+    Array.from(Array(5000).keys())
     )
     .call();
+    console.log(response)
     return response
 }
 export const approveAll = async (operator, tokenContract,selectedAccount) => {

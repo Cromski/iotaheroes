@@ -2,6 +2,7 @@
   import { hero, adventure } from "../../contract_stores";
   import { getHero } from "../../contractHelpers/heroFunctions";
   import HeroSummarySmall from "../HeroSummarySmall.svelte";
+  import { link, push } from "svelte-spa-router";
 
   export let tradeId;
   export let heroId;
@@ -17,7 +18,7 @@
 {:then hero}
   <div
     class="hover:shadow-2xl shadow-black cursor-pointer hover:-translate-y-1 hover:scale-110  transition ease-in-out m-2 outline outline-offset-2 outline-2 relative pb-5"
-    on:click={() => (location.href = "/heromarket/" + tradeId)}
+    on:click={() => push("/heromarket/" + tradeId)}
   >
     <HeroSummarySmall {hero} />
     <span class="absolute right-0"><strong>{price}</strong>i</span>

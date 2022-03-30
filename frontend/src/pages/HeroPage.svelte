@@ -5,13 +5,13 @@
   import { goAdventure } from "../contractHelpers/adventureFunctions";
   import HeroSummary from "../components/HeroSummary.svelte";
   import HeroActionTabs from "../components/HeroActionTabs.svelte";
-  export let currentRoute;
-  let id = currentRoute.namedParams.id;
+  export let params = {};
+  let id = params.id;
   $: heroPromise = $hero ? getHeroAux() : "";
   let getHeroAux = async () => getHero(id, $hero, $adventure);
 
-  async function GoAdventure() {
-    await goAdventure(id, $adventure, $selectedAccount);
+  async function GoAdventure(heroId, equipment) {
+    await goAdventure(heroId, equipment, $adventure, $selectedAccount);
     heroPromise = getHeroAux();
     eventPromise = getCompletedAdventuresAux();
   }

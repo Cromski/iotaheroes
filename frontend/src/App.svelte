@@ -12,7 +12,7 @@
   import { hero } from "./contract_stores";
   import NavBar from "./components/NavBar.svelte";
   import { Modals, closeModal } from "svelte-modals";
-  import { Router } from "svelte-router-spa";
+  import Router from "svelte-spa-router";
   import { routes } from "./routes";
 
   $: isSignedUpPromise = $hero ? isSignedUp($hero, $selectedAccount) : "";
@@ -32,7 +32,7 @@
   }
 </script>
 
-<main class="min-h-screen flex">
+<main class="min-h-screen">
   <Modals>
     <div slot="backdrop" class="backdrop" on:click={closeModal} />
   </Modals>

@@ -5,8 +5,8 @@
   import { getTokenUri } from "../contractHelpers/tokenFunctions";
   import ShopItem from "../components/ShopItem.svelte";
 
-  export let currentRoute;
-  let id = currentRoute.namedParams.id;
+  export let params = {};
+  let id = params.id;
   $: tokenUri = $token ? getTokenUri($token) : "";
   $: productsPromise = $shop ? getProducts(id, $shop) : "";
 

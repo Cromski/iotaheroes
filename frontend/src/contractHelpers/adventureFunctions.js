@@ -13,8 +13,8 @@ export const getCompletedAdventures = async (id, adventureContract) =>  {
       console.log(response)
       return response;
 }
-export const goAdventure = async (id, adventureContract, selectedAccount) => {
-    await adventureContract.methods.goAdventure(id).send({ from: selectedAccount });
+export const goAdventure = async (id, equipment, adventureContract, selectedAccount) => {
+    await adventureContract.methods.goAdventure(id, equipment).send({ from: selectedAccount });
 }
 export const getHeroAdventureStatus = async (id, adventureContract) => {
     console.log(adventureContract)

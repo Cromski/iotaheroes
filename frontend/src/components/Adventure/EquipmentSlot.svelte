@@ -1,16 +1,15 @@
 <script>
+  export let placeholderName;
   export let item;
-  export let clickItem;
-  console.log(item);
 </script>
 
-<div class="m-[10px]">
-  <span><strong>{item.amount} {item.metadata.name}</strong></span>
+{#if item === undefined}
+  {placeholderName}
+{:else}
   <img
-    on:click={() => clickItem(item)}
     class="border-solid mx-auto"
     width="50px"
     alt={item.metadata.description}
     src={"process.env.API_URL" + "/Item/" + item.itemId + ".png"}
   />
-</div>
+{/if}

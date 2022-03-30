@@ -4,6 +4,7 @@
   import HeroSummary from "../components/HeroSummary.svelte";
   import { selectedAccount } from "svelte-web3";
   import HeroSummarySmall from "../components/HeroSummarySmall.svelte";
+  import { push } from "svelte-spa-router";
   $: heroesPromise = $hero ? getHeroesAux() : "";
 
   let getHeroesAux = async () => getHeroes($hero, $adventure, $selectedAccount);
@@ -26,8 +27,9 @@
     {#each heroes as hero, i}
       <div>
         <HeroSummarySmall {hero} />
-        <button class="btn-sm btn-orange" on:click={goToHeroPage(hero.id)}
-          >Select hero</button
+        <button
+          class="btn-sm btn-orange"
+          on:click={() => push("/hero/" + hero.id)}>Select hero</button
         >
       </div>
     {/each}

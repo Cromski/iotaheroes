@@ -1,7 +1,7 @@
 <script>
   import { adventure } from "../../contract_stores";
   import { getCompletedAdventures } from "../../contractHelpers/adventureFunctions";
-  import Adventure from "../../components/Adventure.svelte";
+  import AdventureHistoryItem from "./AdventureHistoryItem.svelte";
   export let heroId;
   $: eventPromise = $adventure ? getCompletedAdventuresAux() : "";
   let getCompletedAdventuresAux = async () =>
@@ -12,7 +12,7 @@
   <h2>Gathering events for this hero...</h2>
 {:then events}
   {#each events as event, i}
-    <Adventure
+    <AdventureHistoryItem
       id={event.returnValues.adventureId}
       heroId={event.returnValues.heroId}
       player={event.returnValues.player}

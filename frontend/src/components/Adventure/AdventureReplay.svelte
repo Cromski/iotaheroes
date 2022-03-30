@@ -3,7 +3,7 @@
   import RangeSlider from "svelte-range-slider-pips";
 
   import Time from "svelte-time";
-  import Item from "./Item.svelte";
+  import Item from "../Item.svelte";
 
   export let adventure;
   export let tokenUri;
@@ -84,7 +84,7 @@
 </script>
 
 <div>
-  Adventure Id: {adventure.Id}
+  Adventure Id: {adventure.id}
   {#if adventure.completedAt}
     (<Time live={1 * 1000} relative timestamp={adventure.completedAt} />)
   {/if}

@@ -3,15 +3,12 @@
   import Inventory from "./Inventory.svelte";
   // provided by Modals
   export let isOpen;
-
-  export let inventory;
-  export let uri = "process.env.API_URL" + "/item/{id}";
 </script>
 
 {#if isOpen}
   <div role="dialog" class="modal">
     <div class="contents">
-      <Inventory {inventory} {uri} />
+      <Inventory />
 
       <div class="actions">
         <button on:click={closeModal}>OK</button>

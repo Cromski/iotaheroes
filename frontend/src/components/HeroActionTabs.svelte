@@ -1,7 +1,7 @@
 <script>
   import { Tabs, Tab, TabList, TabPanel } from "svelte-tabs";
   import Training from "../pages/Training.svelte";
-  import AdventureHistory from "./Adventure/AdventureHistory.svelte";
+  import Adventure from "./Adventure/Adventure.svelte";
   import ListHero from "./HeroesMarket/ListHero.svelte";
   export let hero;
   export let adventureFunction;
@@ -16,12 +16,7 @@
   </TabList>
 
   <TabPanel>
-    <button
-      disabled={hero.isAdventuring ? "disabled" : ""}
-      class="btn btn-orange"
-      on:click={adventureFunction}>Go adventure!</button
-    >
-    <AdventureHistory heroId={hero.id} />
+    <Adventure {hero} {adventureFunction} />
   </TabPanel>
 
   <TabPanel>

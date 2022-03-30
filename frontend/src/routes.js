@@ -4,10 +4,20 @@ import TradingPost from "./pages/TradingPost.svelte"
 import Shop from "./pages/Shop.svelte"
 import TrainingFacilities from "./pages/TrainingFacilities.svelte"
 import HeroMarketplace from "./pages/HeroMarketplace.svelte"
-import HeroListingDetailed from "./components/HeroesMarket/HeroListingDetailed.svelte"
 
+const routes = {
+    '/hero/:id': HeroPage,
+    '/trade': TradingPost,
+    '/heromarket': HeroMarketplace,
+    '/heromarket/:id?': HeroMarketplace,
+    '/shop/:id': Shop,
+    '/upgrade': TrainingFacilities,
+    '/': Overview,
 
-const routes = [
+}
+
+  /* Old routes
+  const routes = [
     {
       name: '/',
       component: Overview,
@@ -21,5 +31,7 @@ const routes = [
     { name: 'upgrade', component: TrainingFacilities},
 
   ]
+
+  */
   
   export { routes }

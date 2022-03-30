@@ -1,7 +1,7 @@
 <script>
-  import { getAdventure } from "../contractHelpers/adventureFunctions";
-  import { getTokenUri } from "../contractHelpers/tokenFunctions";
-  import { token } from "../contract_stores";
+  import { getAdventure } from "../../contractHelpers/adventureFunctions";
+  import { getTokenUri } from "../../contractHelpers/tokenFunctions";
+  import { token } from "../../contract_stores";
 
   import AdventureReplay from "./AdventureReplay.svelte";
 

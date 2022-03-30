@@ -6,7 +6,10 @@
   import { selectedAccount } from "svelte-web3";
   import { heromarket } from "../contract_stores";
   import HeroListing from "../components/HeroesMarket/HeroListing.svelte";
+  import HeroListingDetailed from "../components/HeroesMarket/HeroListingDetailed.svelte";
 
+  export let params = {};
+  $: selectedTrade = params.id;
   $: getTradesPromise = $heromarket ? getOpenTradesAux() : "";
 
   let getOpenTradesAux = async () => getOpenTrades($heromarket);
@@ -21,6 +24,12 @@
 {#await getTradesPromise}
   <p>Getting trades..</p>
 {:then trades}
+  {#if selectedTrade !== undefined && trades.find((x) => x.tradeId === selectedTrade) !== undefined}
+    <HeroListingDetailed
+      trade={trades.find((x) => x.tradeId === selectedTrade)}
+      buyFunction={tradeFulfiller}
+    />
+  {/if}
   <div class=" my-5 flex flex-wrap">
     {#each trades as trade, i}
       <HeroListing
