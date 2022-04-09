@@ -9,7 +9,7 @@
     cancelTrade,
   } from "../../contractHelpers/heroMarketFunctions";
   import { selectedAccount } from "svelte-web3";
-  import { hero, heromarket, trade } from "../../contract_stores";
+  import { hero, heromarket, trade } from "../../stores/contract_stores";
   import ListHeroForm from "./ListHeroForm.svelte";
   export let heroId;
   $: approvedStatus = $hero && $heromarket ? isApprovedForAllAux() : "";

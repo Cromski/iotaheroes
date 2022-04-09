@@ -1,6 +1,6 @@
 <script>
   import { getUsername } from "../contractHelpers/accountFunctions";
-  import { hero } from "../contract_stores";
+  import { hero } from "../stores/contract_stores";
   import { selectedAccount, web3 } from "svelte-web3";
 
   $: getUsernamePromise = $hero ? getUsername($hero, $selectedAccount) : "";

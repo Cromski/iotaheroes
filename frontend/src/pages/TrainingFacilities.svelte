@@ -1,6 +1,6 @@
 <script>
   import { selectedAccount } from "svelte-web3";
-  import { facility, token } from "../contract_stores";
+  import { facility, token } from "../stores/contract_stores";
   import {
     getBasePrice,
     getFacilities,

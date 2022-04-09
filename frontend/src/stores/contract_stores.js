@@ -1,12 +1,12 @@
 import { defaultEvmStores, makeContractStore, web3, chainId } from "svelte-web3";
-import IotaHeroAdventure from "./contracts/IotaHeroAdventure.json";
-import IotaHeroFactory from "./contracts/IotaHeroFactory.json";
-import IotaHeroGameTokens from "./contracts/IotaHeroGameTokens.json";
-import IotaHeroTokenTrade from "./contracts/IotaHeroTokenTrade.json";
-import IotaHeroStore from "./contracts/IotaHeroStore.json";
-import IotaHeroesMarket from "./contracts/IotaHeroesMarket.json";
+import IotaHeroAdventure from "../contracts/IotaHeroAdventure.json";
+import IotaHeroFactory from "../contracts/IotaHeroFactory.json";
+import IotaHeroGameTokens from "../contracts/IotaHeroGameTokens.json";
+import IotaHeroTokenTrade from "../contracts/IotaHeroTokenTrade.json";
+import IotaHeroStore from "../contracts/IotaHeroStore.json";
+import IotaHeroesMarket from "../contracts/IotaHeroesMarket.json";
 
-import IotaHeroTrainingFacility from "./contracts/IotaHeroTrainingFacility.json"
+import IotaHeroTrainingFacility from "../contracts/IotaHeroTrainingFacility.json"
 
 import { derived } from 'svelte/store';
 

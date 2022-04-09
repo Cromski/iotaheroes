@@ -1,7 +1,6 @@
 <script>
   import { getHeroes, spawnHero } from "../contractHelpers/heroFunctions";
-  import { adventure, hero } from "../contract_stores";
-  import HeroSummary from "../components/HeroSummary.svelte";
+  import { adventure, hero } from "../stores/contract_stores";
   import { selectedAccount } from "svelte-web3";
   import HeroSummarySmall from "../components/HeroSummarySmall.svelte";
   import { push } from "svelte-spa-router";

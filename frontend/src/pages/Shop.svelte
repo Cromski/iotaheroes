@@ -1,5 +1,5 @@
 <script>
-  import { shop, token } from "../contract_stores";
+  import { shop, token } from "../stores/contract_stores";
   import { selectedAccount } from "svelte-web3";
   import { buyProduct, getProducts } from "../contractHelpers/storeFunctions";
   import { getTokenUri } from "../contractHelpers/tokenFunctions";

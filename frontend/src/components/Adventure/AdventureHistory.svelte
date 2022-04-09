@@ -1,5 +1,5 @@
 <script>
-  import { adventure } from "../../contract_stores";
+  import { adventure } from "../../stores/contract_stores";
   import { getCompletedAdventures } from "../../contractHelpers/adventureFunctions";
   import AdventureHistoryItem from "./AdventureHistoryItem.svelte";
   export let heroId;

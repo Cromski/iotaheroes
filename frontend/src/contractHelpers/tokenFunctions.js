@@ -31,3 +31,9 @@ export const getAllItems = async () => {
     const json = res.json() 
     return json;
 }
+export const getItem = async (id) => {
+    const res = await fetch("process.env.API_URL" + "/item/"+id)
+    const json = res.json() 
+    console.log(json)
+    return json;
+}

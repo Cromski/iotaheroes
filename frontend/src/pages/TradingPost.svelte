@@ -1,6 +1,5 @@
 <script>
   import {
-    getTokenUri,
     isApprovedForAll,
     approveAll,
   } from "../contractHelpers/tokenFunctions";
@@ -10,13 +9,12 @@
     setTradeOffer,
   } from "../contractHelpers/tradeFunctions";
   import { selectedAccount } from "svelte-web3";
-  import { trade, token } from "../contract_stores";
-  import TradeForm from "../components/TradeForm.svelte";
-  import Trade from "../components/Trade.svelte";
+  import { trade, token } from "../stores/contract_stores";
+  import TradeForm from "../components/TradingPost/TradeForm.svelte";
+  import Trade from "../components/TradingPost/Trade.svelte";
 
   $: getTradesPromise = $trade ? getPastTradesAux() : "";
   $: approvedStatus = $token && $trade ? isApprovedForAllAux() : "";
-  $: uriPromise = $token ? getTokenUri($token) : "";
 
   let getPastTradesAux = async () => getPastTrades($trade);
   let isApprovedForAllAux = async () =>
@@ -28,6 +26,7 @@
     itemIdsWanted,
     amountsWanted
   ) {
+    console.log(itemIdsForSale);
     await setTradeOffer(
       itemIdsForSale,
       amountsForSale,
@@ -70,21 +69,16 @@
 {#await getTradesPromise}
   <p>Getting trades..</p>
 {:then trades}
-  {#await uriPromise}
-    <p>Getting token uri</p>
-  {:then _uri}
-    {#each trades as trade, i}
-      <Trade
-        status={trade.tradeStatus}
-        tradeId={trade.tradeId}
-        uri={_uri}
-        tradefulfiller={tradeFulfiller}
-        creator={trade.tradeInitiator}
-        itemIdsForSale={trade.tokenIdsForSale}
-        amountsForSale={trade.amountsToSell}
-        itemIdsWanted={trade.tokenIdsWanted}
-        amountsWanted={trade.amountsWanted}
-      />
-    {/each}
-  {/await}
+  {#each trades as trade, i}
+    <Trade
+      status={trade.tradeStatus}
+      tradeId={trade.tradeId}
+      tradefulfiller={tradeFulfiller}
+      creator={trade.tradeInitiator}
+      itemIdsForSale={trade.tokenIdsForSale}
+      amountsForSale={trade.amountsToSell}
+      itemIdsWanted={trade.tokenIdsWanted}
+      amountsWanted={trade.amountsWanted}
+    />
+  {/each}
 {/await}

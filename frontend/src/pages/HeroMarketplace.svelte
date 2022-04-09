@@ -4,7 +4,7 @@
     getOpenTrades,
   } from "../contractHelpers/heroMarketFunctions";
   import { selectedAccount } from "svelte-web3";
-  import { heromarket } from "../contract_stores";
+  import { heromarket } from "../stores/contract_stores";
   import HeroListing from "../components/HeroesMarket/HeroListing.svelte";
   import HeroListingDetailed from "../components/HeroesMarket/HeroListingDetailed.svelte";
 

@@ -1,12 +1,12 @@
 <script>
   import { slide, fly } from "svelte/transition";
   import RangeSlider from "svelte-range-slider-pips";
+  import { getItem } from "../../contractHelpers/tokenFunctions";
 
   import Time from "svelte-time";
   import Item from "../Item.svelte";
 
   export let adventure;
-  export let tokenUri;
 
   let isOpen = false;
   let replayComplete = false;
@@ -24,6 +24,21 @@
 
       isOpen = true;
     }
+  };
+  $: itemsPromise = getLootItems();
+  let getLootItems = async () => {
+    let items = [];
+    adventure.loot.tokenIds.forEach(async (itemId, i) => {
+      let metadata = await getItem(itemId);
+      let amount = adventure.loot.amounts[i];
+      items.push({
+        amount,
+        itemId,
+        metadata,
+      });
+    });
+    console.log(items);
+    return items;
   };
 
   console.log(adventure);
@@ -98,19 +113,19 @@
         <div class="grow row-span-full col-start-3 col-span-2 self-center">
           <strong>{final}</strong>
           {#if adventure.loot.tokenIds.length > 0}
-            <div
-              transition:slide={{ duration: 300 }}
-              class="outline outline-offset-2 outline-4 grid grid-cols-3"
-            >
-              <div class="col-span-3">You looted these items:</div>
-              {#each adventure.loot.tokenIds as lootItem, i}
-                <Item
-                  uri={tokenUri}
-                  itemId={adventure.loot.tokenIds[i]}
-                  qty={adventure.loot.amounts[i]}
-                />
-              {/each}
-            </div>
+            {#await itemsPromise}
+              <p>Grabbing item data..</p>
+            {:then items}
+              <div
+                transition:slide={{ duration: 300 }}
+                class="outline outline-offset-2 outline-4 grid grid-cols-3"
+              >
+                <div class="col-span-3">You looted these items:</div>
+                {#each adventure.loot.tokenIds as lootItem, i}
+                  <Item item={items[i]} />
+                {/each}
+              </div>
+            {/await}
           {/if}
         </div>
       {/if}

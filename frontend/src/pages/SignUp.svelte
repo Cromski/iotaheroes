@@ -1,6 +1,6 @@
 <script>
   import { signUp, usernameExists } from "../contractHelpers/accountFunctions";
-  import { hero } from "../contract_stores";
+  import { hero } from "../stores/contract_stores";
   import { selectedAccount } from "svelte-web3";
   export let fnCallback;
   let username;

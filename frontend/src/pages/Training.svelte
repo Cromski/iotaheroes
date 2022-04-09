@@ -2,7 +2,7 @@
   import { selectedAccount } from "svelte-web3";
   import Time from "svelte-time";
 
-  import { facility } from "../contract_stores";
+  import { facility } from "../stores/contract_stores";
   import {
     getFacilities,
     trainAtFacility,

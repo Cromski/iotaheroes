@@ -9,7 +9,7 @@
   import { onMount } from "svelte";
   import SignUp from "./pages/SignUp.svelte";
   import { isSignedUp } from "./contractHelpers/accountFunctions";
-  import { hero } from "./contract_stores";
+  import { hero } from "./stores/contract_stores";
   import NavBar from "./components/NavBar.svelte";
   import { Modals, closeModal } from "svelte-modals";
   import Router from "svelte-spa-router";

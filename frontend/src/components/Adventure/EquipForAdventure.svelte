@@ -1,5 +1,5 @@
 <script>
-  import { inventory } from "../../inventory_store";
+  import { inventory } from "../../stores/inventory_store";
   import Item from "../Item.svelte";
   import EquipmentSlot from "./EquipmentSlot.svelte";
   export let adventureFunction;

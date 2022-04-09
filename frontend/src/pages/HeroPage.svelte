@@ -1,6 +1,6 @@
 <script>
   import { selectedAccount } from "svelte-web3";
-  import { hero, adventure } from "../contract_stores";
+  import { hero, adventure } from "../stores/contract_stores";
   import { getHero } from "../contractHelpers/heroFunctions";
   import { goAdventure } from "../contractHelpers/adventureFunctions";
   import HeroSummary from "../components/HeroSummary.svelte";

@@ -1,8 +1,8 @@
 import { readable, get} from 'svelte/store';
-import {getInventory} from './contractHelpers/tokenFunctions'
+import {getInventory} from '../contractHelpers/tokenFunctions'
 import {token} from './contract_stores'
 import { selectedAccount } from "svelte-web3";
-import { getItem } from "./apiHelpers/Item";
+import { getItem } from "../apiHelpers/Item";
 
 const getData = async () => {
     let t = get(token);
