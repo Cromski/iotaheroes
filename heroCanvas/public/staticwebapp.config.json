@@ -1,12 +1,4 @@
 {
-    "routes": [
-        {
-            "route": "/hero/*",
-            "headers": {
-              "cache-control": "must-revalidate, max-age=15770000"
-            }
-          }
-    ],
     "navigationFallback": {
         "rewrite": "/index.html"
       }
