@@ -9,6 +9,6 @@
     ],
     "navigationFallback": {
         "rewrite": "/index.html",
-        "exclude": ["/hero/**/*.{png,jpg,gif}", "/css/*"]
+        "exclude": ["/hero/*", "/css/*"]
       }
 }
