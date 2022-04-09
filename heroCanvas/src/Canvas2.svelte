@@ -40,7 +40,7 @@
   });
   function handleBody(path, id) {
     let imgBody = new Image();
-    imgBody.src = path + "body/" + id + ".png";
+    imgBody.src = path + "body/" + id + ".PNG";
     imgBody.onload = () => {
       images.set(HeroParts.BODY, imgBody);
       draw();
@@ -50,7 +50,7 @@
       draw();
     };
     let imgHead = new Image();
-    imgHead.src = path + "head/" + id + ".png";
+    imgHead.src = path + "head/" + id + ".PNG";
     imgHead.onload = () => {
       images.set(HeroParts.HEAD, imgHead);
       draw();
@@ -60,7 +60,7 @@
       draw();
     };
     let imgLeftArm = new Image();
-    imgLeftArm.src = path + "left_arm/" + id + ".png";
+    imgLeftArm.src = path + "left_arm/" + id + ".PNG";
     imgLeftArm.onload = () => {
       images.set(HeroParts.LEFT_ARM, imgLeftArm);
       draw();
@@ -70,7 +70,7 @@
       draw();
     };
     let imgRightArm = new Image();
-    imgRightArm.src = path + "right_arm/" + id + ".png";
+    imgRightArm.src = path + "right_arm/" + id + ".PNG";
     imgRightArm.onload = () => {
       images.set(HeroParts.RIGHT_ARM, imgRightArm);
       draw();
@@ -82,7 +82,7 @@
   }
   function handleShirt(path, id) {
     let imgBody = new Image();
-    imgBody.src = path + "body/" + id + ".png";
+    imgBody.src = path + "body/" + id + ".PNG";
     imgBody.onload = () => {
       images.set(HeroParts.SHIRT_TORSO, imgBody);
       draw();
@@ -92,7 +92,7 @@
       draw();
     };
     let imgLeftArm = new Image();
-    imgLeftArm.src = path + "left_sleeve/" + id + ".png";
+    imgLeftArm.src = path + "left_sleeve/" + id + ".PNG";
     imgLeftArm.onload = () => {
       images.set(HeroParts.SHIRT_LEFT_ARM, imgLeftArm);
       draw();
@@ -102,7 +102,7 @@
       draw();
     };
     let imgRightArm = new Image();
-    imgRightArm.src = path + "right_sleeve/" + id + ".png";
+    imgRightArm.src = path + "right_sleeve/" + id + ".PNG";
     imgRightArm.onload = () => {
       images.set(HeroParts.SHIRT_RIGHT_ARM, imgRightArm);
       draw();
@@ -114,7 +114,7 @@
   }
   function handle(path, id, z) {
     let img = new Image();
-    img.src = path + id + ".png";
+    img.src = path + id + ".PNG";
 
     img.onload = () => {
       images.set(z, img);
