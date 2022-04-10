@@ -187,7 +187,9 @@
       <div>Weapon ({weapon})</div>
       <input type="range" bind:value={weapon} min="0" max="5" />
     </div>
-    <button on:click={() => randomize()}>RANDOMIZE</button>
+    <div class="canvasControl" style="text-align:center">
+      <button on:click={() => randomize()}>RANDOMIZE</button>
+    </div>
   </div>
 </div>
 
