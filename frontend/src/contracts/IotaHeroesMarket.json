@@ -21912,6 +21912,88 @@
     "version": "0.8.10+commit.fc410830.Emscripten.clang"
   },
   "networks": {
+    "1074": {
+      "events": {
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        },
+        "0xd0e9aa5556e03c447575bd31d7a883384c075015de0184785193f025fbfd5451": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "tradeId",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "creator",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            }
+          ],
+          "name": "TradeCreated",
+          "type": "event"
+        },
+        "0x580958e7d2b78e6e91069e3a54d87713100ef5a99d53edaf3b8062a175ca730e": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "tradeId",
+              "type": "uint256"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "updater",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "enum IotaHeroesMarket.TradeStatus",
+              "name": "updatedStatus",
+              "type": "uint8"
+            }
+          ],
+          "name": "TradeUpdated",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xA56f886Ca17CD08Ebc1Ef6EDF0d6c6068926f54D",
+      "transactionHash": "0x8d0462f4130f48e6437d2ab92c6ef32a60fbc400f37d01d6064516c0de84ff29"
+    },
     "1337": {
       "events": {
         "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
@@ -21996,7 +22078,7 @@
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-04-02T11:37:46.463Z",
+  "updatedAt": "2022-04-14T16:55:19.265Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

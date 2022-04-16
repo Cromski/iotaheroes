@@ -1,16 +1,15 @@
 <script>
   export let item;
   export let clickItem;
-  console.log(item);
 </script>
 
 <div class="m-[10px]">
-  <span><strong>{item.amount} {item.metadata.name}</strong></span>
+  <span><strong>{item.amount} {item.name}</strong></span>
   <img
     on:click={() => clickItem(item)}
     class="border-solid mx-auto"
     width="50px"
-    alt={item.metadata.description}
-    src={"process.env.API_URL" + "/Item/" + item.itemId + ".png"}
+    alt={item.description}
+    src={"process.env.API_URL" + "/Item/" + item.id + ".png"}
   />
 </div>

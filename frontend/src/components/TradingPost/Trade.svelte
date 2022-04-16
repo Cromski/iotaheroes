@@ -1,41 +1,56 @@
 <script>
   import Item from "../Item.svelte";
   import { items } from "../../stores/all_items_store";
+  import { getUsername } from "../../contractHelpers/accountFunctions";
+  import { hero } from "../../stores/contract_stores";
 
-  export let creator;
-  export let itemIdsForSale;
-  export let amountsForSale;
-  export let itemIdsWanted;
-  export let amountsWanted;
+  $: getUsernamePromise = $hero ? getUsername($hero, trade.tradeInitiator) : "";
+
+  export let trade;
   export let tradefulfiller;
-  export let tradeId;
-  export let status;
-
-  let findItem = (id) => {
+  let findItem = (itemId, amount) => {
+    let newItem;
     Object.entries($items).forEach((itemList, i) => {
-      console.log($items);
-      let item = itemList[1].find((a) => a.id == id);
-      console.log(item);
+      let item = itemList[1].find((a) => a.id == itemId);
       if (item !== undefined) {
-        return item;
+        newItem = { amount: amount, ...item };
       }
     });
+    return newItem;
   };
 </script>
 
-<div style="display:flex">
-  <h4>Trade created by {creator}</h4>
-  <div>
-    <h5>Items for sale</h5>
-    {#each itemIdsForSale as itemId, i}
-      <Item item={findItem(itemId)} />
-    {/each}
-  </div>
-  <div>
-    <h5>Items wanted</h5>
-    {#each itemIdsWanted as itemId, i}
-      <Item qty={amountsWanted[i]} {itemId} />
-    {/each}
-  </div>
-</div>
-<button on:click={() => tradefulfiller(tradeId)}>Fulfill trade</button>
+{#if $items !== []}
+  {#await getUsernamePromise}
+    <p>Getting trade info</p>
+  {:then username}
+    <div class="m-2 border-2 border-black">
+      <div class="text-left">
+        Trade created by <strong>{username}</strong>
+      </div>
+
+      <div style="display:flex">
+        <div>
+          <h5 class="underline">Items for sale</h5>
+          <div class="inline-flex  m-2 border border-black">
+            {#each trade.tokenIdsForSale as itemId, i}
+              <Item item={findItem(itemId, trade.amountsToSell[i])} />
+            {/each}
+          </div>
+        </div>
+        <div>
+          <h5 class="underline">Items wanted</h5>
+          <div class="inline-flex m-2 border border-black">
+            {#each trade.tokenIdsWanted as itemId, i}
+              <Item item={findItem(itemId, trade.amountsWanted[i])} />
+            {/each}
+          </div>
+        </div>
+      </div>
+      <button
+        class="btn-sm btn-orange"
+        on:click={() => tradefulfiller(trade.tradeId)}>Fulfill trade</button
+      >
+    </div>
+  {/await}
+{/if}

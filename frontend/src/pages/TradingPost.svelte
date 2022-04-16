@@ -70,15 +70,6 @@
   <p>Getting trades..</p>
 {:then trades}
   {#each trades as trade, i}
-    <Trade
-      status={trade.tradeStatus}
-      tradeId={trade.tradeId}
-      tradefulfiller={tradeFulfiller}
-      creator={trade.tradeInitiator}
-      itemIdsForSale={trade.tokenIdsForSale}
-      amountsForSale={trade.amountsToSell}
-      itemIdsWanted={trade.tokenIdsWanted}
-      amountsWanted={trade.amountsWanted}
-    />
+    <Trade {trade} tradefulfiller={tradeFulfiller} />
   {/each}
 {/await}

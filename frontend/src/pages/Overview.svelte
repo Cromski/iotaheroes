@@ -2,7 +2,7 @@
   import { getHeroes, spawnHero } from "../contractHelpers/heroFunctions";
   import { adventure, hero } from "../stores/contract_stores";
   import { selectedAccount } from "svelte-web3";
-  import HeroSummarySmall from "../components/HeroSummarySmall.svelte";
+  import HeroSummarySmall from "../components/Hero/HeroSummarySmall.svelte";
   import { push } from "svelte-spa-router";
   $: heroesPromise = $hero ? getHeroesAux() : "";
 
@@ -10,11 +10,7 @@
 
   async function spawnHeroAux() {
     await spawnHero($hero, $selectedAccount);
-    inventoryPromise = getInventoryAux();
     heroesPromise = getHeroesAux();
-  }
-  function goToHeroPage(heroId) {
-    location.href = "hero/" + heroId;
   }
 </script>
 

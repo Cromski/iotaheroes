@@ -34,7 +34,6 @@
           slotId={3}
           placeholderName={"Head"}
           item={equipment[3]}
-          changeActiveSlotFunction={changeActiveSlot}
         />
       </div>
     </div>
@@ -48,7 +47,6 @@
           slotId={4}
           placeholderName={"Chest"}
           item={equipment[4]}
-          changeActiveSlotFunction={changeActiveSlot}
         />
       </div>
       <div
@@ -59,7 +57,6 @@
           slotId={1}
           placeholderName={"Weapon"}
           item={equipment[1]}
-          changeActiveSlotFunction={changeActiveSlot}
         />
       </div>
     </div>
@@ -94,7 +91,6 @@
           slotId={5}
           placeholderName={"Pants"}
           item={equipment[5]}
-          changeActiveSlotFunction={changeActiveSlot}
         />
       </div>
     </div>
@@ -106,21 +102,21 @@
     <div>
       Strength: +{equipment.length > 0
         ? equipment
-            .map((item) => item.metadata.attributes.boost.strength)
+            .map((item) => item.attributes.boost.strength)
             .reduce((prev, next) => prev + next)
         : 0}
     </div>
     <div>
       Agility: +{equipment.length > 0
         ? equipment
-            .map((item) => item.metadata.attributes.boost.agility)
+            .map((item) => item.attributes.boost.agility)
             .reduce((prev, next) => prev + next)
         : 0}
     </div>
     <div>
       Intelligence: +{equipment.length > 0
         ? equipment
-            .map((item) => item.metadata.attributes.boost.intelligence)
+            .map((item) => item.attributes.boost.intelligence)
             .reduce((prev, next) => prev + next)
         : 0}
     </div>
@@ -129,7 +125,7 @@
     <div class="p-2 border-black border-2 m-3">
       Here is your items
       <div>
-        {#each $inventory.filter((f) => f.metadata.attributes?.itemSlot == activeSlot) as item, i}
+        {#each $inventory.filter((f) => f.attributes?.itemSlot == activeSlot) as item, i}
           <Item {item} clickItem={selectItem} />
         {/each}
       </div>

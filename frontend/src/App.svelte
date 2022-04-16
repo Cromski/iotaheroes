@@ -28,7 +28,6 @@
   }
   async function connect() {
     await defaultEvmStores.setProvider();
-    console.log(defaultEvmStores.$chainId);
   }
 </script>
 

@@ -1,5 +1,4 @@
 export const getFacilities = async (facilityContract, selectedAccount, onlyOwnedFacilities) => {
-    console.log(facilityContract)
     const response = await facilityContract.methods.getFacilitiesWithUserLevels().call({from:selectedAccount});
     let facilitiesWithLevel = [];
     response[0].forEach((facility, i) => {
@@ -15,7 +14,6 @@ export const getFacilities = async (facilityContract, selectedAccount, onlyOwned
             facilitiesWithLevel.push({...facility, level: facilityLevel})
         }
     })
-    console.log(facilitiesWithLevel)
     return facilitiesWithLevel;
 }
 export const getBasePrice = async (facilityContract) => {

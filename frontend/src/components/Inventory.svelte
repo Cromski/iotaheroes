@@ -1,8 +1,6 @@
 <script>
   import { inventory } from "../stores/inventory_store";
-
   import Item from "./Item.svelte";
-  console.log(inventory);
 </script>
 
 <h2>Your inventory</h2>

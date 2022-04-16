@@ -1,6 +1,5 @@
 export const getPastTrades = async (tradeContract) => {
     const response = await tradeContract.methods.getOpenTrades().call();
-    console.log(response[0]);
     return response;
 }
 export const setTradeOffer = async ( itemIdsForSale,amountsForSale,itemIdsWanted,amountsWanted,tradeContract,selectedAccount) => {

@@ -8,7 +8,7 @@
     trainAtFacility,
     heroReadyToTrainAt,
   } from "../contractHelpers/facilityFunctions";
-  import TrainingFacilityTraining from "../components/TrainingFacilityTraining.svelte";
+  import TrainingFacilityTraining from "../components/TrainingFacility/TrainingFacilityTraining.svelte";
   export let hero;
   let id = hero.id;
   export let refreshHeroData;
@@ -48,7 +48,6 @@
     {#if facilities.length != 0}
       {#key facilityPromise}
         <div class="flex flex-wrap justify-center mt-10">
-          <button on:click={() => refreshHeroData()}>tester</button>
           {#each facilities as facility}
             <TrainingFacilityTraining
               {facility}

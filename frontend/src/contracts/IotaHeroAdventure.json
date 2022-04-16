@@ -27410,6 +27410,82 @@
       "address": "0x265Eb73CA53d50d13bacC63eD79D0c942c448AA0",
       "transactionHash": "0x29862b156e01db7b3b9176b08cf80d7215ed26f488d31834653ab579a10155e5"
     },
+    "1074": {
+      "events": {
+        "0xbcb585d59fbf23e95ea561b810c6f7b83b556ddc1c9d222aefcaeb7d324aaccc": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "player",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "uint256",
+              "name": "heroId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "adventureId",
+              "type": "uint256"
+            }
+          ],
+          "name": "AdventureCompleted",
+          "type": "event"
+        },
+        "0x86e3966eac95125f1d265e0199935edf15bc4146fb0a2db534a3207b87e5e7c5": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "internalType": "address",
+              "name": "player",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "heroId",
+              "type": "uint256"
+            },
+            {
+              "indexed": false,
+              "internalType": "uint256",
+              "name": "adventureId",
+              "type": "uint256"
+            }
+          ],
+          "name": "AdventureInitiated",
+          "type": "event"
+        },
+        "0x8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e0": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "previousOwner",
+              "type": "address"
+            },
+            {
+              "indexed": true,
+              "internalType": "address",
+              "name": "newOwner",
+              "type": "address"
+            }
+          ],
+          "name": "OwnershipTransferred",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0x0dEAC0cA6AED81C0e0cCD117C8eF857dC0206529",
+      "transactionHash": "0xe0db03245d6f33fd3bbef38681eb9c7c263325a28497042c0430f457fea9eaff"
+    },
     "1337": {
       "events": {
         "0x77e7f22c561a1fe25ae0fe4ab7fae668a036026e1e75ee2387811cb34aa1f0d2": {
@@ -27788,7 +27864,7 @@
     }
   },
   "schemaVersion": "3.4.4",
-  "updatedAt": "2022-04-02T11:37:37.866Z",
+  "updatedAt": "2022-04-14T16:55:04.981Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

@@ -1,7 +1,7 @@
 <script>
   import { hero, adventure } from "../../stores/contract_stores";
   import { getHero } from "../../contractHelpers/heroFunctions";
-  import HeroSummarySmall from "../HeroSummarySmall.svelte";
+  import HeroSummarySmall from "../Hero/HeroSummarySmall.svelte";
   import { link, push } from "svelte-spa-router";
 
   export let tradeId;

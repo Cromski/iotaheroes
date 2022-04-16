@@ -37,11 +37,9 @@
         metadata,
       });
     });
-    console.log(items);
     return items;
   };
 
-  console.log(adventure);
   let maxHeroHP = adventure.hero.constitution;
   let maxEncounterHP = adventure.encounters[0].attributes.constitution;
   let currentHeroHP = [adventure.hero.constitution];

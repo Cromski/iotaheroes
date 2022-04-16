@@ -7,7 +7,6 @@ import { getItem } from "../apiHelpers/Item";
 const getData = async () => {
     let t = get(token);
     let sa = get(selectedAccount);
-    console.log(t,sa)
     var inv = await getInventory(get(token), get(selectedAccount))
     let items = []
     await Promise.all(inv.map(async (amount, itemId) => {
@@ -16,12 +15,10 @@ const getData = async () => {
             let metadata = await getItem(itemId);
             items.push({
                 amount,
-                itemId,
-                metadata
+                ...metadata
             });
         }  
     }))
-    console.log(items)
     return items;
 }
 

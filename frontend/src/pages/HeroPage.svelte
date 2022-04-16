@@ -3,8 +3,9 @@
   import { hero, adventure } from "../stores/contract_stores";
   import { getHero } from "../contractHelpers/heroFunctions";
   import { goAdventure } from "../contractHelpers/adventureFunctions";
-  import HeroSummary from "../components/HeroSummary.svelte";
-  import HeroActionTabs from "../components/HeroActionTabs.svelte";
+  import HeroSummary from "../components/Hero/HeroSummary.svelte";
+  import HeroActionTabs from "../components/Hero/HeroActionTabs.svelte";
+
   export let params = {};
   let id = params.id;
   $: heroPromise = $hero ? getHeroAux() : "";

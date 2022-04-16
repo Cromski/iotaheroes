@@ -1,5 +1,4 @@
 export const getTokenUri = async (tokenContract) => {
-    console.log(tokenContract)
     const response = await tokenContract.methods.uri(0).call();
     // Need to overwrite this while testing..
     return "process.env.API_URL"+"/item/{id}";
@@ -18,7 +17,6 @@ export const getInventory = async (tokenContract, selectedAccount) => {
     Array.from(Array(5000).keys())
     )
     .call();
-    console.log(response)
     return response
 }
 export const approveAll = async (operator, tokenContract,selectedAccount) => {
@@ -34,6 +32,5 @@ export const getAllItems = async () => {
 export const getItem = async (id) => {
     const res = await fetch("process.env.API_URL" + "/item/"+id)
     const json = res.json() 
-    console.log(json)
     return json;
 }

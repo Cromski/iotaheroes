@@ -3,7 +3,7 @@
   import { selectedAccount } from "svelte-web3";
   import { buyProduct, getProducts } from "../contractHelpers/storeFunctions";
   import { getTokenUri } from "../contractHelpers/tokenFunctions";
-  import ShopItem from "../components/ShopItem.svelte";
+  import ShopItem from "../components/Shops/ShopItem.svelte";
 
   export let params = {};
   let id = params.id;

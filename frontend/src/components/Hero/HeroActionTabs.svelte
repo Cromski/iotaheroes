@@ -1,8 +1,8 @@
 <script>
   import { Tabs, Tab, TabList, TabPanel } from "svelte-tabs";
-  import Training from "../pages/Training.svelte";
-  import Adventure from "./Adventure/Adventure.svelte";
-  import ListHero from "./HeroesMarket/ListHero.svelte";
+  import Training from "../../pages/Training.svelte";
+  import Adventure from "../Adventure/Adventure.svelte";
+  import ListHero from "../HeroesMarket/ListHero.svelte";
   export let hero;
   export let adventureFunction;
   export let refreshHeroData;

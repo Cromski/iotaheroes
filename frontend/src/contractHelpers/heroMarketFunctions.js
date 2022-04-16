@@ -1,11 +1,9 @@
 export const getOpenTrades = async (heroMarketContract) => {
     const response = await heroMarketContract.methods.getOpenTrades().call();
-    console.log(response);
     return response;
 }
 export const getTradeForItemId = async (itemId, heroMarketContract) => {
   const response = await heroMarketContract.methods.getTradeForItem(itemId).call();
-  console.log(response);
 
   if (response.tradeInitiator == "0x0000000000000000000000000000000000000000")
   {

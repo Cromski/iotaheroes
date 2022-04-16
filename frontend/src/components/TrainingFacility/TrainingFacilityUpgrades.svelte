@@ -1,5 +1,5 @@
 <script>
-  import StatPie from "./StatPie.svelte";
+  import StatPie from "../StatPie.svelte";
   import TrainingFacility from "./TrainingFacility.svelte";
   export let facility;
   export let canUpgradeAt;
@@ -8,15 +8,17 @@
   $: readyToUpgrade = canUpgradeAt > Date.now() / 1000;
 </script>
 
-<div class="grid justify-items-center">
+<div class="m-2" style="">
   <TrainingFacility {facility} />
   <strong
     >Cost to upgrade: {Number(basePrice) * (Number(facility.level) + 1)}</strong
   >
-  <button
-    disabled={readyToUpgrade ? "disabled" : ""}
-    class="btn btn-orange"
-    on:click={() => upgradeFunction(facility.id, facility.level)}
-    >Upgrade!</button
-  >
+  <div>
+    <button
+      disabled={readyToUpgrade ? "disabled" : ""}
+      class="btn btn-orange"
+      on:click={() => upgradeFunction(facility.id, facility.level)}
+      >Upgrade!</button
+    >
+  </div>
 </div>

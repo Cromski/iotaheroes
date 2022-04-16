@@ -1,7 +1,7 @@
 <script>
   import { hero, adventure } from "../../stores/contract_stores";
   import { getHero } from "../../contractHelpers/heroFunctions";
-  import HeroSummary from "../HeroSummary.svelte";
+  import HeroSummary from "../Hero/HeroSummary.svelte";
 
   export let trade;
   export let buyFunction;

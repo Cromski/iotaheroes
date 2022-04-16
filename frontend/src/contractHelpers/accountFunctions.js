@@ -5,8 +5,8 @@ export const isSignedUp = async (heroContract, selectedAccount) => {
     const response = await heroContract.methods.isSignedUp().call({from:selectedAccount});
     return response;
 }
-export const getUsername = async (heroContract, selectedAccount) => {
-    const response = await heroContract.methods.getUsername().call({from:selectedAccount});
+export const getUsername = async (heroContract, address) => {
+    const response = await heroContract.methods.getUsername().call({from:address});
     return response;
 }
 export const usernameExists = async (username, heroContract) => {

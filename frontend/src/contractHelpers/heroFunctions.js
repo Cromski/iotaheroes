@@ -1,27 +1,25 @@
 import {
     getHeroAdventureStatus
   } from "../contractHelpers/adventureFunctions";
+  import {getHeroTraits} from "../apiHelpers/Hero"
 
 export const getHeroes = async (heroContract,adventureContract, selectedAccount) => {
-    console.log(heroContract)
     const heroes = await heroContract.methods.getOwnerHeroes(selectedAccount).call();
-    console.log(heroes)
-    const arrLength = heroes.length;
     let heroesWithStatus = [];
     await Promise.all(heroes.map( async (hero) => {
         const heroStatus = await getHeroAdventureStatus(hero.id,adventureContract);
-        heroesWithStatus.push({...hero, readyToAdventure: heroStatus[1], isAdventuring: heroStatus[0]})
+        const heroTraits = await getHeroTraits(hero.id);
+        heroesWithStatus.push({...hero, readyToAdventure: heroStatus[1], isAdventuring: heroStatus[0], traits:heroTraits})
     })
     )
-    console.log("heroesstatus",heroesWithStatus)
-    return heroesWithStatus;
+    return heroesWithStatus.sort((a,b) => a.id - b.id);
 }
 export const getHero = async (id, heroContract, adventureContract) => {
-    console.log(heroContract)
-
     const hero = await heroContract.methods.heroes(id).call();
     const heroStatus = await getHeroAdventureStatus(id,adventureContract);
-    addHeroStatus(hero,heroStatus);
+    const heroTraits = await getHeroTraits(id);
+    addHeroStatusAndTraits(hero,heroStatus,heroTraits);
+
     return hero;
 }
 
@@ -42,8 +40,9 @@ export const approveAll = async (operator, heroContract,selectedAccount) => {
 }
 
 
-const addHeroStatus = (hero, heroStatus) => {
+const addHeroStatusAndTraits = (hero, heroStatus,heroTraits) => {
     hero.readyToAdventure = heroStatus[1];
     hero.isAdventuring = heroStatus[0];
+    hero.traits = heroTraits;
     return hero;
 }

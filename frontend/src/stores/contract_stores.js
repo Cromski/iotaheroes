@@ -13,7 +13,6 @@ import { derived } from 'svelte/store';
 export const hero = derived([web3, chainId], ([$web3, $chainId]) => {  
     if ($web3.eth && $chainId) {
         const deployedNetwork = IotaHeroFactory.networks[$chainId];
-        console.log(deployedNetwork)
         return new $web3.eth.Contract(
             IotaHeroFactory.abi, deployedNetwork.address, {});
     }
@@ -23,7 +22,6 @@ export const hero = derived([web3, chainId], ([$web3, $chainId]) => {
 export const adventure = derived([web3, chainId], ([$web3, $chainId]) => {  
     if ($web3.eth && $chainId) {
         const deployedNetwork = IotaHeroAdventure.networks[$chainId];
-        console.log(deployedNetwork)
         return new $web3.eth.Contract(
         IotaHeroAdventure.abi, deployedNetwork.address, {});
     }
@@ -32,7 +30,6 @@ export const adventure = derived([web3, chainId], ([$web3, $chainId]) => {
 export const facility = derived([web3, chainId], ([$web3, $chainId]) => {  
     if ($web3.eth && $chainId) {
         const deployedNetwork = IotaHeroTrainingFacility.networks[$chainId];
-        console.log(deployedNetwork)
         return new $web3.eth.Contract(
             IotaHeroTrainingFacility.abi, deployedNetwork.address, {});
     }

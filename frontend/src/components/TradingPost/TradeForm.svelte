@@ -10,7 +10,6 @@
   let wantedAmounts = [0];
 
   const pickItem = (id) => {
-    console.log(id);
     if (!chosenItems.includes(id)) {
       chosenItems = [...chosenItems, id];
       chosenItemAmounts = [...chosenItemAmounts, 0];
@@ -24,7 +23,6 @@
     }
   };
   const pickItemWanted = (id) => {
-    console.log(id);
     if (!wantedItems.includes(id)) {
       wantedItems = [...wantedItems, id];
       wantedAmounts = [...wantedAmounts, 0];
@@ -40,7 +38,7 @@
 
   function createTradeAux() {
     createTrade(
-      chosenItems.map((a) => a.itemId),
+      chosenItems.map((a) => a.id),
       chosenItemAmounts,
       wantedItems,
       wantedAmounts
@@ -68,9 +66,9 @@
               class="mr-2"
               width="35px"
               alt={"pic"}
-              src={"process.env.API_URL" + "/Item/" + item.itemId + ".png"}
+              src={"process.env.API_URL" + "/Item/" + item.id + ".png"}
             />
-            <input type="hidden" value={item.itemId} />
+            <input type="hidden" value={item.id} />
             <input
               type="number"
               max={inventory[item.amount]}
@@ -92,7 +90,6 @@
         <!--/*border-2 border-black*/-->
         <div><ItemSelector select={pickItemWanted} /></div>
         {#each wantedItems as item, i}
-          {console.log(item)}
           <div class="m-[10px] flex justify-center">
             <img
               on:click={() => pickItemWanted(item)}

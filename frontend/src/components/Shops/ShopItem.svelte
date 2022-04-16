@@ -10,7 +10,6 @@
   export let buyAction;
 
   async function getMetadata() {
-    console.log("web3", $web3);
     const url = uri.replace("{id}", itemId);
     const resp = await fetch(url);
     const json = await resp.json();

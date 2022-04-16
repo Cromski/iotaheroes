@@ -13,7 +13,7 @@
     isApprovedForAll,
     approveAll,
   } from "../contractHelpers/tokenFunctions";
-  import TrainingFacilityUpgrades from "../components/TrainingFacilityUpgrades.svelte";
+  import TrainingFacilityUpgrades from "../components/TrainingFacility/TrainingFacilityUpgrades.svelte";
 
   $: facilityPromise = $facility ? getFacilitiesAux() : "";
   $: basePricePromise = $facility ? getBasePrice($facility) : "";

@@ -1,6 +1,7 @@
 <script>
   export let placeholderName;
   export let item;
+  export let slotId;
 </script>
 
 {#if item === undefined}
@@ -9,7 +10,7 @@
   <img
     class="border-solid mx-auto"
     width="50px"
-    alt={item.metadata.description}
-    src={"process.env.API_URL" + "/Item/" + item.itemId + ".png"}
+    alt={item.description}
+    src={"process.env.API_URL" + "/Item/" + item.id + ".png"}
   />
 {/if}

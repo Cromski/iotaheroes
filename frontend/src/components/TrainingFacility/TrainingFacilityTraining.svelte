@@ -5,7 +5,7 @@
   export let heroIsReadyToTrain;
 </script>
 
-<div class="grid justify-items-center">
+<div class="m-2">
   <TrainingFacility {facility} />
   <button
     disabled={!heroIsReadyToTrain ? "disabled" : ""}

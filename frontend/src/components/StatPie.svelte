@@ -3,8 +3,6 @@
   export let str;
   export let agi;
   export let int;
-  export let width;
-  console.log(str);
   let data = {
     labels: ["Strength", "Agility", "Intelligence"],
     datasets: [
@@ -28,4 +26,4 @@
   };
 </script>
 
-<Pie {width} {data} {options} />
+<Pie {data} {options} />
