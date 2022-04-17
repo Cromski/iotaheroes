@@ -6,5 +6,4 @@
 </script>
 
 <EquipForAdventure {hero} {adventureFunction} />
-
 <AdventureHistory heroId={hero.id} />
