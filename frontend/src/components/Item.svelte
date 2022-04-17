@@ -10,6 +10,6 @@
     class="border-solid mx-auto"
     width="50px"
     alt={item.description}
-    src={"process.env.API_URL" + "/Item/" + item.id + ".png"}
+    src={"items/" + item.id + ".png"}
   />
 </div>

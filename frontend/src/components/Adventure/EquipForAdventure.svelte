@@ -14,7 +14,7 @@
     console.log(equipment);
   };
   let goAdventure = () => {
-    let equipArr = equipment.map((a) => a.itemId).filter((a) => a != null);
+    let equipArr = equipment.map((a) => a.id).filter((a) => a != null);
     console.log(equipArr);
     adventureFunction(hero.id, equipArr);
   };

@@ -9,18 +9,20 @@
   export let trade;
   export let tradefulfiller;
   let findItem = (itemId, amount) => {
-    let newItem;
-    Object.entries($items).forEach((itemList, i) => {
-      let item = itemList[1].find((a) => a.id == itemId);
-      if (item !== undefined) {
-        newItem = { amount: amount, ...item };
-      }
-    });
-    return newItem;
+    if ($items !== []) {
+      let newItem;
+      Object.entries($items).forEach((itemList, i) => {
+        let item = itemList[1].find((a) => a.id == itemId);
+        if (item !== undefined) {
+          newItem = { amount: amount, ...item };
+        }
+      });
+      return newItem;
+    }
   };
 </script>
 
-{#if $items !== []}
+{#if Object.keys($items).length !== 0}
   {#await getUsernamePromise}
     <p>Getting trade info</p>
   {:then username}

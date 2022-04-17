@@ -1,6 +1,6 @@
 export const getAllItems = async () => {
     const res = await fetch("process.env.API_URL"+"/Item")
-    const json = await res.json() 
+    const json = res.json() 
     return json;
 }
 

@@ -29,7 +29,7 @@
         style={"border-style:solid;vertical-align:middle"}
         width="50px"
         alt={data.description}
-        src={"process.env.API_URL" + "/Item/" + data.id + ".png"}
+        src={"items/" + data.id + ".png"}
       />
       <p>Quantity: <strong>{qty}</strong></p>
       <p>Price: <strong>{$web3.utils.fromWei(price)}</strong></p>

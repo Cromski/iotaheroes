@@ -33,8 +33,7 @@
       let amount = adventure.loot.amounts[i];
       items.push({
         amount,
-        itemId,
-        metadata,
+        ...metadata,
       });
     });
     return items;
