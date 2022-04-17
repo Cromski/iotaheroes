@@ -17,7 +17,7 @@ jobs:
       uses: SpicyPizza/create-envfile@v1
       with:
         envkey_API_URL: "https://iotaheroes.azurewebsites.net/api"
-        directory: "frontend"
+        directory: "../frontend"
         file_name: .env
         
   build_and_deploy_job:
