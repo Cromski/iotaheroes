@@ -14,6 +14,8 @@
   import { Modals, closeModal } from "svelte-modals";
   import Router from "svelte-spa-router";
   import { routes } from "./routes";
+  import LogRocket from "logrocket";
+  LogRocket.init("ekynnv/iotaheroes");
 
   $: isSignedUpPromise = $hero ? isSignedUp($hero, $selectedAccount) : "";
   $: metamaskConnected = window.ethereum

@@ -14,7 +14,6 @@
   async function GoAdventure(heroId, equipment) {
     await goAdventure(heroId, equipment, $adventure, $selectedAccount);
     heroPromise = getHeroAux();
-    eventPromise = getCompletedAdventuresAux();
   }
   function refreshHeroData() {
     console.log("Queued hero for refresh");
