@@ -13,15 +13,15 @@
   class="fixed top-0 border-0  w-full h-16 flex border-b-2 border-black-600 border-off-set-4"
 >
   <!-- navbar start -->
-  <div on:click={() => push("/")} class=" flex justify-start w-1/4">
-    <!-- left side -->
+  <div on:click={() => push("/")} class=" flex justify-start bing:w-1/4 bing:min-w-[210px] w-1/2 bing:bg-cyan-600">
+    <!-- left side  px-9 text-2xl text-[#ff3e00] font-thin border-none ml-11 ... flex justify-start w-1/4-->
     <img
       alt="IotaHeroes"
       src="/logo.PNG"
-      class=" px-9 text-2xl text-[#ff3e00] font-thin border-none ml-11"
+      class=" mx-auto "
     />
   </div>
-  <div class="flex justify-end w-3/4">
+  <div class="flex justify-end w-3/4 bg-red-600 overflow-hidden">
     <!-- right side -->
     <button
       on:click={() => push("/heromarket")}
