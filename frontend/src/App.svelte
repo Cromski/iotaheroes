@@ -15,6 +15,8 @@
   import Router from "svelte-spa-router";
   import { routes } from "./routes";
   import LogRocket from "logrocket";
+  import SoMe from "./components/SoMe.svelte";
+
   LogRocket.init("ekynnv/iotaheroes");
   LogRocket.identify(selectedAccount);
   $: isSignedUpPromise = $hero ? isSignedUp($hero, $selectedAccount) : "";
@@ -45,6 +47,7 @@
 </script>
 
 <main class="min-h-screen">
+  <SoMe />
   <Modals>
     <div slot="backdrop" class="backdrop" on:click={closeModal} />
   </Modals>
@@ -91,8 +94,10 @@
         {#if window.ethereum}
           <!-- Wallet found, give network details-->
           <div>
-            Browser wallet found, please connect to the Iota Test EVM network to
-            continue
+            <strong
+              >Browser wallet found, please connect to the Iota Test EVM network
+              to continue</strong
+            >
           </div>
           <div class="p-2 text-sm text-left border border-black bg-white">
             <p>
