@@ -16,7 +16,7 @@
   import { routes } from "./routes";
   import LogRocket from "logrocket";
   LogRocket.init("ekynnv/iotaheroes");
-
+  LogRocket.identify(selectedAccount);
   $: isSignedUpPromise = $hero ? isSignedUp($hero, $selectedAccount) : "";
   $: metamaskConnected = window.ethereum
     ? window.ethereum.isConnected()
@@ -25,6 +25,17 @@
   onMount(async () => {
     await connect();
   });
+
+  // detect Metamask account change
+  window.ethereum.on("accountsChanged", function (accounts) {
+    location.reload();
+  });
+
+  // detect Network account change
+  window.ethereum.on("networkChanged", function (networkId) {
+    location.reload();
+  });
+
   function signInCallback() {
     isSignedUpPromise = isSignedUp($hero, $selectedAccount);
   }
@@ -53,35 +64,73 @@
       {/if}
     {/await}
   {:else}
-    {#if window.Web3}
-      <p>
-        The Web3.js library has been injected in Global window Object (version: {window
-          .Web3.version}).
-      </p>
-    {:else}
-      <div class="notification is-warning">
-        <strong
-          >Error! The Web3.js library has not been detected in the Global window
-          Object.</strong
-        >
-        Please check that Web3.js has been correctly added in
-        <em class="is-family-code">public/index.html</em>
-        with the line:
-        <pre>
+    <img
+      alt="IotaHeroes"
+      src="/logo.PNG"
+      class="w-1/2 mx-auto text-2xl text-[#ff3e00] font-thin border-none"
+    />
+    <div class="flex w-full">
+      <div id="container" class="">
+        {#if window.Web3}
+          <!-- Web3 was injected by library (svelte-web3)-->
+        {:else}
+          <div class="notification is-warning">
+            <strong
+              >Error! The Web3.js library has not been detected in the Global
+              window Object.</strong
+            >
+            Please check that Web3.js has been correctly added in
+            <em class="is-family-code">public/index.html</em>
+            with the line:
+            <pre>
     &lt;script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js">&lt;/script>
     </pre>
+          </div>
+        {/if}
+        <!-- Was a browswer wallet found-->
+        {#if window.ethereum}
+          <!-- Wallet found, give network details-->
+          <div>
+            Browser wallet found, please connect to the Iota Test EVM network to
+            continue
+          </div>
+          <div class="p-2 text-sm text-left border border-black bg-white">
+            <p>
+              First make sure you have made an account and logged into your
+              MetaMask browser extension.
+            </p>
+            <p class="mt-2">
+              Click on the Networks dropdown in the top and click the "Add
+              Network" button, finally add the details below and save the
+              network.
+            </p>
+            <p class="mt-2">
+              Network Name: <strong>Iota EVM test</strong> (or choose another name)
+            </p>
+            <p>RPC URL: <strong>https://evm.wasp.sc.iota.org</strong></p>
+            <p>Chain ID: <strong>1074</strong></p>
+            <p>
+              Currency Symbol: <strong>i</strong> (or choose another symbol)
+            </p>
+            <p>
+              Block Explorer URL: <strong
+                >https://explorer.wasp.sc.iota.org</strong
+              > (optional)
+            </p>
+          </div>
+        {:else}
+          <!-- no wallet found give metamask link-->
+          <p>
+            Please install <a href="https://metamask.io/">MetaMask</a> to continue..
+          </p>
+          <p class="mt-4">
+            MetaMask is a cryptocurrency wallet that allows you to interact with
+            this and many other decentralized applications through a browser
+            extension.
+          </p>
+        {/if}
       </div>
-    {/if}
-    <p>
-      Browser wallet detected in Global Object window.ethereum : {window.ethereum
-        ? "yes"
-        : "no"}
-    </p>
-    {#if window.ethereum}
-      <p>
-        Browser wallet already connected to metamask : {metamaskConnected}
-      </p>
-    {/if}
+    </div>
   {/if}
 </main>
 
