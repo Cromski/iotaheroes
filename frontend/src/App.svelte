@@ -17,8 +17,8 @@
   import LogRocket from "logrocket";
   import SoMe from "./components/SoMe.svelte";
 
-  LogRocket.init("ekynnv/iotaheroes");
-  LogRocket.identify(selectedAccount);
+  // LogRocket.init("ekynnv/iotaheroes");
+  // LogRocket.identify($selectedAccount);
   $: isSignedUpPromise = $hero ? isSignedUp($hero, $selectedAccount) : "";
   $: metamaskConnected = window.ethereum
     ? window.ethereum.isConnected()

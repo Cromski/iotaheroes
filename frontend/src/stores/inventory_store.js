@@ -13,8 +13,9 @@ const getData = async () => {
         if(amount != 0)
         {
             let metadata = await getItem(itemId);
+            let amountInt = parseInt(amount);
             items.push({
-                amount,
+                amount:amountInt,
                 ...metadata
             });
         }  

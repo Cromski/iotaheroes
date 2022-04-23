@@ -1,8 +1,8 @@
 <div
   style="background-color: rgba(255,255,255,0.2"
-  class="m-2 py-1 px-3 absolute right-0 bottom-0 inline-flex rounded-lg"
+  class="m-2 py-1 px-3 fixed right-0 bottom-0 inline-flex rounded-lg"
 >
-  <div class="mx-2">
+  <div class="mx-2 ">
     <a
       href="https://twitter.com/IotaHeroes"
       target="_blank"
