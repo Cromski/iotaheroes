@@ -19,6 +19,11 @@ export const getInventory = async (tokenContract, selectedAccount) => {
     .call();
     return response
 }
+export const sendItem = async (itemId,amount, to, tokenContract,selectedAccount) => {
+    await tokenContract.methods
+    .safeTransferFrom(selectedAccount,to,itemId,amount, "0x0")
+    .send({ from: selectedAccount });
+}
 export const approveAll = async (operator, tokenContract,selectedAccount) => {
     await tokenContract.methods
     .setApprovalForAll(operator._address, true)
