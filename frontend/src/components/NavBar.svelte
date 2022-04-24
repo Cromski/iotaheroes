@@ -33,7 +33,7 @@
       class="mr-3 h-16 w-24 border-none text-lg hover:underline">UPGRADE</button
     >
     <button
-      on:click={() => toggleInventory()}
+      on:click={() => push("/inventory")}
       class="mr-3 h-16 w-24 border-none text-lg hover:underline"
       >INVENTORY</button
     >
