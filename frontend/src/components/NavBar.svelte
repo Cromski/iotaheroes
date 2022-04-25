@@ -43,10 +43,14 @@
       class="mr-3 h-16 w-24 border-none text-lg hover:underline">TRADE</button
     >
     <button
+      on:click={() => push("/user")}
+      class="mr-3 h-16 w-24 border-none text-lg hover:underline">USERS</button
+    >
+    <!-- <button
       on:click={() => push("/shop/0")}
       class=" mr-[12%] h-16 w-24 border-none text-lg hover:underline"
       >SHOP</button
-    >
+    > -->
     <div class="h-16 w-18 border-none text-lg hover:underline items-center">
       <AccountInfo />
     </div>

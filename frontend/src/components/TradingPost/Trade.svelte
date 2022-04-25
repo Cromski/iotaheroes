@@ -5,6 +5,7 @@
   import { getUsername } from "../../contractHelpers/accountFunctions";
   import { hero } from "../../stores/contract_stores";
   import { inventory } from "../../stores/inventory_store";
+  import UserLink from "../UserLink.svelte";
   export let trade;
   export let approved;
   export let tradefulfiller;
@@ -51,7 +52,7 @@
   {:then username}
     <div class="m-2 border-2 border-black">
       <div class="text-left">
-        Trade created by <strong>{username}</strong>
+        Trade created by <UserLink userSearchTerm={username} />
       </div>
 
       <div style="display:flex">

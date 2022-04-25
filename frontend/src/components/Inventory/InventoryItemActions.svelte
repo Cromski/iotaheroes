@@ -19,10 +19,10 @@
 
   const searchUserAux = async (userSearchTerm) => {
     var user = await searchUser(userSearchTerm, $hero);
-    if (user === "") {
+    if (user.username === "") {
       validRecipient = false;
     } else {
-      recipientAddress = await getAddressForUsername($hero, user);
+      recipientAddress = user.address;
       validRecipient = true;
     }
     return user;
@@ -80,7 +80,7 @@
         Checking addresss..
       {:then username}
         {#if username !== ""}
-          <div>Sending to.. <strong>{username}</strong></div>
+          <div>Sending to.. <strong>{username.username}</strong></div>
         {:else}
           <div class="text-xs">Enter a valid username or address!</div>
         {/if}

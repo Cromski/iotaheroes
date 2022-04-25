@@ -29,13 +29,14 @@ export const usernameExists = async (username, heroContract) => {
 
 export const searchUser = async (user,heroContract) => {
     var exists = await usernameExists(user, heroContract);
+    var addr = await getAddressForUsername(heroContract, user);
     if (exists) {
-      return user;
+      return {username:user, address: addr};
     } else {
       var isValid = isValidAddress(user);
       if (isValid) {
-        var username = await getUsernameByAddress($hero, user);
-        return username;
+        var username = await getUsernameByAddress(heroContract, user);
+        return {username:username, address:user};
       } else {
         return "";
       }

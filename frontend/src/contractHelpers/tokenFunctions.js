@@ -17,7 +17,19 @@ export const getInventory = async (tokenContract, selectedAccount) => {
     Array.from(Array(5000).keys())
     )
     .call();
-    return response
+    let items = []
+    await Promise.all(response.map(async (amount, itemId) => {
+        if(amount != 0)
+        {
+            let metadata = await getItem(itemId);
+            let amountInt = parseInt(amount);
+            items.push({
+                amount:amountInt,
+                ...metadata
+            });
+        }  
+    }))
+    return items;
 }
 export const sendItem = async (itemId,amount, to, tokenContract,selectedAccount) => {
     await tokenContract.methods

@@ -5,6 +5,7 @@
   import { goAdventure } from "../contractHelpers/adventureFunctions";
   import HeroSummary from "../components/Hero/HeroSummary.svelte";
   import HeroActionTabs from "../components/Hero/HeroActionTabs.svelte";
+  import UserLink from "../components/UserLink.svelte";
 
   export let params = {};
   let id = params.id;
@@ -16,7 +17,6 @@
     heroPromise = getHeroAux();
   }
   function refreshHeroData() {
-    console.log("Queued hero for refresh");
     heroPromise = getHeroAux();
   }
 </script>
@@ -25,5 +25,10 @@
   <h2>Getting hero...</h2>
 {:then hero}
   <HeroSummary {hero} />
-  <HeroActionTabs {hero} {refreshHeroData} adventureFunction={GoAdventure} />
+
+  {#if hero.owner.toLowerCase() === $selectedAccount}
+    <HeroActionTabs {hero} {refreshHeroData} adventureFunction={GoAdventure} />
+  {:else}
+    <div>This hero is owned by: <UserLink userSearchTerm={hero.owner} /></div>
+  {/if}
 {/await}
