@@ -58,7 +58,7 @@
       {#if isSignedUp}
         <div class="flex w-full">
           <NavBar />
-          <div id="container" class="">
+          <div id="container" class="relative">
             <Router {routes} />
           </div>
         </div>
@@ -73,7 +73,7 @@
       class="w-1/2 mx-auto text-2xl text-[#ff3e00] font-thin border-none"
     />
     <div class="flex w-full">
-      <div id="container" class="">
+      <div id="container" class="relative">
         {#if window.Web3}
           <!-- Web3 was injected by library (svelte-web3)-->
         {:else}

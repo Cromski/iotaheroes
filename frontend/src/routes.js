@@ -5,6 +5,8 @@ import Inventory from "./pages/Inventory.svelte"
 import Shop from "./pages/Shop.svelte"
 import TrainingFacilities from "./pages/TrainingFacilities.svelte"
 import HeroMarketplace from "./pages/HeroMarketplace.svelte"
+import Users from "./pages/Users.svelte"
+
 
 const routes = {
     '/hero/:id': HeroPage,
@@ -14,6 +16,7 @@ const routes = {
     '/heromarket/:id?': HeroMarketplace,
     '/shop/:id': Shop,
     '/upgrade': TrainingFacilities,
+    '/user/:id?': Users,
     '/': Overview,
 
 }
