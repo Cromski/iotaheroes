@@ -3,6 +3,7 @@ import {
   } from "../contractHelpers/adventureFunctions";
   import {getHeroTraits} from "../apiHelpers/Hero"
 
+
 export const getHeroes = async (heroContract,adventureContract, selectedAccount) => {
     const heroes = await heroContract.methods.getOwnerHeroes(selectedAccount).call();
     let heroesWithStatus = [];
@@ -15,6 +16,10 @@ export const getHeroes = async (heroContract,adventureContract, selectedAccount)
     })
     )
     return heroesWithStatus.sort((a,b) => a.id - b.id);
+}
+export const getHeroesSimple = async (heroContract, selectedAccount) => {
+    const heroes = await heroContract.methods.getOwnerHeroes(selectedAccount).call();   
+    return heroes;
 }
 export const getHero = async (id, heroContract, adventureContract) => {
     const hero = await heroContract.methods.heroes(id).call();
