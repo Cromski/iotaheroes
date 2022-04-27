@@ -16,28 +16,29 @@
   import { routes } from "./routes";
   import LogRocket from "logrocket";
   import SoMe from "./components/SoMe.svelte";
+  import ConnectionGuide from "./components/ConnectionGuide.svelte";
 
   // LogRocket.init("ekynnv/iotaheroes");
   // LogRocket.identify($selectedAccount);
   $: isSignedUpPromise = $hero ? isSignedUp($hero, $selectedAccount) : "";
-  $: metamaskConnected = window.ethereum
-    ? window.ethereum.isConnected()
-    : false;
+  $: metamaskConnected = window.ethereum;
+  $: metamaskConnected, metamaskConnected ? walletListeners() : "";
 
   onMount(async () => {
     await connect();
   });
+  function walletListeners() {
+    window.ethereum.on("accountsChanged", function (accounts) {
+      console.log("Accounts changed");
+      location.reload();
+    });
 
-  // detect Metamask account change
-  window.ethereum.on("accountsChanged", function (accounts) {
-    location.reload();
-  });
-
-  // detect Network account change
-  window.ethereum.on("networkChanged", function (networkId) {
-    location.reload();
-  });
-
+    // detect Network account change
+    window.ethereum.on("networkChanged", function (networkId) {
+      console.log("Network changed");
+      location.reload();
+    });
+  }
   function signInCallback() {
     isSignedUpPromise = isSignedUp($hero, $selectedAccount);
   }
@@ -55,15 +56,21 @@
     {#await isSignedUpPromise}
       <p>Checking if you are signed in..</p>
     {:then isSignedUp}
-      {#if isSignedUp}
+      {#if isSignedUp.error === false && isSignedUp.status === true}
         <div class="flex w-full">
           <NavBar />
           <div id="container" class="relative">
             <Router {routes} />
           </div>
         </div>
-      {:else}
+      {:else if isSignedUp.error === false && isSignedUp.status === false}
         <SignUp fnCallback={signInCallback} />
+      {:else if isSignedUp.error === true}
+        <div class="flex w-full">
+          <div id="container" class="relative">
+            <ConnectionGuide error={true} hasWallet={window.ethereum} />
+          </div>
+        </div>
       {/if}
     {/await}
   {:else}
@@ -90,50 +97,7 @@
     </pre>
           </div>
         {/if}
-        <!-- Was a browswer wallet found-->
-        {#if window.ethereum}
-          <!-- Wallet found, give network details-->
-          <div>
-            <strong
-              >Browser wallet found, please connect to the Iota Test EVM network
-              to continue</strong
-            >
-          </div>
-          <div class="p-2 text-sm text-left border border-black bg-white">
-            <p>
-              First make sure you have made an account and logged into your
-              MetaMask browser extension.
-            </p>
-            <p class="mt-2">
-              Click on the Networks dropdown in the top and click the "Add
-              Network" button, finally add the details below and save the
-              network.
-            </p>
-            <p class="mt-2">
-              Network Name: <strong>Iota EVM test</strong> (or choose another name)
-            </p>
-            <p>RPC URL: <strong>https://evm.wasp.sc.iota.org</strong></p>
-            <p>Chain ID: <strong>1074</strong></p>
-            <p>
-              Currency Symbol: <strong>i</strong> (or choose another symbol)
-            </p>
-            <p>
-              Block Explorer URL: <strong
-                >https://explorer.wasp.sc.iota.org</strong
-              > (optional)
-            </p>
-          </div>
-        {:else}
-          <!-- no wallet found give metamask link-->
-          <p>
-            Please install <a href="https://metamask.io/">MetaMask</a> to continue..
-          </p>
-          <p class="mt-4">
-            MetaMask is a cryptocurrency wallet that allows you to interact with
-            this and many other decentralized applications through a browser
-            extension.
-          </p>
-        {/if}
+        <ConnectionGuide hasWallet={window.ethereum} />
       </div>
     </div>
   {/if}

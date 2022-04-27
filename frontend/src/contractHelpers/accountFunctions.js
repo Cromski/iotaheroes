@@ -2,8 +2,11 @@ export const signUp = async (username, heroContract, selectedAccount) => {
     await heroContract.methods.signUp(username).send({from:selectedAccount});
 }
 export const isSignedUp = async (heroContract, selectedAccount) => {
-    const response = await heroContract.methods.isSignedUp().call({from:selectedAccount});
-    return response;
+  try {
+    return {error:false, status:await heroContract.methods.isSignedUp().call({from:selectedAccount})};
+  } catch (e) {
+    return {error:true, status:e};
+  }    
 }
 // current users name
 export const getUsername = async (heroContract, address) => {

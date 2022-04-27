@@ -7,6 +7,7 @@
   } from "../contractHelpers/accountFunctions";
   import UserOverview from "../components/SearchUserDetails/UserOverview.svelte";
   import UserTag from "../components/UserTag.svelte";
+  import HelpTooltip from "../components/General/HelpTooltip.svelte";
   import { slimscroll } from "svelte-slimscroll";
 
   export let params = {};
@@ -48,6 +49,7 @@
         {/each}
       </div>
     </div>
+    <HelpTooltip tip={"Gold is received as loot from adventuring."} />
   {/await}
 </div>
 
