@@ -91,3 +91,18 @@ button:focus {
 #encounterHealthBar.disabled {
   opacity: 1;
 }
+
+.icon-sm {
+  color: #ff9933;
+  width: 20px;
+  height: 20px;
+}
+.tooltip-wrapper {
+  color: white;
+}
+.default-tip {
+  min-width: 200px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  border: #333 1px solid;
+}

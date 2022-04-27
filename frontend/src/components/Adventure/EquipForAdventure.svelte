@@ -1,4 +1,5 @@
 <script>
+  import collapse from "svelte-collapse";
   import { inventory } from "../../stores/inventory_store";
   import Item from "../Item.svelte";
   import GearPane from "./GearPane.svelte";
@@ -9,10 +10,14 @@
     removeSet,
     removeAllSets,
   } from "../../storageHelpers/gearSets";
+  import { onDestroy } from "svelte";
+  import HelpTooltip from "../General/HelpTooltip.svelte";
   export let adventureFunction;
   export let hero;
 
+  let open = false;
   let gearSets = getAllSets();
+
   let saveSetName;
   let selectedGearSet;
 
@@ -23,6 +28,7 @@
     activeSlot = id;
     delete equipment[id];
     equipment = equipment; // Trigger re-render
+    saveSet("Last (autosaved)", equipment);
   };
 
   let selectItem = (item) => {
@@ -69,6 +75,12 @@
     fromTemplate(selectedGearSet);
     saveSetName = selectedGearSet;
   };
+  let unsub = inventory.subscribe((inv) => {
+    if (gearSets.length !== 0) {
+      fromTemplate(gearSets[0].name);
+    }
+  });
+  onDestroy(unsub);
 </script>
 
 <div class="border">Equip your hero for the adventure</div>
@@ -121,16 +133,22 @@
       bind:value={selectedGearSet}
       on:change={handleSelectSet}
     >
-      <option disabled>None</option>
+      {#if gearSets.length === 0}
+        <option disabled>None</option>
+      {/if}
       {#each gearSets as gearSet}
         <option value={gearSet.name}>{gearSet.name}</option>
       {/each}
     </select>
-    <button on:click={handleRemoveAll} class="btn-orange btn-sm ml-1"
-      >Delete All</button
+    <HelpTooltip
+      tip={"Anytime you make a change it will be saved in the 'Last' set. Create a new set to have more control"}
+    />
+    <button class="btn-orange btn-sm ml-1" on:click={() => (open = !open)}>
+      Manage sets</button
     >
   </div>
-  <div class="text-left ">
+
+  <div use:collapse={{ open }} class="text-left ">
     <input bind:value={saveSetName} type="text" placeholder="Set name" />
     <button
       disabled={saveSetName === undefined || saveSetName === ""}
@@ -141,6 +159,9 @@
       disabled={saveSetName === undefined || saveSetName === ""}
       on:click={handleRemove}
       class="btn-orange btn-sm">Delete</button
+    >
+    <button on:click={handleRemoveAll} class="btn-orange btn-sm ml-1"
+      >Delete All</button
     >
   </div>
 </div>
