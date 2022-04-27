@@ -3,6 +3,7 @@
   import { getLevelProgress } from "../../util/heroXP";
   import XpBar from "../XpBar.svelte";
   import HeroCanvas from "./HeroCanvas.svelte";
+  import HelpTooltip from "../General/HelpTooltip.svelte";
 
   export let hero;
   var str = getLevelProgress(hero.strength);
@@ -17,7 +18,7 @@
     </div>
   </div>
   <div class="flex-auto">
-    <div class="" style="max-width:250px">
+    <div class="" style="max-width:270px">
       <ul style="list-style:none;">
         <li>id: {hero.id}</li>
         <!-- <li>dna: {dna}</li> -->
@@ -39,7 +40,8 @@
           >
         </li>
         {#if hero.isAdventuring}
-          <li>Hero is currently on an adventure</li>
+          <h2>Hero is currently on an adventure <HelpTooltip tip={"You have to wait for the adventure to complete before you can go on another!"} /></h2>     
+
         {/if}
         <li />
       </ul>

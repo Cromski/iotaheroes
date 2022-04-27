@@ -8,7 +8,7 @@
   <!-- Wallet found, give network details-->
   <div>
     {#if error}
-      <strong
+      <strong class="str-text"
         >There was an error connecting, are you using the correct RPC url in the
         metamask network?
       </strong>
