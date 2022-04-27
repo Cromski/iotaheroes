@@ -2,7 +2,10 @@ import remove from 'lodash/remove'
 
 export const getAllSets = () => {
     var setsString = localStorage.getItem("sets");
-    return JSON.parse(setsString);
+    var setsObj = JSON.parse(setsString);
+    if(setsObj === null)
+    {return []}
+    return setsObj
 }
 export const getSet = (name) => {
     var setsString = localStorage.getItem("sets");
@@ -34,6 +37,9 @@ export const saveSet = (name, equipArr) => {
     }
 }
 
+export const removeAllSets = () => {
+    localStorage.removeItem("sets")
+}
 export const removeSet = (name) => {
     var setsString = localStorage.getItem("sets");
     var gearSets = JSON.parse(setsString);

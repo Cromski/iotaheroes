@@ -7,39 +7,46 @@
     getAllSets,
     saveSet,
     removeSet,
+    removeAllSets,
   } from "../../storageHelpers/gearSets";
   export let adventureFunction;
   export let hero;
 
+  let gearSets = getAllSets();
   let saveSetName;
   let selectedGearSet;
+
   $: activeSlot = 7;
-  let gearSets = getAllSets();
   $: equipment = [];
+
   let changeActiveSlot = (id) => {
     activeSlot = id;
     delete equipment[id];
-    equipment = equipment;
-    console.log(equipment);
+    equipment = equipment; // Trigger re-render
   };
+
   let selectItem = (item) => {
     equipment[item.attributes.itemSlot] = item;
-    console.log("all sets", getAllSets());
+    saveSet("Last (autosaved)", equipment);
   };
+
   let goAdventure = () => {
     let equipArr = equipment.map((a) => a.id).filter((a) => a != null);
     adventureFunction(hero.id, equipArr);
   };
-  let handleSelectSet = () => {
-    fromTemplate(selectedGearSet);
-    saveSetName = selectedGearSet;
-  };
+
+  // Functionality to save/restore item sets
   let handleSave = () => {
     saveSet(saveSetName, equipment);
     gearSets = getAllSets();
   };
   let handleRemove = () => {
     removeSet(saveSetName);
+    gearSets = getAllSets();
+    saveSetName = "";
+  };
+  let handleRemoveAll = () => {
+    removeAllSets();
     gearSets = getAllSets();
     saveSetName = "";
   };
@@ -57,6 +64,10 @@
       }
     }
     equipment = gearSetWithItemData;
+  };
+  let handleSelectSet = () => {
+    fromTemplate(selectedGearSet);
+    saveSetName = selectedGearSet;
   };
 </script>
 
@@ -102,7 +113,7 @@
   {/if}
 </div>
 <div>
-  <div class="flex text-left">
+  <div class="flex text-left items-center">
     <label for="setSelector">Your sets:</label>
     <select
       class="ml-1"
@@ -110,23 +121,26 @@
       bind:value={selectedGearSet}
       on:change={handleSelectSet}
     >
-      <option disabled>none</option>
+      <option disabled>None</option>
       {#each gearSets as gearSet}
         <option value={gearSet.name}>{gearSet.name}</option>
       {/each}
     </select>
+    <button on:click={handleRemoveAll} class="btn-orange btn-sm ml-1"
+      >Delete All</button
+    >
   </div>
-  <div class="text-left">
+  <div class="text-left ">
     <input bind:value={saveSetName} type="text" placeholder="Set name" />
     <button
       disabled={saveSetName === undefined || saveSetName === ""}
       on:click={handleSave}
-      class="btn-orange btn-sm">save</button
+      class="btn-orange btn-sm">Save</button
     >
     <button
       disabled={saveSetName === undefined || saveSetName === ""}
       on:click={handleRemove}
-      class="btn-orange btn-sm">delete</button
+      class="btn-orange btn-sm">Delete</button
     >
   </div>
 </div>
