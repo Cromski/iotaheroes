@@ -1,100 +1,69 @@
 <script>
   import { inventory } from "../../stores/inventory_store";
   import Item from "../Item.svelte";
-  import EquipmentSlot from "./EquipmentSlot.svelte";
+  import GearPane from "./GearPane.svelte";
+  import {
+    getSet,
+    getAllSets,
+    saveSet,
+    removeSet,
+  } from "../../storageHelpers/gearSets";
   export let adventureFunction;
   export let hero;
+
+  let saveSetName;
+  let selectedGearSet;
   $: activeSlot = 7;
+  let gearSets = getAllSets();
   $: equipment = [];
   let changeActiveSlot = (id) => {
     activeSlot = id;
+    delete equipment[id];
+    equipment = equipment;
+    console.log(equipment);
   };
   let selectItem = (item) => {
-    equipment[activeSlot] = item;
-    console.log(equipment);
+    equipment[item.attributes.itemSlot] = item;
+    console.log("all sets", getAllSets());
   };
   let goAdventure = () => {
     let equipArr = equipment.map((a) => a.id).filter((a) => a != null);
-    console.log(equipArr);
     adventureFunction(hero.id, equipArr);
+  };
+  let handleSelectSet = () => {
+    fromTemplate(selectedGearSet);
+    saveSetName = selectedGearSet;
+  };
+  let handleSave = () => {
+    saveSet(saveSetName, equipment);
+    gearSets = getAllSets();
+  };
+  let handleRemove = () => {
+    removeSet(saveSetName);
+    gearSets = getAllSets();
+    saveSetName = "";
+  };
+  let fromTemplate = (name) => {
+    var gearSet = getSet(name);
+    if (gearSet === undefined) {
+      equipment = [];
+      return;
+    }
+    let gearSetWithItemData = [];
+    for (let i = 0; i < gearSet.gear.length; i++) {
+      var it = $inventory.find((item) => item.id === gearSet.gear[i]);
+      if (it !== undefined) {
+        gearSetWithItemData[i] = it;
+      }
+    }
+    equipment = gearSetWithItemData;
   };
 </script>
 
 <div class="border">Equip your hero for the adventure</div>
 
 <div class="flex">
-  <!--Equipment pane -->
-  <div class="w-72">
-    <div class="grid grid-cols-5">
-      <div
-        on:click={() => changeActiveSlot(3)}
-        class="bg-white col-start-2 mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={3}
-          placeholderName={"Head"}
-          item={equipment[3]}
-        />
-      </div>
-    </div>
-    <div class="grid grid-cols-5">
-      <div class="bg-white mx-4 my-1 border-black border-2 w-14 h-14" />
-      <div
-        on:click={() => changeActiveSlot(4)}
-        class="bg-white  mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={4}
-          placeholderName={"Chest"}
-          item={equipment[4]}
-        />
-      </div>
-      <div
-        on:click={() => changeActiveSlot(1)}
-        class="bg-white  mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={1}
-          placeholderName={"Weapon"}
-          item={equipment[1]}
-        />
-      </div>
-    </div>
-    <div class="grid grid-cols-5">
-      <div
-        on:click={() => changeActiveSlot(6)}
-        class="bg-white  mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={6}
-          placeholderName={"Boots"}
-          item={equipment[6]}
-        />
-      </div>
-      <div
-        on:click={() => changeActiveSlot(7)}
-        class="bg-white  mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={7}
-          placeholderName={"Belt"}
-          item={equipment[7]}
-        />
-      </div>
-    </div>
-    <div class="grid grid-cols-5">
-      <div
-        on:click={() => changeActiveSlot(5)}
-        class="bg-white col-start-2 mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={5}
-          placeholderName={"Pants"}
-          item={equipment[5]}
-        />
-      </div>
-    </div>
-  </div>
+  <GearPane {equipment} clickItem={changeActiveSlot} />
 
   <!-- Inventory pane -->
   <div class="p-2 border-black border-2 m-3">
@@ -133,6 +102,35 @@
   {/if}
 </div>
 <div>
+  <div class="flex text-left">
+    <label for="setSelector">Your sets:</label>
+    <select
+      class="ml-1"
+      id="setSelector"
+      bind:value={selectedGearSet}
+      on:change={handleSelectSet}
+    >
+      <option disabled>none</option>
+      {#each gearSets as gearSet}
+        <option value={gearSet.name}>{gearSet.name}</option>
+      {/each}
+    </select>
+  </div>
+  <div class="text-left">
+    <input bind:value={saveSetName} type="text" placeholder="Set name" />
+    <button
+      disabled={saveSetName === undefined || saveSetName === ""}
+      on:click={handleSave}
+      class="btn-orange btn-sm">save</button
+    >
+    <button
+      disabled={saveSetName === undefined || saveSetName === ""}
+      on:click={handleRemove}
+      class="btn-orange btn-sm">delete</button
+    >
+  </div>
+</div>
+<div class="mt-10">
   <button
     disabled={hero.isAdventuring ? "disabled" : ""}
     class="btn btn-orange"

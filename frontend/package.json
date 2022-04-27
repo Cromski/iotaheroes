@@ -29,6 +29,7 @@
   "dependencies": {
     "@okrad/svelte-progressbar": "^1.11.3",
     "@rollup/plugin-json": "^4.1.0",
+    "lodash": "^4.17.21",
     "logrocket": "^2.2.1",
     "mathjs": "^10.1.1",
     "nerdamer": "^1.1.13",
