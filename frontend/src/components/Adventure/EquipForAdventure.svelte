@@ -1,6 +1,7 @@
 <script>
-  import collapse from "svelte-collapse";
   import { inventory } from "../../stores/inventory_store";
+  import { getLevelProgress } from "../../util/heroXP";
+  import { checkIfEmpty } from "../../util/sparseArrayIsEmpty";
   import Item from "../Item.svelte";
   import GearPane from "./GearPane.svelte";
   import {
@@ -11,18 +12,40 @@
     removeAllSets,
   } from "../../storageHelpers/gearSets";
   import { onDestroy } from "svelte";
-  import HelpTooltip from "../General/HelpTooltip.svelte";
+  import GearSetManager from "./GearSetManager.svelte";
+  import { slimscroll } from "svelte-slimscroll";
+
   export let adventureFunction;
   export let hero;
 
-  let open = false;
-  let gearSets = getAllSets();
-
-  let saveSetName;
-  let selectedGearSet;
-
   $: activeSlot = 7;
   $: equipment = [];
+  const heroStr = getLevelProgress(hero.strength);
+  const heroAgi = getLevelProgress(hero.agility);
+  const heroInt = getLevelProgress(hero.intelligence);
+
+  let gearStr, gearAgi, gearInt;
+  $: equipment,
+    (gearStr =
+      equipment.length > 0 && !checkIfEmpty(equipment)
+        ? equipment
+            .map((item) => item.attributes.boost.strength)
+            .reduce((prev, next) => prev + next)
+        : 0),
+    (gearAgi =
+      equipment.length > 0 && !checkIfEmpty(equipment)
+        ? equipment
+            .map((item) => item.attributes.boost.agility)
+            .reduce((prev, next) => prev + next)
+        : 0),
+    (gearInt =
+      equipment.length > 0 && !checkIfEmpty(equipment)
+        ? equipment
+            .map((item) => item.attributes.boost.intelligence)
+            .reduce((prev, next) => prev + next)
+        : 0);
+
+  let gearSets = getAllSets();
 
   let changeActiveSlot = (id) => {
     activeSlot = id;
@@ -42,19 +65,17 @@
   };
 
   // Functionality to save/restore item sets
-  let handleSave = () => {
-    saveSet(saveSetName, equipment);
+  let handleSave = (name) => {
+    saveSet(name, equipment);
     gearSets = getAllSets();
   };
-  let handleRemove = () => {
-    removeSet(saveSetName);
+  let handleRemove = (name) => {
+    removeSet(name);
     gearSets = getAllSets();
-    saveSetName = "";
   };
   let handleRemoveAll = () => {
     removeAllSets();
     gearSets = getAllSets();
-    saveSetName = "";
   };
   let fromTemplate = (name) => {
     var gearSet = getSet(name);
@@ -71,9 +92,8 @@
     }
     equipment = gearSetWithItemData;
   };
-  let handleSelectSet = () => {
-    fromTemplate(selectedGearSet);
-    saveSetName = selectedGearSet;
+  let handleSelectSet = (name) => {
+    fromTemplate(name);
   };
   let unsub = inventory.subscribe((inv) => {
     if (gearSets.length !== 0) {
@@ -83,88 +103,51 @@
   onDestroy(unsub);
 </script>
 
-<div class="border">Equip your hero for the adventure</div>
+<h2>Equip your hero for the adventure</h2>
 
-<div class="flex">
+<div class="mt-4 flex">
+  <div class="p-1 border-black border m-3">
+    <h3>Stats</h3>
+    <div class="underline whitespace-pre font-bold str-text">
+      Strength: {heroStr.currentLevel}(+{gearStr})={heroStr.currentLevel+gearStr}
+    </div>
+    <div class="underline whitespace-pre font-bold agi-text">
+      Agility: {heroAgi.currentLevel}(+{gearAgi})={heroAgi.currentLevel+gearAgi}
+    </div>
+    <div class="underline whitespace-pre font-bold int-text">
+      Intelligence: {heroInt.currentLevel}(+{gearInt})={heroInt.currentLevel+gearInt}
+    </div>
+  </div>
   <GearPane {equipment} clickItem={changeActiveSlot} />
 
   <!-- Inventory pane -->
-  <div class="p-2 border-black border-2 m-3">
-    <h3>Stats bonus</h3>
-    <div>
-      Strength: +{equipment.length > 0
-        ? equipment
-            .map((item) => item.attributes.boost.strength)
-            .reduce((prev, next) => prev + next)
-        : 0}
-    </div>
-    <div>
-      Agility: +{equipment.length > 0
-        ? equipment
-            .map((item) => item.attributes.boost.agility)
-            .reduce((prev, next) => prev + next)
-        : 0}
-    </div>
-    <div>
-      Intelligence: +{equipment.length > 0
-        ? equipment
-            .map((item) => item.attributes.boost.intelligence)
-            .reduce((prev, next) => prev + next)
-        : 0}
-    </div>
-  </div>
   {#if activeSlot !== -1}
-    <div class="p-2 border-black border-2 m-3">
-      Here is your items
-      <div>
-        {#each $inventory.filter((f) => f.attributes?.itemSlot == activeSlot) as item, i}
+    <div class="grow p-2 border-black border mx-4">
+      <h3>Here is your items</h3>
+      <div
+        class="flex flex-wrap"
+        use:slimscroll={{
+          height: "170px",
+          alwaysVisible: true,
+          color: "#EA580C",
+        }}
+      >
+        <!-- {#each $inventory.filter((f) => f.attributes?.itemSlot == activeSlot) as item, i} -->
+        {#each $inventory.filter((f) => f.attributes?.itemSlot !== undefined) as item, i}
           <Item {item} clickItem={selectItem} />
         {/each}
       </div>
     </div>
   {/if}
 </div>
-<div>
-  <div class="flex text-left items-center">
-    <label for="setSelector">Your sets:</label>
-    <select
-      class="ml-1"
-      id="setSelector"
-      bind:value={selectedGearSet}
-      on:change={handleSelectSet}
-    >
-      {#if gearSets.length === 0}
-        <option disabled>None</option>
-      {/if}
-      {#each gearSets as gearSet}
-        <option value={gearSet.name}>{gearSet.name}</option>
-      {/each}
-    </select>
-    <HelpTooltip
-      tip={"Anytime you make a change it will be saved in the 'Last' set. Create a new set to have more control"}
-    />
-    <button class="btn-orange btn-sm ml-1" on:click={() => (open = !open)}>
-      Manage sets</button
-    >
-  </div>
+<GearSetManager
+  {gearSets}
+  {handleRemove}
+  {handleSave}
+  {handleRemoveAll}
+  {handleSelectSet}
+/>
 
-  <div use:collapse={{ open }} class="text-left ">
-    <input bind:value={saveSetName} type="text" placeholder="Set name" />
-    <button
-      disabled={saveSetName === undefined || saveSetName === ""}
-      on:click={handleSave}
-      class="btn-orange btn-sm">Save</button
-    >
-    <button
-      disabled={saveSetName === undefined || saveSetName === ""}
-      on:click={handleRemove}
-      class="btn-orange btn-sm">Delete</button
-    >
-    <button on:click={handleRemoveAll} class="btn-orange btn-sm ml-1"
-      >Delete All</button
-    >
-  </div>
-</div>
 <div class="mt-10">
   <button
     disabled={hero.isAdventuring ? "disabled" : ""}

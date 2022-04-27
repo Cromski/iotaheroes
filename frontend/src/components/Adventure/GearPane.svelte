@@ -5,8 +5,8 @@
   $: equipment;
 </script>
 
-<div class="w-72">
-  <div class="grid grid-cols-5">
+<div style="width:180px; min-width:180px">
+  <div class="grid grid-cols-3">
     <div
       on:click={() => clickItem(3)}
       class="bg-white col-start-2 mx-4 my-1 border-black border-2 w-14 h-14"
@@ -14,7 +14,7 @@
       <EquipmentSlot slotId={3} placeholderName={"Head"} item={equipment[3]} />
     </div>
   </div>
-  <div class="grid grid-cols-5">
+  <div class="grid grid-cols-3">
     <div class="bg-white mx-4 my-1 border-black border-2 w-14 h-14" />
     <div
       on:click={() => clickItem(4)}
@@ -33,7 +33,7 @@
       />
     </div>
   </div>
-  <div class="grid grid-cols-5">
+  <div class="grid grid-cols-3">
     <div
       on:click={() => clickItem(6)}
       class="bg-white  mx-4 my-1 border-black border-2 w-14 h-14"
@@ -47,7 +47,7 @@
       <EquipmentSlot slotId={7} placeholderName={"Belt"} item={equipment[7]} />
     </div>
   </div>
-  <div class="grid grid-cols-5">
+  <div class="grid grid-cols-3">
     <div
       on:click={() => clickItem(5)}
       class="bg-white col-start-2 mx-4 my-1 border-black border-2 w-14 h-14"

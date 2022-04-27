@@ -106,3 +106,12 @@ button:focus {
   word-wrap: break-word;
   border: #333 1px solid;
 }
+.str-text {
+  color: #853939;
+}
+.agi-text {
+  color: #53723d;
+}
+.int-text {
+  color: #3f83a7;
+}
