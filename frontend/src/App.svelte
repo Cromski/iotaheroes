@@ -17,7 +17,18 @@
   import LogRocket from "logrocket";
   import SoMe from "./components/SoMe.svelte";
   import ConnectionGuide from "./components/ConnectionGuide.svelte";
+  import * as Sentry from "@sentry/browser";
+  import { BrowserTracing } from "@sentry/tracing";
 
+  Sentry.init({
+    dsn: "https://edae217dae144a55bf2353d3aa01a5ed@o1224159.ingest.sentry.io/6368896",
+    integrations: [new BrowserTracing()],
+
+    // Set tracesSampleRate to 1.0 to capture 100%
+    // of transactions for performance monitoring.
+    // We recommend adjusting this value in production
+    tracesSampleRate: 1.0,
+  });
   // LogRocket.init("ekynnv/iotaheroes");
   // LogRocket.identify($selectedAccount);
   $: isSignedUpPromise = $hero ? isSignedUp($hero, $selectedAccount) : "";
