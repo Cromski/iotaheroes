@@ -15,16 +15,41 @@
   import Router from "svelte-spa-router";
   import { routes } from "./routes";
   import LogRocket from "logrocket";
-  LogRocket.init("ekynnv/iotaheroes");
+  import SoMe from "./components/SoMe.svelte";
+  import ConnectionGuide from "./components/ConnectionGuide.svelte";
+  import * as Sentry from "@sentry/browser";
+  import { BrowserTracing } from "@sentry/tracing";
 
+  Sentry.init({
+    dsn: "https://edae217dae144a55bf2353d3aa01a5ed@o1224159.ingest.sentry.io/6368896",
+    integrations: [new BrowserTracing()],
+
+    // Set tracesSampleRate to 1.0 to capture 100%
+    // of transactions for performance monitoring.
+    // We recommend adjusting this value in production
+    tracesSampleRate: 1.0,
+  });
+  // LogRocket.init("ekynnv/iotaheroes");
+  // LogRocket.identify($selectedAccount);
   $: isSignedUpPromise = $hero ? isSignedUp($hero, $selectedAccount) : "";
-  $: metamaskConnected = window.ethereum
-    ? window.ethereum.isConnected()
-    : false;
+  $: metamaskConnected = window.ethereum;
+  $: metamaskConnected, metamaskConnected ? walletListeners() : "";
 
   onMount(async () => {
     await connect();
   });
+  function walletListeners() {
+    window.ethereum.on("accountsChanged", function (accounts) {
+      console.log("Accounts changed");
+      location.reload();
+    });
+
+    // detect Network account change
+    window.ethereum.on("networkChanged", function (networkId) {
+      console.log("Network changed");
+      location.reload();
+    });
+  }
   function signInCallback() {
     isSignedUpPromise = isSignedUp($hero, $selectedAccount);
   }
@@ -34,6 +59,7 @@
 </script>
 
 <main class="min-h-screen">
+  <SoMe />
   <Modals>
     <div slot="backdrop" class="backdrop" on:click={closeModal} />
   </Modals>
@@ -41,47 +67,50 @@
     {#await isSignedUpPromise}
       <p>Checking if you are signed in..</p>
     {:then isSignedUp}
-      {#if isSignedUp}
+      {#if isSignedUp.error === false && isSignedUp.status === true}
         <div class="flex w-full">
           <NavBar />
-          <div id="container" class="">
+          <div id="container" class="relative">
             <Router {routes} />
           </div>
         </div>
-      {:else}
+      {:else if isSignedUp.error === false && isSignedUp.status === false}
         <SignUp fnCallback={signInCallback} />
+      {:else if isSignedUp.error === true}
+        <div class="flex w-full">
+          <div id="container" class="relative">
+            <ConnectionGuide error={true} hasWallet={window.ethereum} />
+          </div>
+        </div>
       {/if}
     {/await}
   {:else}
-    {#if window.Web3}
-      <p>
-        The Web3.js library has been injected in Global window Object (version: {window
-          .Web3.version}).
-      </p>
-    {:else}
-      <div class="notification is-warning">
-        <strong
-          >Error! The Web3.js library has not been detected in the Global window
-          Object.</strong
-        >
-        Please check that Web3.js has been correctly added in
-        <em class="is-family-code">public/index.html</em>
-        with the line:
-        <pre>
+    <img
+      alt="IotaHeroes"
+      src="/logo.PNG"
+      class="w-1/2 mx-auto text-2xl text-[#ff3e00] font-thin border-none"
+    />
+    <div class="flex w-full">
+      <div id="container" class="relative">
+        {#if window.Web3}
+          <!-- Web3 was injected by library (svelte-web3)-->
+        {:else}
+          <div class="notification is-warning">
+            <strong
+              >Error! The Web3.js library has not been detected in the Global
+              window Object.</strong
+            >
+            Please check that Web3.js has been correctly added in
+            <em class="is-family-code">public/index.html</em>
+            with the line:
+            <pre>
     &lt;script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js">&lt;/script>
     </pre>
+          </div>
+        {/if}
+        <ConnectionGuide hasWallet={window.ethereum} />
       </div>
-    {/if}
-    <p>
-      Browser wallet detected in Global Object window.ethereum : {window.ethereum
-        ? "yes"
-        : "no"}
-    </p>
-    {#if window.ethereum}
-      <p>
-        Browser wallet already connected to metamask : {metamaskConnected}
-      </p>
-    {/if}
+    </div>
   {/if}
 </main>
 

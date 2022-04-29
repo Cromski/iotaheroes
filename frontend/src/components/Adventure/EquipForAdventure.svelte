@@ -1,138 +1,154 @@
 <script>
   import { inventory } from "../../stores/inventory_store";
+  import { getLevelProgress } from "../../util/heroXP";
+  import { checkIfEmpty } from "../../util/sparseArrayIsEmpty";
   import Item from "../Item.svelte";
-  import EquipmentSlot from "./EquipmentSlot.svelte";
+  import GearPane from "./GearPane.svelte";
+  import {
+    getSet,
+    getAllSets,
+    saveSet,
+    removeSet,
+    removeAllSets,
+  } from "../../storageHelpers/gearSets";
+  import { onDestroy } from "svelte";
+  import GearSetManager from "./GearSetManager.svelte";
+  import { slimscroll } from "svelte-slimscroll";
+
   export let adventureFunction;
   export let hero;
+
   $: activeSlot = 7;
   $: equipment = [];
-  let changeActiveSlot = (id) => {
-    activeSlot = id;
-  };
-  let selectItem = (item) => {
-    equipment[activeSlot] = item;
-    console.log(equipment);
-  };
-  let goAdventure = () => {
-    let equipArr = equipment.map((a) => a.id).filter((a) => a != null);
-    console.log(equipArr);
-    adventureFunction(hero.id, equipArr);
-  };
-</script>
+  const heroStr = getLevelProgress(hero.strength);
+  const heroAgi = getLevelProgress(hero.agility);
+  const heroInt = getLevelProgress(hero.intelligence);
 
-<div class="border">Equip your hero for the adventure</div>
-
-<div class="flex">
-  <!--Equipment pane -->
-  <div class="w-72">
-    <div class="grid grid-cols-5">
-      <div
-        on:click={() => changeActiveSlot(3)}
-        class="bg-white col-start-2 mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={3}
-          placeholderName={"Head"}
-          item={equipment[3]}
-        />
-      </div>
-    </div>
-    <div class="grid grid-cols-5">
-      <div class="bg-white mx-4 my-1 border-black border-2 w-14 h-14" />
-      <div
-        on:click={() => changeActiveSlot(4)}
-        class="bg-white  mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={4}
-          placeholderName={"Chest"}
-          item={equipment[4]}
-        />
-      </div>
-      <div
-        on:click={() => changeActiveSlot(1)}
-        class="bg-white  mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={1}
-          placeholderName={"Weapon"}
-          item={equipment[1]}
-        />
-      </div>
-    </div>
-    <div class="grid grid-cols-5">
-      <div
-        on:click={() => changeActiveSlot(6)}
-        class="bg-white  mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={6}
-          placeholderName={"Boots"}
-          item={equipment[6]}
-        />
-      </div>
-      <div
-        on:click={() => changeActiveSlot(7)}
-        class="bg-white  mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={7}
-          placeholderName={"Belt"}
-          item={equipment[7]}
-        />
-      </div>
-    </div>
-    <div class="grid grid-cols-5">
-      <div
-        on:click={() => changeActiveSlot(5)}
-        class="bg-white col-start-2 mx-4 my-1 border-black border-2 w-14 h-14"
-      >
-        <EquipmentSlot
-          slotId={5}
-          placeholderName={"Pants"}
-          item={equipment[5]}
-        />
-      </div>
-    </div>
-  </div>
-
-  <!-- Inventory pane -->
-  <div class="p-2 border-black border-2 m-3">
-    <h3>Stats bonus</h3>
-    <div>
-      Strength: +{equipment.length > 0
+  let gearStr, gearAgi, gearInt;
+  $: equipment,
+    (gearStr =
+      equipment.length > 0 && !checkIfEmpty(equipment)
         ? equipment
             .map((item) => item.attributes.boost.strength)
             .reduce((prev, next) => prev + next)
-        : 0}
-    </div>
-    <div>
-      Agility: +{equipment.length > 0
+        : 0),
+    (gearAgi =
+      equipment.length > 0 && !checkIfEmpty(equipment)
         ? equipment
             .map((item) => item.attributes.boost.agility)
             .reduce((prev, next) => prev + next)
-        : 0}
-    </div>
-    <div>
-      Intelligence: +{equipment.length > 0
+        : 0),
+    (gearInt =
+      equipment.length > 0 && !checkIfEmpty(equipment)
         ? equipment
             .map((item) => item.attributes.boost.intelligence)
             .reduce((prev, next) => prev + next)
-        : 0}
+        : 0);
+
+  let gearSets = getAllSets();
+
+  let changeActiveSlot = (id) => {
+    activeSlot = id;
+    delete equipment[id];
+    equipment = equipment; // Trigger re-render
+    saveSet("Last (autosaved)", equipment);
+  };
+
+  let selectItem = (item) => {
+    equipment[item.attributes.itemSlot] = item;
+    saveSet("Last (autosaved)", equipment);
+  };
+
+  let goAdventure = () => {
+    let equipArr = equipment.map((a) => a.id).filter((a) => a != null);
+    adventureFunction(hero.id, equipArr);
+  };
+
+  // Functionality to save/restore item sets
+  let handleSave = (name) => {
+    saveSet(name, equipment);
+    gearSets = getAllSets();
+  };
+  let handleRemove = (name) => {
+    removeSet(name);
+    gearSets = getAllSets();
+  };
+  let handleRemoveAll = () => {
+    removeAllSets();
+    gearSets = getAllSets();
+  };
+  let fromTemplate = (name) => {
+    var gearSet = getSet(name);
+    if (gearSet === undefined) {
+      equipment = [];
+      return;
+    }
+    let gearSetWithItemData = [];
+    for (let i = 0; i < gearSet.gear.length; i++) {
+      var it = $inventory.find((item) => item.id === gearSet.gear[i]);
+      if (it !== undefined) {
+        gearSetWithItemData[i] = it;
+      }
+    }
+    equipment = gearSetWithItemData;
+  };
+  let handleSelectSet = (name) => {
+    fromTemplate(name);
+  };
+  let unsub = inventory.subscribe((inv) => {
+    if (gearSets.length !== 0) {
+      fromTemplate(gearSets[0].name);
+    }
+  });
+  onDestroy(unsub);
+</script>
+
+<h2>Equip your hero for the adventure</h2>
+
+<div class="mt-4 flex">
+  <div class="p-1 border-black border m-3">
+    <h3>Stats</h3>
+    <div class="underline whitespace-pre font-bold str-text">
+      Strength: {heroStr.currentLevel}(+{gearStr})={heroStr.currentLevel+gearStr}
+    </div>
+    <div class="underline whitespace-pre font-bold agi-text">
+      Agility: {heroAgi.currentLevel}(+{gearAgi})={heroAgi.currentLevel+gearAgi}
+    </div>
+    <div class="underline whitespace-pre font-bold int-text">
+      Intelligence: {heroInt.currentLevel}(+{gearInt})={heroInt.currentLevel+gearInt}
     </div>
   </div>
+  <GearPane {equipment} clickItem={changeActiveSlot} />
+
+  <!-- Inventory pane -->
   {#if activeSlot !== -1}
-    <div class="p-2 border-black border-2 m-3">
-      Here is your items
-      <div>
-        {#each $inventory.filter((f) => f.attributes?.itemSlot == activeSlot) as item, i}
+    <div class="grow p-2 border-black border mx-4">
+      <h3>Here is your items</h3>
+      <div
+        class="flex flex-wrap"
+        use:slimscroll={{
+          height: "170px",
+          alwaysVisible: true,
+          color: "#EA580C",
+        }}
+      >
+        <!-- {#each $inventory.filter((f) => f.attributes?.itemSlot == activeSlot) as item, i} -->
+        {#each $inventory.filter((f) => f.attributes?.itemSlot !== undefined) as item, i}
           <Item {item} clickItem={selectItem} />
         {/each}
       </div>
     </div>
   {/if}
 </div>
-<div>
+<GearSetManager
+  {gearSets}
+  {handleRemove}
+  {handleSave}
+  {handleRemoveAll}
+  {handleSelectSet}
+/>
+
+<div class="mt-10">
   <button
     disabled={hero.isAdventuring ? "disabled" : ""}
     class="btn btn-orange"

@@ -66,7 +66,7 @@
               class="mr-2"
               width="35px"
               alt={"pic"}
-              src={"process.env.API_URL" + "/Item/" + item.id + ".png"}
+              src={"items/" + item.id + ".png"}
             />
             <input type="hidden" value={item.id} />
             <input
@@ -96,7 +96,7 @@
               class="mr-2"
               width="35px"
               alt={"pic"}
-              src={"process.env.API_URL" + "/Item/" + item + ".png"}
+              src={"items/" + item + ".png"}
             />
             <input type="hidden" value={item} />
             <input

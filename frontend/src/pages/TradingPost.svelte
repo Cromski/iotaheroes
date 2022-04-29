@@ -65,11 +65,12 @@
     </p>
     <TradeForm {createTrade} {trade} {token} />
   {/if}
-{/await}
-{#await getTradesPromise}
-  <p>Getting trades..</p>
-{:then trades}
-  {#each trades as trade, i}
-    <Trade {trade} tradefulfiller={tradeFulfiller} />
-  {/each}
+
+  {#await getTradesPromise}
+    <p>Getting trades..</p>
+  {:then trades}
+    {#each trades as trade, i}
+      <Trade {trade} approved={isApproved} tradefulfiller={tradeFulfiller} />
+    {/each}
+  {/await}
 {/await}

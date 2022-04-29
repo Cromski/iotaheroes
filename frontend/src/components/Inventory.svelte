@@ -5,6 +5,7 @@
 
 <h2>Your inventory</h2>
 <div class="grid grid-cols-6">
+  {console.log($inventory)}
   {#each $inventory as item, i}
     <Item {item} />
   {/each}
